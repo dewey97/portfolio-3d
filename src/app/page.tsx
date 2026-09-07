@@ -13,7 +13,24 @@ import {
   Briefcase,
   Code,
   FolderGit2,
+  TrendingUp,
 } from 'lucide-react';
+
+function parseExperienceContent(content: string) {
+  const lines = content
+    .split('\n')
+    .map((l) => l.trim())
+    .filter((l) => l.startsWith('- '));
+
+  return lines.map((line) => {
+    const raw = line.replace(/^- /, '');
+    const match = raw.match(/^\*\*(.*?)\*\*:?\s*(.*)$/);
+    if (match) {
+      return { title: match[1], desc: match[2] };
+    }
+    return { title: '', desc: raw };
+  });
+}
 
 export default function Home() {
   const profile = getProfileData('vie');
@@ -123,46 +140,135 @@ export default function Home() {
         </div>
       </section>
 
-      {/* EXPERIENCE SECTION */}
-      <section id="experience" className="max-w-6xl mx-auto px-6 py-16 border-t border-slate-800/60">
-        <div className="flex items-center gap-3 mb-10">
-          <Briefcase className="w-6 h-6 text-blue-400" />
-          <h2 className="text-2xl md:text-3xl font-bold tracking-tight">Kinh Nghiệm Làm Việc</h2>
+      {/* EXPERIENCE SECTION - EXECUTIVE SPLIT-BENTO */}
+      <section id="experience" className="max-w-6xl mx-auto px-6 py-20 border-t border-slate-800/60">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+          <div>
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-950/60 border border-blue-800/40 text-blue-400 text-xs font-mono mb-3">
+              <Briefcase className="w-3.5 h-3.5" />
+              <span>Career Journey</span>
+            </div>
+            <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight text-white">
+              Kinh Nghiệm Làm Việc
+            </h2>
+          </div>
+          <p className="text-slate-400 text-sm max-w-md">
+            Hành trình xây dựng kiến trúc dữ liệu, tối ưu hóa quy trình phân tích và tạo tác động thực tế cho doanh nghiệp.
+          </p>
         </div>
 
-        <div className="space-y-8 relative before:absolute before:inset-0 before:left-3.5 before:w-0.5 before:bg-slate-800">
-          {experiences.map((exp) => (
-            <div key={exp.id} className="relative pl-10 group">
-              <div className="absolute left-1.5 top-1.5 w-4 h-4 rounded-full bg-slate-950 border-2 border-blue-500 group-hover:scale-125 transition" />
-              <div className="bg-slate-900/60 border border-slate-800/80 rounded-xl p-6 hover:border-slate-700 transition">
-                <div className="flex flex-wrap items-center justify-between gap-2 mb-2">
-                  <h3 className="text-xl font-semibold text-white">{exp.role}</h3>
-                  <span className="text-xs font-mono px-2.5 py-1 rounded bg-blue-950/80 text-blue-300 border border-blue-800/40">
-                    {exp.startDate} – {exp.endDate}
-                  </span>
-                </div>
-                <div className="flex items-center gap-4 text-sm text-slate-400 mb-4">
-                  <span className="font-medium text-slate-300">{exp.company}</span>
-                  <span className="flex items-center gap-1 text-xs">
-                    <MapPin className="w-3.5 h-3.5" />
-                    {exp.location}
-                  </span>
-                </div>
-                <div className="text-slate-300 text-sm leading-relaxed whitespace-pre-line mb-4">
-                  {exp.content.replace(/^### .*$/gm, '')}
-                </div>
-                {exp.tags && exp.tags.length > 0 && (
-                  <div className="flex flex-wrap gap-2 pt-2 border-t border-slate-800/60">
-                    {exp.tags.map((tag) => (
-                      <span key={tag} className="text-xs font-mono px-2 py-0.5 rounded bg-slate-800 text-slate-400">
-                        {tag}
+        <div className="space-y-8">
+          {experiences.map((exp, index) => {
+            const isCurrent = exp.endDate.toLowerCase().includes('hiện tại') || exp.endDate.toLowerCase().includes('present');
+            const initials = exp.company.toLowerCase().includes('giáo dục') || exp.company.toLowerCase().includes('educollab') ? 'EC' : 'ZS';
+            const bullets = parseExperienceContent(exp.content);
+
+            // Tìm bullet có chứa thành tích nổi bật (% hoặc tiết kiệm / tối ưu)
+            const highlightBullet = bullets.find((b) => b.desc.includes('%') || b.title.includes('Web') || b.desc.includes('40%') || b.desc.includes('20%'));
+            const standardBullets = bullets.filter((b) => b !== highlightBullet);
+
+            return (
+              <div
+                key={exp.id}
+                className="group relative rounded-2xl bg-slate-900/50 border border-slate-800/80 hover:border-blue-500/40 hover:bg-slate-900/80 transition-all duration-300 backdrop-blur-sm p-6 sm:p-8 shadow-lg hover:shadow-2xl hover:shadow-blue-950/30 overflow-hidden"
+              >
+                {/* Ambient subtle glow on hover */}
+                <div className="absolute top-0 right-0 w-64 h-64 bg-blue-500/5 rounded-full blur-3xl group-hover:bg-blue-500/10 transition-all duration-500 pointer-events-none" />
+
+                <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-start">
+                  {/* LEFT COLUMN: COMPANY & ROLE (lg:col-span-4) */}
+                  <div className="lg:col-span-4 space-y-4">
+                    <div className="flex items-center gap-3.5">
+                      <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-600/20 via-sky-500/10 to-cyan-400/20 border border-blue-500/30 flex items-center justify-center text-blue-400 font-mono font-bold text-base shadow-inner group-hover:scale-105 group-hover:border-blue-400/60 transition-all">
+                        {initials}
+                      </div>
+                      <div>
+                        <span className="text-xs font-mono uppercase tracking-wider text-blue-400 font-semibold">
+                          0{index + 1} • {exp.startDate.split('/')[1] || 'EXP'}
+                        </span>
+                        <h4 className="text-slate-200 font-semibold text-sm leading-snug">
+                          {exp.company}
+                        </h4>
+                      </div>
+                    </div>
+
+                    <div>
+                      <h3 className="text-xl font-bold text-white group-hover:text-cyan-300 transition-colors">
+                        {exp.role}
+                      </h3>
+                    </div>
+
+                    <div className="flex flex-wrap items-center gap-2.5 pt-1">
+                      <span
+                        className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-mono font-medium border ${
+                          isCurrent
+                            ? 'bg-emerald-950/60 text-emerald-300 border-emerald-800/50 shadow-sm shadow-emerald-950'
+                            : 'bg-slate-800/80 text-slate-300 border-slate-700/60'
+                        }`}
+                      >
+                        {isCurrent && <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />}
+                        {exp.startDate} – {exp.endDate}
                       </span>
-                    ))}
+
+                      <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs text-slate-400 bg-slate-800/50 border border-slate-700/40">
+                        <MapPin className="w-3 h-3 text-slate-400" />
+                        {exp.location}
+                      </span>
+                    </div>
                   </div>
-                )}
+
+                  {/* RIGHT COLUMN: HIGHLIGHTS & DETAILED BULLETS (lg:col-span-8) */}
+                  <div className="lg:col-span-8 space-y-5 lg:border-l lg:border-slate-800/80 lg:pl-8">
+                    {/* KEY IMPACT METRIC BOX */}
+                    {highlightBullet && (
+                      <div className="rounded-xl bg-gradient-to-r from-blue-950/50 via-slate-900/60 to-slate-900/30 border border-blue-800/40 p-4 flex items-start gap-3 shadow-inner">
+                        <div className="p-1.5 rounded-lg bg-blue-500/20 text-cyan-400 shrink-0 mt-0.5">
+                          <TrendingUp className="w-4 h-4" />
+                        </div>
+                        <div>
+                          <span className="text-xs font-mono text-cyan-300 font-semibold uppercase tracking-wider block mb-0.5">
+                            Key Business Impact
+                          </span>
+                          <p className="text-sm text-slate-200 font-medium leading-relaxed">
+                            <strong className="text-white">{highlightBullet.title}:</strong>{' '}
+                            {highlightBullet.desc}
+                          </p>
+                        </div>
+                      </div>
+                    )}
+
+                    {/* DETAILED BULLET POINTS */}
+                    <div className="space-y-3">
+                      {standardBullets.map((bullet, bIdx) => (
+                        <div key={bIdx} className="flex items-start gap-3 text-sm">
+                          <span className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2 shrink-0 group-hover:bg-cyan-400 transition-colors" />
+                          <p className="text-slate-300/90 leading-relaxed">
+                            {bullet.title && <strong className="text-slate-100 font-semibold">{bullet.title}: </strong>}
+                            {bullet.desc}
+                          </p>
+                        </div>
+                      ))}
+                    </div>
+
+                    {/* TECH STACK PILLS */}
+                    {exp.tags && exp.tags.length > 0 && (
+                      <div className="flex flex-wrap items-center gap-2 pt-3 border-t border-slate-800/60">
+                        <span className="text-xs text-slate-400 font-mono mr-1">Stack:</span>
+                        {exp.tags.map((tag) => (
+                          <span
+                            key={tag}
+                            className="text-xs font-mono px-2.5 py-0.5 rounded-md bg-slate-800/80 border border-slate-700/60 text-slate-300 hover:border-blue-500/40 hover:text-cyan-300 transition-colors"
+                          >
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </section>
 
