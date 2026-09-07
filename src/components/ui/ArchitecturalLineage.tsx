@@ -19,8 +19,8 @@ const NODES_BY_LANG: Record<'vie' | 'eng', ArchitectureNode[]> = {
     {
       id: 'ingestion',
       step: '01',
-      title: 'Multi-Source Ingestion',
-      category: 'Ingestion Layer',
+      title: 'Thu Thập Đa Nguồn (Ingestion)',
+      category: 'Tầng Thu Thập',
       tools: ['Python', 'REST APIs', 'POS Webhooks', 'GA4 BigQuery Export'],
       specs: [
         { label: 'Tần suất Ingestion', value: 'Micro-batch 15 phút' },
@@ -35,8 +35,8 @@ const NODES_BY_LANG: Record<'vie' | 'eng', ArchitectureNode[]> = {
     {
       id: 'transformation',
       step: '02',
-      title: 'Data Modeling & ETL',
-      category: 'Transformation Layer',
+      title: 'Mô Hình Hóa Dữ Liệu (ETL)',
+      category: 'Tầng Chuyển Hóa',
       tools: ['DuckDB', 'Python Polars', 'SQL Pipelines', 'Automated CRON'],
       specs: [
         { label: 'Tốc độ thực thi', value: '< 90s full pipeline' },
@@ -51,8 +51,8 @@ const NODES_BY_LANG: Record<'vie' | 'eng', ArchitectureNode[]> = {
     {
       id: 'warehouse',
       step: '03',
-      title: 'Data Warehouse & Marts',
-      category: 'Storage Layer',
+      title: 'Kho Dữ Liệu & Data Marts',
+      category: 'Tầng Lưu Trữ',
       tools: ['PostgreSQL', 'DuckDB Parquet', 'Star Schema', 'Indexed Views'],
       specs: [
         { label: 'Độ trễ truy vấn', value: '< 200ms p95' },
@@ -67,9 +67,9 @@ const NODES_BY_LANG: Record<'vie' | 'eng', ArchitectureNode[]> = {
     {
       id: 'bi',
       step: '04',
-      title: 'Decision & BI Layer',
-      category: 'Analytics & Delivery',
-      tools: ['Metabase', 'Automated Alerts', 'Telegram Bot', 'Executive P&L'],
+      title: 'Báo Cáo & Trợ Lý Điều Hành',
+      category: 'Tầng Quyết Định',
+      tools: ['Metabase', 'Cảnh báo tự động', 'Telegram Bot', 'Executive P&L'],
       specs: [
         { label: 'Đối tượng sử dụng', value: 'C-Level & Branch Managers' },
         { label: 'Giảm tải Ad-hoc', value: 'Giảm 70% yêu cầu thủ công' },
@@ -156,7 +156,7 @@ export default function ArchitecturalLineage({ lang = 'vie' }: { lang?: 'vie' | 
 
   const labels = {
     vie: {
-      telemetry: 'System Telemetry & SLA',
+      telemetry: 'Thông Số Vận Hành & SLA',
       description: 'Mô Tả Triển Khai',
       tradeoffs: 'Đánh Đổi Kiến Trúc & Quyết Định Kỹ Thuật (Trade-offs):',
     },
@@ -169,26 +169,26 @@ export default function ArchitecturalLineage({ lang = 'vie' }: { lang?: 'vie' | 
 
   return (
     <div className="w-full space-y-6">
-      {/* 4-NODE MINIMALIST FLOW STRIP */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+      {/* 4-NODE FLOATING STRIP WITHOUT HARSH BORDERS */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         {nodes.map((node) => {
           const isActive = node.id === activeId;
           return (
             <button
               key={node.id}
               onClick={() => setActiveId(node.id)}
-              className={`p-4 rounded-xl border text-left transition-all duration-200 relative ${
+              className={`p-5 rounded-2xl text-left transition-all duration-300 relative group hover:-translate-y-1.5 cursor-pointer ${
                 isActive
-                  ? 'bg-zinc-900/90 border-zinc-500/60 text-zinc-100 shadow-sm'
-                  : 'bg-zinc-950/40 border-zinc-800/60 text-zinc-400 hover:border-zinc-700 hover:text-zinc-200'
+                  ? 'bg-zinc-900 shadow-xl shadow-black/80 ring-1 ring-white/20 text-zinc-100'
+                  : 'bg-zinc-900/60 shadow-lg shadow-black/60 hover:bg-zinc-900/90 hover:shadow-2xl hover:shadow-black ring-1 ring-white/5 text-zinc-400 hover:text-zinc-200'
               }`}
             >
               <div className="flex items-center justify-between mb-3">
-                <span className="font-mono text-xs text-zinc-500 font-medium">
+                <span className="font-mono text-xs text-zinc-500 font-medium group-hover:text-zinc-400 transition-colors">
                   {node.step} / {node.category}
                 </span>
                 {isActive && (
-                  <span className="w-1.5 h-1.5 rounded-full bg-zinc-200" />
+                  <span className="w-2 h-2 rounded-full bg-emerald-400 shadow-sm shadow-emerald-400" />
                 )}
               </div>
               <h4 className="text-sm font-semibold text-zinc-100 mb-1">
@@ -202,18 +202,18 @@ export default function ArchitecturalLineage({ lang = 'vie' }: { lang?: 'vie' | 
         })}
       </div>
 
-      {/* ACTIVE NODE DOSSIER / SPECIFICATIONS */}
+      {/* ACTIVE NODE DOSSIER / SPECIFICATIONS - DEEP FLOATING CARD */}
       <AnimatePresence mode="wait">
         <motion.div
           key={`${lang}-${activeNode.id}`}
-          initial={{ opacity: 0, y: 8 }}
+          initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: -6 }}
-          transition={{ duration: 0.2 }}
-          className="rounded-xl border border-zinc-800/80 bg-zinc-900/40 p-6 md:p-8 space-y-6"
+          exit={{ opacity: 0, y: -8 }}
+          transition={{ duration: 0.25 }}
+          className="rounded-2xl bg-zinc-900/70 p-6 md:p-8 space-y-6 shadow-2xl shadow-black ring-1 ring-white/10 relative overflow-hidden backdrop-blur-xl"
         >
           {/* HEADER ROW */}
-          <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-6 border-b border-zinc-800/60">
+          <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-6 border-b border-zinc-800/40">
             <div>
               <div className="flex items-center gap-2 mb-1">
                 <span className="font-mono text-xs text-zinc-500">
@@ -234,7 +234,7 @@ export default function ArchitecturalLineage({ lang = 'vie' }: { lang?: 'vie' | 
               {activeNode.tools.map((t) => (
                 <span
                   key={t}
-                  className="px-2.5 py-1 rounded-md bg-zinc-950 border border-zinc-800 text-xs font-mono text-zinc-300"
+                  className="px-2.5 py-1 rounded-lg bg-zinc-950/80 shadow-inner text-xs font-mono text-zinc-300 ring-1 ring-white/5"
                 >
                   {t}
                 </span>
@@ -253,10 +253,10 @@ export default function ArchitecturalLineage({ lang = 'vie' }: { lang?: 'vie' | 
                 {activeNode.specs.map((s, idx) => (
                   <div
                     key={idx}
-                    className="p-3 rounded-lg bg-zinc-950/60 border border-zinc-800/60 flex items-center justify-between text-xs"
+                    className="p-3 rounded-xl bg-zinc-950/60 shadow-md shadow-black/40 flex items-center justify-between text-xs ring-1 ring-white/5"
                   >
                     <span className="text-zinc-400 font-mono">{s.label}</span>
-                    <span className="text-zinc-200 font-semibold font-mono">
+                    <span className="text-zinc-100 font-semibold font-mono">
                       {s.value}
                     </span>
                   </div>
@@ -270,13 +270,13 @@ export default function ArchitecturalLineage({ lang = 'vie' }: { lang?: 'vie' | 
                 <span className="text-xs font-mono uppercase text-zinc-500 tracking-wider block font-medium mb-1">
                   {labels.description}
                 </span>
-                <p className="text-zinc-300 font-normal">
+                <p className="text-zinc-300 font-normal leading-relaxed">
                   {activeNode.summary}
                 </p>
               </div>
 
-              <div className="p-4 rounded-lg bg-zinc-950/40 border border-zinc-800/60">
-                <span className="text-xs font-mono uppercase text-zinc-400 tracking-wider block font-semibold mb-1">
+              <div className="p-4 rounded-xl bg-zinc-950/50 shadow-inner ring-1 ring-white/5">
+                <span className="text-xs font-mono uppercase text-zinc-300 tracking-wider block font-semibold mb-1">
                   {labels.tradeoffs}
                 </span>
                 <p className="text-xs text-zinc-400 leading-relaxed">

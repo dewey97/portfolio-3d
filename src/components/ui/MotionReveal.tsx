@@ -16,9 +16,9 @@ export function MotionReveal({
   children,
   delay = 0,
   direction = 'up',
-  duration = 0.5,
+  duration = 0.6,
   className = '',
-  once = true,
+  once = false, // 2-way bidirectional transitions on scroll
   ...props
 }: MotionRevealProps) {
   const shouldReduceMotion = useReducedMotion();
@@ -27,13 +27,13 @@ export function MotionReveal({
     if (shouldReduceMotion) return { x: 0, y: 0 };
     switch (direction) {
       case 'up':
-        return { y: 14, x: 0 };
+        return { y: 28, x: 0 };
       case 'down':
-        return { y: -14, x: 0 };
+        return { y: -28, x: 0 };
       case 'left':
-        return { x: 14, y: 0 };
+        return { x: 28, y: 0 };
       case 'right':
-        return { x: -14, y: 0 };
+        return { x: -28, y: 0 };
       default:
         return { x: 0, y: 0 };
     }
@@ -45,11 +45,11 @@ export function MotionReveal({
     <motion.div
       initial={shouldReduceMotion ? false : { opacity: 0, ...offset }}
       whileInView={{ opacity: 1, x: 0, y: 0 }}
-      viewport={{ once, margin: '100px 0px 0px 0px' }}
+      viewport={{ once, amount: 0.12, margin: '-30px 0px -30px 0px' }}
       transition={{
         duration: shouldReduceMotion ? 0 : duration,
         delay,
-        ease: [0.16, 1, 0.3, 1], // Crisp easeOut
+        ease: [0.22, 1, 0.36, 1], // Smooth cubic-bezier for clear floating entrance
       }}
       className={className}
       {...props}
@@ -78,20 +78,20 @@ export function SpotlightCard({ children, className = '', ...props }: SpotlightC
 
   return (
     <motion.div
-      whileHover={{ y: -2 }}
-      transition={{ duration: 0.2, ease: 'easeOut' }}
+      whileHover={{ y: -4 }}
+      transition={{ duration: 0.25, ease: 'easeOut' }}
       onMouseMove={handleMouseMove}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      className={`relative overflow-hidden rounded-xl bg-zinc-900/40 border border-zinc-800/80 transition-all duration-200 backdrop-blur-md ${className}`}
+      className={`relative overflow-hidden rounded-2xl bg-zinc-900/60 shadow-xl shadow-black/80 hover:shadow-2xl hover:shadow-black transition-all duration-300 backdrop-blur-md ${className}`}
       {...props}
     >
-      {/* Subtle border highlight on hover */}
+      {/* Dynamic Cursor Spotlight Radial Glow */}
       <div
-        className="pointer-events-none absolute inset-0 transition-opacity duration-200 rounded-xl"
+        className="pointer-events-none absolute -inset-px transition-opacity duration-300"
         style={{
           opacity: isHovered ? 1 : 0,
-          border: '1px solid rgba(255, 255, 255, 0.15)',
+          background: `radial-gradient(450px circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(255, 255, 255, 0.08), transparent 70%)`,
         }}
       />
       <div className="relative z-10">{children}</div>
