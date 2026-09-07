@@ -9,26 +9,28 @@ interface MotionRevealProps extends HTMLMotionProps<'div'> {
   direction?: 'up' | 'down' | 'left' | 'right' | 'none';
   duration?: number;
   className?: string;
+  once?: boolean;
 }
 
 export function MotionReveal({
   children,
   delay = 0,
   direction = 'up',
-  duration = 0.6,
+  duration = 0.65,
   className = '',
+  once = false, // Enables continuous smooth transitions when scrolling both up and down
   ...props
 }: MotionRevealProps) {
   const getOffset = () => {
     switch (direction) {
       case 'up':
-        return { y: 35, x: 0 };
+        return { y: 30, x: 0 };
       case 'down':
-        return { y: -35, x: 0 };
+        return { y: -30, x: 0 };
       case 'left':
-        return { x: 35, y: 0 };
+        return { x: 30, y: 0 };
       case 'right':
-        return { x: -35, y: 0 };
+        return { x: -30, y: 0 };
       default:
         return { x: 0, y: 0 };
     }
@@ -40,7 +42,7 @@ export function MotionReveal({
     <motion.div
       initial={{ opacity: 0, ...offset }}
       whileInView={{ opacity: 1, x: 0, y: 0 }}
-      viewport={{ once: true, margin: '-60px' }}
+      viewport={{ once, amount: 0.15, margin: '-50px' }}
       transition={{
         duration,
         delay,
@@ -54,7 +56,7 @@ export function MotionReveal({
   );
 }
 
-interface SpotlightCardProps extends React.HTMLAttributes<HTMLDivElement> {
+interface SpotlightCardProps extends HTMLMotionProps<'div'> {
   children: React.ReactNode;
   className?: string;
 }
@@ -72,7 +74,9 @@ export function SpotlightCard({ children, className = '', ...props }: SpotlightC
   };
 
   return (
-    <div
+    <motion.div
+      whileHover={{ y: -4 }}
+      transition={{ duration: 0.25, ease: 'easeOut' }}
       onMouseMove={handleMouseMove}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
@@ -92,10 +96,10 @@ export function SpotlightCard({ children, className = '', ...props }: SpotlightC
         className="pointer-events-none absolute inset-0 transition-opacity duration-300 rounded-2xl"
         style={{
           opacity: isHovered ? 1 : 0,
-          border: '1px solid rgba(56, 189, 248, 0.3)',
+          border: '1px solid rgba(56, 189, 248, 0.35)',
         }}
       />
       <div className="relative z-10">{children}</div>
-    </div>
+    </motion.div>
   );
 }
