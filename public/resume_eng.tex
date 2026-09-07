@@ -1,6 +1,6 @@
 %-------------------------
 % Resume in LaTeX (Jake's Resume / Harvard Standard ATS Format)
-% Font: Sans-Serif Modern (Roboto / Inter Style)
+% Spacious & Breathable Line Spacing (Roboto Sans-Serif)
 %------------------------
 
 \documentclass[letterpaper,11pt]{article}
@@ -16,9 +16,13 @@
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
+\usepackage{setspace}
 
 % Set Clean Sans-Serif Font (Roboto)
 \usepackage[sfdefault]{roboto}
+
+% Comfortable Line Spacing (1.18x breathing room)
+\setstretch{1.18}
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -26,12 +30,12 @@
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
-% Adjust margins to fit on 1 page cleanly
-\addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1.0in}
-\addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
+% Adjust margins for a balanced, comfortable 1-page layout
+\addtolength{\oddsidemargin}{-0.4in}
+\addtolength{\evensidemargin}{-0.4in}
+\addtolength{\textwidth}{0.8in}
+\addtolength{\topmargin}{-.4in}
+\addtolength{\textheight}{0.8in}
 
 \urlstyle{same}
 
@@ -39,42 +43,42 @@
 \raggedright
 \setlength{\tabcolsep}{0in}
 
-% Sections formatting
+% Sections formatting - Open spacing above and below section rules
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large\bfseries
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+  \vspace{6pt}\scshape\raggedright\large\bfseries\color{NavyBlue}
+}{}{0em}{}[\color{black}\titlerule \vspace{2pt}]
 
 %-------------------------
 % Custom commands
 \newcommand{\resumeItem}[1]{
   \item\small{
-    {#1 \vspace{-2pt}}
+    {#1 \vspace{1pt}}
   }
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-2pt}\item
+  \vspace{2pt}\item
     \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}\vspace{-2pt}
 }
 
 \newcommand{\resumeProjectHeading}[2]{
-    \vspace{-2pt}\item
+    \vspace{2pt}\item
     \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
       \small#1 & #2 \\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}\vspace{-2pt}
 }
 
-\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{1pt}}
 
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in]}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in, itemsep=2.5pt, topsep=2pt, parsep=1.5pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{2pt}}
 
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%
@@ -83,13 +87,15 @@
 
 %----------HEADING----------
 \begin{center}
-    \textbf{\Huge \scshape Dinh Huy Bui} \\ \vspace{2pt}
-    \small \textbf{\color{NavyBlue} Data Analyst \& Analytics Engineer} \\ \vspace{3pt}
+    \textbf{\Huge \scshape Dinh Huy Bui} \\ \vspace{3pt}
+    \small \textbf{\color{NavyBlue} Data Analyst \& Analytics Engineer} \\ \vspace{4pt}
     \small +84 328 979 304 $|$ \href{mailto:huybui9703@gmail.com}{\underline{huybui9703@gmail.com}} $|$ 
     \href{https://www.linkedin.com/in/dinh-huy-bui/}{\underline{LinkedIn}} $|$
     \href{https://github.com/dewey97}{\underline{GitHub}} $|$
     Cau Giay District, Hanoi, Vietnam
 \end{center}
+
+\vspace{2pt}
 
 %-----------SUMMARY-----------
 \section*{Professional Summary}
@@ -104,7 +110,7 @@
   \resumeSubHeadingListEnd
 
 %-----------EXPERIENCE-----------
-\section*{Experience}
+\section*{Work Experience}
   \resumeSubHeadingListStart
         \resumeSubheading
       {Vietnam Educational Cooperation Joint Stock Company}{Hanoi, Vietnam}
@@ -126,30 +132,37 @@
   \resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------
-\section*{Projects}
+\section*{Featured Projects}
   \resumeSubHeadingListStart
         \resumeProjectHeading
       {\textbf{Student Management Web System \& CRM Data Warehouse}}{2025}
       \resumeItemListStart
-        \resumeItem{\textbf{Centralized application and admissions Data Warehouse planning} -- Restructured and integrated fragmented data sources across admissions departments into a centralized Data Warehouse. Built a Web App management system that \textbf{reduced operational overhead by 40\%} and standardized reporting for executive management. \emph{(Technologies: Data Warehouse, Python, JavaScript, CRM, Power BI, Zoho Analytics)}}
+        \resumeItem{\textbf{Centralized application and admissions Data Warehouse planning} -- Restructured and integrated fragmented data sources across admissions departments into a centralized Data Warehouse. Built a Web App management system that \textbf{reduced operational overhead by 40\%} and standardized reporting for executive management. \emph{(Tech: Data Warehouse, Python, JavaScript, CRM, Power BI, Zoho Analytics)}}
       \resumeItemListEnd
     \resumeProjectHeading
       {\textbf{ETL Pipeline Optimization \& International Analytics Dashboards}}{2024}
       \resumeItemListStart
-        \resumeItem{\textbf{Data analytics infrastructure for Philippines \& Thailand markets} -- Designed large-scale ETL pipelines for international markets, \textbf{cutting daily data processing times by 20\%}. Deployed automated Power BI \& Metabase dashboards for multi-dimensional business performance tracking. \emph{(Technologies: ETL, BigQuery, PostgreSQL, Power BI, Metabase, Market Analysis)}}
+        \resumeItem{\textbf{Data analytics infrastructure for Philippines \& Thailand markets} -- Designed large-scale ETL pipelines for international markets, \textbf{cutting daily data processing times by 20\%}. Deployed automated Power BI \& Metabase dashboards for multi-dimensional business performance tracking. \emph{(Tech: ETL, BigQuery, PostgreSQL, Power BI, Metabase, Market Analysis)}}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
 %-----------SKILLS-----------
-\section*{Technical Skills \& Certifications}
+\section*{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Databases \& Querying}: {BigQuery, PostgreSQL, MySQL, Advanced SQL Query Optimization, Large-Scale Data Handling} \\ \vspace{2pt}
-     \textbf{Data Visualization \& Business Intelligence}: {Power BI, Zoho Analytics, Metabase, Tableau, Interactive Dashboard Design, KPI \& Conversion Tracking} \\ \vspace{2pt}
-     \textbf{Programming \& Automation}: {Python, JavaScript, Git, HTML/CSS, Automated Reporting, Management Web Application Development, AI-Assisted Workflows} \\ \vspace{2pt}
-     \textbf{Business Domain \& Certifications}: {E-commerce Analytics, Performance Marketing, Business Analysis (BA), English B2 Aptis (British Council), DataCamp Data Analysis, IIBA Business Analysis}
+     \textbf{Databases \& Querying}: {BigQuery, PostgreSQL, MySQL, Advanced SQL Query Optimization} \\ \vspace{2pt}
+     \textbf{Data Visualization \& BI}: {Power BI, Zoho Analytics, Metabase, Tableau} \\ \vspace{2pt}
+     \textbf{Programming \& Automation}: {Python, JavaScript, Git, HTML/CSS, AI-Assisted Workflows}
     }}
  \end{itemize}
+
+%-----------CERTIFICATIONS-----------
+\section*{Certifications}
+        \resumeItemListStart
+      \resumeItem{\textbf{English B2 Aptis Certificate} -- Issued by British Council}
+      \resumeItem{\textbf{Data Analysis Course Certificate} -- Issued by DataCamp}
+      \resumeItem{\textbf{Business Analysis Course Certificate} -- Issued by IIBA}
+      \resumeItemListEnd
 
 %-------------------------------------------
 \end{document}

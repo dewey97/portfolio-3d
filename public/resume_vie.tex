@@ -1,6 +1,6 @@
 %-------------------------
 % Resume in LaTeX (Jake's Resume / Harvard Standard ATS Format)
-% Font: Sans-Serif Modern (Roboto / Inter Style)
+% Spacious & Breathable Line Spacing (Roboto Sans-Serif)
 %------------------------
 
 \documentclass[letterpaper,11pt]{article}
@@ -16,9 +16,13 @@
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
+\usepackage{setspace}
 
 % Set Clean Sans-Serif Font (Roboto)
 \usepackage[sfdefault]{roboto}
+
+% Comfortable Line Spacing (1.18x breathing room)
+\setstretch{1.18}
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -26,12 +30,12 @@
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
-% Adjust margins to fit on 1 page cleanly
-\addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1.0in}
-\addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
+% Adjust margins for a balanced, comfortable 1-page layout
+\addtolength{\oddsidemargin}{-0.4in}
+\addtolength{\evensidemargin}{-0.4in}
+\addtolength{\textwidth}{0.8in}
+\addtolength{\topmargin}{-.4in}
+\addtolength{\textheight}{0.8in}
 
 \urlstyle{same}
 
@@ -39,42 +43,42 @@
 \raggedright
 \setlength{\tabcolsep}{0in}
 
-% Sections formatting
+% Sections formatting - Open spacing above and below section rules
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large\bfseries
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+  \vspace{6pt}\scshape\raggedright\large\bfseries\color{NavyBlue}
+}{}{0em}{}[\color{black}\titlerule \vspace{2pt}]
 
 %-------------------------
 % Custom commands
 \newcommand{\resumeItem}[1]{
   \item\small{
-    {#1 \vspace{-2pt}}
+    {#1 \vspace{1pt}}
   }
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-2pt}\item
+  \vspace{2pt}\item
     \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}\vspace{-2pt}
 }
 
 \newcommand{\resumeProjectHeading}[2]{
-    \vspace{-2pt}\item
+    \vspace{2pt}\item
     \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
       \small#1 & #2 \\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}\vspace{-2pt}
 }
 
-\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{1pt}}
 
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in]}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in, itemsep=2.5pt, topsep=2pt, parsep=1.5pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{2pt}}
 
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%
@@ -83,13 +87,15 @@
 
 %----------HEADING----------
 \begin{center}
-    \textbf{\Huge \scshape Bùi Đình Huy} \\ \vspace{2pt}
-    \small \textbf{\color{NavyBlue} Data Analyst \& Analytics Engineer} \\ \vspace{3pt}
+    \textbf{\Huge \scshape Bùi Đình Huy} \\ \vspace{3pt}
+    \small \textbf{\color{NavyBlue} Data Analyst \& Analytics Engineer} \\ \vspace{4pt}
     \small 0328979304 $|$ \href{mailto:huybui9703@gmail.com}{\underline{huybui9703@gmail.com}} $|$ 
     \href{https://www.linkedin.com/in/dinh-huy-bui/}{\underline{LinkedIn}} $|$
     \href{https://github.com/dewey97}{\underline{GitHub}} $|$
     Quận Cầu Giấy, Hà Nội, Việt Nam
 \end{center}
+
+\vspace{2pt}
 
 %-----------SUMMARY-----------
 \section*{Tóm Tắt Chuyên Môn}
@@ -131,25 +137,32 @@
         \resumeProjectHeading
       {\textbf{Hệ thống Web Quản lý Học sinh \& Data Warehouse CRM}}{2025}
       \resumeItemListStart
-        \resumeItem{\textbf{Ứng dụng quản lý tập trung và quy hoạch Data Warehouse tuyển sinh} -- Hệ thống tái cấu trúc và đồng bộ nguồn dữ liệu phân mảnh từ nhiều phòng ban tuyển sinh về Data Warehouse tập trung. Tích hợp Web App quản lý tập trung giúp \textbf{tiết kiệm 40\% thời gian vận hành} và chuẩn hóa dữ liệu báo cáo cho cấp quản lý. \emph{(Technologies: Data Warehouse, Python, JavaScript, CRM, Power BI, Zoho Analytics)}}
+        \resumeItem{\textbf{Ứng dụng quản lý tập trung và quy hoạch Data Warehouse tuyển sinh} -- Hệ thống tái cấu trúc và đồng bộ nguồn dữ liệu phân mảnh từ nhiều phòng ban tuyển sinh về Data Warehouse tập trung. Tích hợp Web App quản lý tập trung giúp \textbf{tiết kiệm 40\% thời gian vận hành} và chuẩn hóa dữ liệu báo cáo cho cấp quản lý. \emph{(Tech: Data Warehouse, Python, JavaScript, CRM, Power BI, Zoho Analytics)}}
       \resumeItemListEnd
     \resumeProjectHeading
       {\textbf{Tối ưu hóa Quy trình ETL \& Dashboard Báo cáo Quốc tế}}{2024}
       \resumeItemListStart
-        \resumeItem{\textbf{Hạ tầng phân tích dữ liệu thị trường Philippines \& Thái Lan} -- Dự án thiết kế luồng ETL xử lý dữ liệu quy mô lớn cho thị trường quốc tế, giúp \textbf{giảm 20\% thời gian xử lý dữ liệu hằng ngày}. Triển khai Dashboard tự động trên Power BI \& Metabase phục vụ theo dõi hiệu suất kinh doanh đa chiều. \emph{(Technologies: ETL, BigQuery, PostgreSQL, Power BI, Metabase, Market Analysis)}}
+        \resumeItem{\textbf{Hạ tầng phân tích dữ liệu thị trường Philippines \& Thái Lan} -- Dự án thiết kế luồng ETL xử lý dữ liệu quy mô lớn cho thị trường quốc tế, giúp \textbf{giảm 20\% thời gian xử lý dữ liệu hằng ngày}. Triển khai Dashboard tự động trên Power BI \& Metabase phục vụ theo dõi hiệu suất kinh doanh đa chiều. \emph{(Tech: ETL, BigQuery, PostgreSQL, Power BI, Metabase, Market Analysis)}}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
 %-----------SKILLS-----------
-\section*{Kỹ Năng \& Chứng Chỉ}
+\section*{Kỹ Năng Chuyên Môn}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Cơ sở dữ liệu \& Truy vấn (Databases \& Queries)}: {BigQuery, PostgreSQL, MySQL, Tối ưu hóa câu lệnh truy vấn (SQL Optimization), xử lý tập dữ liệu lớn} \\ \vspace{2pt}
-     \textbf{Trực quan hóa dữ liệu (Data Visualization \& BI)}: {Power BI, Zoho Analytics, Metabase, Tableau, Thiết kế Dashboard tương tác cao, theo dõi KPI \& tỷ lệ chuyển đổi} \\ \vspace{2pt}
-     \textbf{Lập trình \& Tự động hóa (Programming \& Automation)}: {Python, JavaScript, Git, HTML/CSS, Tự động hóa báo cáo, phát triển Web App quản lý, ứng dụng AI tối ưu quy trình} \\ \vspace{2pt}
-     \textbf{Kiến thức Nghiệp vụ \& Chứng chỉ (Business \& Certifications)}: {E-commerce, Performance Marketing, Business Analysis (BA), Tiếng Anh B2 Aptis (British Council), DataCamp Data Analysis, IIBA Business Analysis}
+     \textbf{Cơ sở dữ liệu \& Truy vấn}: {BigQuery, PostgreSQL, MySQL, Tối ưu hóa SQL Query} \\ \vspace{2pt}
+     \textbf{Trực quan hóa dữ liệu (BI)}: {Power BI, Zoho Analytics, Metabase, Tableau} \\ \vspace{2pt}
+     \textbf{Lập trình \& Tự động hóa}: {Python, JavaScript, Git, HTML/CSS, Ứng dụng AI}
     }}
  \end{itemize}
+
+%-----------CERTIFICATIONS-----------
+\section*{Chứng Chỉ \& Bằng Cấp}
+        \resumeItemListStart
+      \resumeItem{\textbf{Chứng chỉ Tiếng Anh B2 Aptis} -- Được cấp bởi British Council}
+      \resumeItem{\textbf{Chứng chỉ khóa học Phân tích Dữ liệu} -- Được cấp bởi DataCamp}
+      \resumeItem{\textbf{Chứng chỉ khóa học Business Analysis} -- Được cấp bởi IIBA}
+      \resumeItemListEnd
 
 %-------------------------------------------
 \end{document}
