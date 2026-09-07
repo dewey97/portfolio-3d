@@ -1,0 +1,169 @@
+%-------------------------
+% Resume in LaTeX (Jake's Resume / Harvard Standard ATS Format)
+% Spacious & Breathable Line Spacing (Roboto Sans-Serif)
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{setspace}
+
+% Set Clean Sans-Serif Font (Roboto)
+\usepackage[sfdefault]{roboto}
+
+% Comfortable Line Spacing (1.18x breathing room)
+\setstretch{1.18}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins for a balanced, comfortable 1-page layout
+\addtolength{\oddsidemargin}{-0.4in}
+\addtolength{\evensidemargin}{-0.4in}
+\addtolength{\textwidth}{0.8in}
+\addtolength{\topmargin}{-.4in}
+\addtolength{\textheight}{0.8in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting - Open spacing above and below section rules
+\titleformat{\section}{
+  \vspace{6pt}\scshape\raggedright\large\bfseries\color{NavyBlue}
+}{}{0em}{}[\color{black}\titlerule \vspace{2pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{1pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{2pt}\item
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-2pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \vspace{2pt}\item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-2pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{1pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in, itemsep=2.5pt, topsep=2pt, parsep=1.5pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{2pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Bùi Đình Huy} \\ \vspace{3pt}
+    \small \textbf{\color{NavyBlue} Analytics Engineer \& Data Infrastructure Specialist} \\ \vspace{4pt}
+    \small 0328979304 $|$ \href{mailto:huybui9703@gmail.com}{\underline{huybui9703@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/dinh-huy-bui/}{\underline{LinkedIn}} $|$
+    \href{https://github.com/dewey97}{\underline{GitHub}} $|$
+    Quận Cầu Giấy, Hà Nội, Việt Nam
+\end{center}
+
+\vspace{2pt}
+
+%-----------SUMMARY-----------
+\section*{Tóm Tắt Chuyên Môn}
+\small{Kỹ sư Phân tích Dữ liệu với năng lực tự chủ toàn diện: từ thiết kế Data Warehouse, tối ưu hóa truy vấn SQL trên tập dữ liệu lớn, xây dựng luồng ETL/ELT đến lập trình Web App quản lý và tích hợp công cụ AI tự động hóa.}
+
+%-----------EDUCATION-----------
+\section*{Học Vấn}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Đại học Ngoại Thương (FTU)}{Hà Nội, Việt Nam}
+      {Cử nhân loại Giỏi - Chuyên ngành Kinh tế đối ngoại}{2021 -- 2025}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section*{Kinh Nghiệm Làm Việc}
+  \resumeSubHeadingListStart
+        \resumeSubheading
+      {Công ty CP Hợp tác Giáo dục Việt Nam}{Hà Nội, Việt Nam}
+      {Kỹ sư Phân tích Dữ liệu (Analytics Engineer)}{06/2025 -- Hiện tại}
+      \resumeItemListStart
+      \resumeItem{\textbf{Quy hoạch \& Quản trị Data Warehouse CRM}: Tái cấu trúc và đồng bộ các nguồn dữ liệu rời rạc từ nhiều phòng ban tuyển sinh, thiết kế Data Warehouse chuẩn hóa theo dõi trọn vẹn dữ liệu khách hàng. Làm đầu mối kỹ thuật kết nối CSDL công ty với CRM bên thứ ba.}
+      \resumeItem{\textbf{Lập trình Web App Quản lý Học sinh \& KPI}: Trực tiếp phát triển ứng dụng Full-stack giải quyết điểm nghẽn luồng dữ liệu vận hành, \textbf{tiết kiệm 40\% thời gian xử lý nghiệp vụ} cho khối tuyển sinh.}
+      \resumeItem{\textbf{Thiết kế Mô hình Dữ liệu BI}: Xây dựng kiến trúc báo cáo trên Power BI và Zoho Analytics với các câu lệnh DAX tối ưu hóa, hỗ trợ phân tích hiệu suất và tỷ lệ chuyển đổi đa nguồn.}
+      \resumeItem{\textbf{Tự động hóa Luồng Dữ liệu}: Thiết lập các kịch bản script Python tự động hóa trích xuất và đồng bộ dữ liệu phễu tuyển sinh hàng ngày.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Công ty CP Z Solution}{Hà Nội, Việt Nam}
+      {Chuyên viên Kỹ thuật \& Phân tích Dữ liệu}{03/2024 -- 06/2025}
+      \resumeItemListStart
+      \resumeItem{\textbf{Xây dựng \& Tối ưu hóa Luồng ETL}: Phối hợp cùng IT/BI thiết kế các luồng ETL xử lý dữ liệu quy mô lớn cho thị trường quốc tế (Philippines, Thái Lan), \textbf{cắt giảm 20\% thời gian batch processing hằng ngày}.}
+      \resumeItem{\textbf{Quản trị Hạ tầng Báo cáo BI}: Kết nối và tối ưu hóa hệ thống Metabase \& Power BI với cơ sở dữ liệu PostgreSQL, tối ưu cấu trúc truy vấn phục vụ phân tích thời gian thực.}
+      \resumeItem{\textbf{Mô hình hóa Dữ liệu Nghiên cứu}: Xây dựng kiến trúc dữ liệu phân tích định lượng phục vụ đánh giá tính khả thi cho danh mục sản phẩm mới và các chiến dịch thương mại.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section*{Dự Án Nổi Bật}
+  \resumeSubHeadingListStart
+        \resumeProjectHeading
+      {\textbf{Hệ thống Web Quản lý Học sinh \& Data Warehouse CRM}}{2025}
+      \resumeItemListStart
+        \resumeItem{\textbf{Kiến trúc Data Warehouse tuyển sinh và ứng dụng Web quản lý tập trung} -- Quy hoạch và đồng bộ nguồn dữ liệu phân mảnh về Data Warehouse trung tâm. Phát triển Web App quản lý tập trung giúp \textbf{tiết kiệm 40\% thời gian vận hành} và chuẩn hóa dữ liệu báo cáo kỹ thuật. \emph{(Tech: Data Warehouse, Python, JavaScript, CRM API, Power BI, Zoho Analytics)}}
+      \resumeItemListEnd
+    \resumeProjectHeading
+      {\textbf{Hạ tầng ETL \& Tối ưu Truy vấn Báo cáo Quốc tế}}{2024}
+      \resumeItemListStart
+        \resumeItem{\textbf{Pipeline xử lý dữ liệu lớn cho thị trường Philippines \& Thái Lan} -- Thiết kế pipeline ETL xử lý dữ liệu thương mại quốc tế, \textbf{giảm 20\% thời gian xử lý hàng ngày}. Tối ưu hóa schema và kết nối Dashboard Metabase/Power BI cho dữ liệu quy mô lớn. \emph{(Tech: ETL, BigQuery, PostgreSQL, SQL Optimization, Metabase, Power BI)}}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section*{Kỹ Năng Chuyên Môn}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Cơ Sở Dữ Liệu \& Tối Ưu Truy Vấn (Databases \& SQL)}: {BigQuery, PostgreSQL, MySQL, Tối ưu hóa câu lệnh truy vấn phức tạp (SQL Optimization), Partitioning, Indexing \& Xử lý tập dữ liệu lớn, Thiết kế Schema \& Kiến trúc Data Warehouse} \\ \vspace{2pt}
+     \textbf{Kỹ Thuật Dữ Liệu \& ETL Pipeline (Data Engineering \& ETL)}: {Xây dựng \& Tối ưu luồng ETL/ELT tự động, Tích hợp API CSDL công ty với bên thứ ba (CRM, BI), Chuẩn hóa dữ liệu \& Kiểm soát chất lượng (Data Quality)} \\ \vspace{2pt}
+     \textbf{Lập Trình \& Tự Động Hóa Hệ Thống (Programming \& Automation)}: {Python, JavaScript, TypeScript, HTML/CSS, Git, Phát triển Full-stack Web App quản lý tập trung, Tích hợp AI APIs \& Tự động hóa quy trình nghiệp vụ} \\ \vspace{2pt}
+     \textbf{Hệ Thống Trực Quan Hóa \& BI (BI Platforms)}: {Power BI, Zoho Analytics, Metabase, Tableau, Mô hình hóa dữ liệu (Data Modeling - Star/Snowflake Schema), Viết công thức DAX, Calculated Columns nâng cao}
+    }}
+ \end{itemize}
+
+%-----------CERTIFICATIONS-----------
+\section*{Chứng Chỉ \& Bằng Cấp}
+        \resumeItemListStart
+      \resumeItem{\textbf{Chứng chỉ Tiếng Anh B2 Aptis} -- Được cấp bởi British Council}
+      \resumeItem{\textbf{Chứng chỉ khóa học Phân tích Dữ liệu} -- Được cấp bởi DataCamp}
+      \resumeItem{\textbf{Chứng chỉ khóa học Business Analysis} -- Được cấp bởi IIBA}
+      \resumeItemListEnd
+
+%-------------------------------------------
+\end{document}

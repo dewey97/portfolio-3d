@@ -1,6 +1,5 @@
 import fs from 'fs';
 import path from 'path';
-import matter from 'gray-matter';
 
 export interface ProfileData {
   name: string;
@@ -44,127 +43,159 @@ export interface SkillsData {
   categories: { name: string; items: string[] }[];
 }
 
-function getDataDir(lang: string = 'vie'): string {
-  const targetDir = path.join(process.cwd(), `../data/${lang}`);
-  if (fs.existsSync(targetDir)) {
-    return targetDir;
-  }
-  return path.join(process.cwd(), '../data/vie');
+export interface BeyondWorkItem {
+  id: string;
+  tag: string;
+  title: string;
+  subtitle: string;
+  description: string;
+  icon: string;
+  highlights: string[];
 }
 
-export function getProfileData(lang: string = 'vie'): ProfileData {
-  const dataDir = getDataDir(lang);
-  const fullPath = path.join(dataDir, 'profile.md');
-  if (!fs.existsSync(fullPath)) {
+export interface BeyondWorkData {
+  title: string;
+  subtitle: string;
+  items: BeyondWorkItem[];
+}
+
+function loadPortfolioJson() {
+  const jsonPath = path.join(process.cwd(), '../data/portfolio.json');
+  if (fs.existsSync(jsonPath)) {
+    try {
+      const raw = fs.readFileSync(jsonPath, 'utf8');
+      return JSON.parse(raw);
+    } catch (e) {
+      console.error('Error parsing portfolio.json:', e);
+    }
+  }
+  return null;
+}
+
+export function getProfileData(lang: string = 'vie', track: string = 'master'): ProfileData {
+  const data = loadPortfolioJson();
+  const langKey = lang === 'eng' ? 'eng' : 'vie';
+  const langData = data?.[langKey];
+  const profile = langData?.profile;
+  const trackData = langData?.tracks?.[track] || langData?.tracks?.master;
+
+  if (!profile) {
     return {
       name: 'Bùi Đình Huy',
-      title: 'Data Analyst & Analytics Engineer',
-      email: '',
-      phone: '',
-      location: '',
-      github: '',
-      linkedin: '',
-      website: '',
+      title: 'Business Analytics & Analytics Engineering Consultant',
+      email: 'huybui9703@gmail.com',
+      phone: '0328979304',
+      location: 'Quận Cầu Giấy, Hà Nội, Việt Nam',
+      github: 'https://github.com/dewey97',
+      linkedin: 'https://www.linkedin.com/in/dinh-huy-bui/',
+      website: 'https://dinhhuybui.dev',
       bio: '',
       content: '',
     };
   }
-  const fileContents = fs.readFileSync(fullPath, 'utf8');
-  const { data, content } = matter(fileContents);
+
   return {
-    name: data.name || '',
-    title: data.title || '',
-    email: data.email || '',
-    phone: data.phone || '',
-    location: data.location || '',
-    github: data.github || '',
-    linkedin: data.linkedin || '',
-    website: data.website || '',
-    bio: data.bio || '',
-    content,
+    name: profile.name || '',
+    title: trackData?.title || 'Business Analytics & Analytics Engineering Consultant',
+    email: profile.email || '',
+    phone: profile.phone || '',
+    location: profile.location || '',
+    github: profile.github || '',
+    linkedin: profile.linkedin || '',
+    website: profile.website || '',
+    bio: trackData?.bio || '',
+    content: trackData?.bio || '',
   };
 }
 
-export function getExperiencesData(lang: string = 'vie'): ExperienceData[] {
-  const dataDir = getDataDir(lang);
-  const expDir = path.join(dataDir, 'experiences');
-  if (!fs.existsSync(expDir)) return [];
-  const fileNames = fs.readdirSync(expDir);
-  const experiences = fileNames
-    .filter((fileName) => fileName.endsWith('.md'))
-    .map((fileName) => {
-      const id = fileName.replace(/\.md$/, '');
-      const fullPath = path.join(expDir, fileName);
-      const fileContents = fs.readFileSync(fullPath, 'utf8');
-      const { data, content } = matter(fileContents);
-      return {
-        id,
-        company: data.company || '',
-        role: data.role || '',
-        location: data.location || '',
-        startDate: data.startDate || '',
-        endDate: data.endDate || '',
-        tags: data.tags || [],
-        featured: data.featured ?? true,
-        content,
-      };
-    });
-  return experiences;
+export function getExperiencesData(lang: string = 'vie', track: string = 'master'): ExperienceData[] {
+  const data = loadPortfolioJson();
+  const langKey = lang === 'eng' ? 'eng' : 'vie';
+  const langData = data?.[langKey];
+  const trackData = langData?.tracks?.[track] || langData?.tracks?.master;
+  const experiences = trackData?.experiences;
+
+  if (!experiences || !Array.isArray(experiences)) {
+    return [];
+  }
+
+  return experiences.map((exp: any) => {
+    const bulletsContent = Array.isArray(exp.bullets)
+      ? exp.bullets.map((b: string) => `- ${b}`).join('\n')
+      : exp.content || '';
+
+    return {
+      id: exp.id,
+      company: exp.company || '',
+      role: exp.role || '',
+      location: exp.location || '',
+      startDate: exp.startDate || '',
+      endDate: exp.endDate || '',
+      tags: exp.tags || [],
+      featured: exp.featured ?? true,
+      content: bulletsContent,
+    };
+  });
 }
 
-export function getProjectsData(lang: string = 'vie'): ProjectData[] {
-  const dataDir = getDataDir(lang);
-  const projDir = path.join(dataDir, 'projects');
-  if (!fs.existsSync(projDir)) return [];
-  const fileNames = fs.readdirSync(projDir);
-  const projects = fileNames
-    .filter((fileName) => fileName.endsWith('.md'))
-    .map((fileName) => {
-      const id = fileName.replace(/\.md$/, '');
-      const fullPath = path.join(projDir, fileName);
-      const fileContents = fs.readFileSync(fullPath, 'utf8');
-      const { data, content } = matter(fileContents);
-      return {
-        id,
-        title: data.title || '',
-        subtitle: data.subtitle || '',
-        date: data.date || '',
-        tags: data.tags || [],
-        github: data.github || '',
-        demo: data.demo || '',
-        featured: data.featured ?? true,
-        content,
-      };
-    });
-  return projects;
+export function getProjectsData(lang: string = 'vie', track: string = 'master'): ProjectData[] {
+  const data = loadPortfolioJson();
+  const langKey = lang === 'eng' ? 'eng' : 'vie';
+  const langData = data?.[langKey];
+  const trackData = langData?.tracks?.[track] || langData?.tracks?.master;
+  const projects = trackData?.projects;
+
+  if (!projects || !Array.isArray(projects)) {
+    return [];
+  }
+
+  return projects.map((proj: any) => ({
+    id: proj.id,
+    title: proj.title || '',
+    subtitle: proj.subtitle || '',
+    date: proj.date || '',
+    tags: proj.tags || [],
+    github: proj.github || '',
+    demo: proj.demo || '',
+    featured: proj.featured ?? true,
+    content: proj.description || proj.content || '',
+  }));
 }
 
-export function getSkillsData(lang: string = 'vie'): SkillsData {
-  const dataDir = getDataDir(lang);
-  const fullPath = path.join(dataDir, 'skills.md');
-  if (!fs.existsSync(fullPath)) {
+export function getSkillsData(lang: string = 'vie', track: string = 'master'): SkillsData {
+  const data = loadPortfolioJson();
+  const langKey = lang === 'eng' ? 'eng' : 'vie';
+  const langData = data?.[langKey];
+  const trackData = langData?.tracks?.[track] || langData?.tracks?.master;
+  const skills = trackData?.skills;
+
+  if (!skills) {
     return { title: 'Skills', categories: [] };
   }
-  const fileContents = fs.readFileSync(fullPath, 'utf8');
-  const { data, content } = matter(fileContents);
-
-  const lines = content.split('\n');
-  const categories: { name: string; items: string[] }[] = [];
-  let currentCategory: { name: string; items: string[] } | null = null;
-
-  for (const line of lines) {
-    const trimmed = line.trim();
-    if (trimmed.startsWith('### ')) {
-      if (currentCategory) categories.push(currentCategory);
-      currentCategory = { name: trimmed.replace('### ', ''), items: [] };
-    } else if (trimmed.startsWith('- ') && currentCategory) {
-      currentCategory.items.push(trimmed.replace('- ', ''));
-    }
-  }
-  if (currentCategory) categories.push(currentCategory);
 
   return {
-    title: data.title || 'Skills',
-    categories,
+    title: skills.title || 'Skills & Competencies',
+    categories: skills.categories || [],
   };
 }
+
+export function getBeyondWorkData(lang: string = 'vie'): BeyondWorkData {
+  const data = loadPortfolioJson();
+  const langKey = lang === 'eng' ? 'eng' : 'vie';
+  const beyond = data?.[langKey]?.beyondWork;
+
+  if (!beyond) {
+    return {
+      title: 'Beyond The Data',
+      subtitle: '',
+      items: [],
+    };
+  }
+
+  return {
+    title: beyond.title || 'Beyond The Data',
+    subtitle: beyond.subtitle || '',
+    items: beyond.items || [],
+  };
+}
+

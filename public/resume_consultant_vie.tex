@@ -1,0 +1,169 @@
+%-------------------------
+% Resume in LaTeX (Jake's Resume / Harvard Standard ATS Format)
+% Spacious & Breathable Line Spacing (Roboto Sans-Serif)
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{setspace}
+
+% Set Clean Sans-Serif Font (Roboto)
+\usepackage[sfdefault]{roboto}
+
+% Comfortable Line Spacing (1.18x breathing room)
+\setstretch{1.18}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins for a balanced, comfortable 1-page layout
+\addtolength{\oddsidemargin}{-0.4in}
+\addtolength{\evensidemargin}{-0.4in}
+\addtolength{\textwidth}{0.8in}
+\addtolength{\topmargin}{-.4in}
+\addtolength{\textheight}{0.8in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting - Open spacing above and below section rules
+\titleformat{\section}{
+  \vspace{6pt}\scshape\raggedright\large\bfseries\color{NavyBlue}
+}{}{0em}{}[\color{black}\titlerule \vspace{2pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{1pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{2pt}\item
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-2pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \vspace{2pt}\item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-2pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{1pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in, itemsep=2.5pt, topsep=2pt, parsep=1.5pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{2pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Bùi Đình Huy} \\ \vspace{3pt}
+    \small \textbf{\color{NavyBlue} Business Analytics \& Strategy Consultant} \\ \vspace{4pt}
+    \small 0328979304 $|$ \href{mailto:huybui9703@gmail.com}{\underline{huybui9703@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/dinh-huy-bui/}{\underline{LinkedIn}} $|$
+    \href{https://github.com/dewey97}{\underline{GitHub}} $|$
+    Quận Cầu Giấy, Hà Nội, Việt Nam
+\end{center}
+
+\vspace{2pt}
+
+%-----------SUMMARY-----------
+\section*{Tóm Tắt Chuyên Môn}
+\small{Chuyên viên Tư vấn \& Phân tích Kinh doanh (Cử nhân Giỏi FTU, Chứng chỉ IIBA BA) với tư duy sắc bén, chuyên sâu về tối ưu hóa phễu chuyển đổi, nghiên cứu thị trường, đánh giá hiệu quả thương mại và tái thiết kế quy trình vận hành dựa trên dữ liệu thực chứng.}
+
+%-----------EDUCATION-----------
+\section*{Học Vấn}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Đại học Ngoại Thương (FTU)}{Hà Nội, Việt Nam}
+      {Cử nhân loại Giỏi - Chuyên ngành Kinh tế đối ngoại}{2021 -- 2025}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section*{Kinh Nghiệm Làm Việc}
+  \resumeSubHeadingListStart
+        \resumeSubheading
+      {Công ty CP Hợp tác Giáo dục Việt Nam}{Hà Nội, Việt Nam}
+      {Chuyên viên Tư vấn \& Phân tích Dữ liệu Kinh doanh}{06/2025 -- Hiện tại}
+      \resumeItemListStart
+      \resumeItem{\textbf{Tư vấn \& Tái thiết kế Kiến trúc Dữ liệu CRM}: Đóng vai trò cầu nối chiến lược giữa Ban giám đốc và các phòng ban tuyển sinh, bóc tách điểm nghẽn vận hành để tư vấn mô hình theo dõi vòng đời khách hàng toàn diện từ tiếp cận đến nhập học.}
+      \resumeItem{\textbf{Thiết lập Báo cáo Quản trị \& Quyết định Chiến lược}: Khảo sát bài toán kinh doanh, xây dựng hệ thống chỉ số giám sát vận hành và tỷ lệ chuyển đổi chi tiết theo từng kênh leads, giúp lãnh đạo ra quyết định phân bổ ngân sách tối ưu.}
+      \resumeItem{\textbf{Khởi xướng Giải pháp Số hóa Vận hành \& KPI}: Đề xuất và trực tiếp triển khai ứng dụng quản lý tập trung, \textbf{cắt giảm 40\% thời gian vận hành} và chuẩn hóa dữ liệu báo cáo toàn hệ thống.}
+      \resumeItem{\textbf{Hệ thống Dashboard Quản trị Trực quan}: Thiết kế Dashboard tương tác cao trên Power BI \& Zoho Analytics, cung cấp góc nhìn toàn cảnh về tốc độ tăng trưởng doanh số theo thời gian thực.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Công ty CP Z Solution}{Hà Nội, Việt Nam}
+      {Chuyên viên Phân tích Phát triển Kinh doanh Hệ thống}{03/2024 -- 06/2025}
+      \resumeItemListStart
+      \resumeItem{\textbf{Nghiên cứu Thị trường Quốc tế \& Đánh giá Tính khả thi}: Chủ trì phân tích dữ liệu thị trường quốc tế (Philippines, Thái Lan); đánh giá tiềm năng thương mại cho dòng sản phẩm mới và đo lường hiệu quả các chiến dịch kích cầu doanh số.}
+      \resumeItem{\textbf{Tư vấn Tối ưu hóa Quy trình Báo cáo}: Phối hợp cùng IT \& BI tái cấu trúc luồng thông tin báo cáo liên phòng ban, \textbf{giảm 20\% thời gian trích xuất dữ liệu}, nâng cao năng lực phản ứng với biến động thị trường.}
+      \resumeItem{\textbf{Hệ thống Báo cáo Tự động cho Khối Vận hành}: Xây dựng dashboard tự động trên Power BI và Metabase, chuẩn hóa số liệu đa chiều giúp Ban lãnh đạo nắm bắt kịp thời các cơ hội kinh doanh.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section*{Dự Án Nổi Bật}
+  \resumeSubHeadingListStart
+        \resumeProjectHeading
+      {\textbf{Hệ thống Quản lý Vận hành Tuyển sinh \& Chuẩn hóa Dữ liệu CRM}}{2025}
+      \resumeItemListStart
+        \resumeItem{\textbf{Tư vấn kiến trúc dữ liệu và triển khai giải pháp số hóa quy trình kinh doanh} -- Khảo sát và tư vấn tái cấu trúc toàn diện nguồn dữ liệu tuyển sinh phân mảnh. Triển khai Web App quản lý tập trung giúp \textbf{tiết kiệm 40\% chi phí thời gian vận hành} và cung cấp báo cáo chuyển đổi thời gian thực cho cấp quản lý. \emph{(Tech: Business Analysis, CRM, Process Optimization, Power BI, Zoho Analytics)}}
+      \resumeItemListEnd
+    \resumeProjectHeading
+      {\textbf{Phân tích Dữ liệu Thị trường \& Hệ thống Dashboard Quốc tế}}{2024}
+      \resumeItemListStart
+        \resumeItem{\textbf{Đánh giá thương mại và hạ tầng báo cáo thị trường Philippines \& Thái Lan} -- Nghiên cứu và chuẩn hóa hệ thống phân tích thị trường quốc tế, \textbf{cắt giảm 20\% độ trễ dữ liệu hằng ngày}. Cung cấp báo cáo đa chiều hỗ trợ Ban giám đốc định hình chiến lược sản phẩm tại Đông Nam Á. \emph{(Tech: Market Analysis, Commercial Strategy, Power BI, Metabase, BigQuery)}}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section*{Kỹ Năng Chuyên Môn}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Tư Vấn Chiến Lược \& Phân Tích Nghiệp Vụ (Consulting \& BA)}: {Khảo sát \& Bóc tách Requirement từ Ban lãnh đạo, Tối ưu Phễu Chuyển đổi Khách hàng (Conversion Funnel), Tái thiết kế \& Số hóa Quy trình Vận hành Doanh nghiệp, Chứng chỉ IIBA Business Analysis, Tiếng Anh B2 Aptis (British Council)} \\ \vspace{2pt}
+     \textbf{Nghiên Cứu Thị Trường \& Thương Mại (Market Research \& Commerce)}: {Phân tích Thị trường Quốc tế (Đông Nam Á), Đánh giá Hiệu quả Chiến dịch (A/B Testing, Contest, Promotion), Phân tích Chi phí \& Đo lường ROI, Tư duy Kinh tế \& Thương mại Quốc tế (FTU)} \\ \vspace{2pt}
+     \textbf{Báo Cáo Quản Trị \& BI Điều Hành (Executive BI \& Dashboards)}: {Power BI, Zoho Analytics, Metabase, Tableau, Xây dựng Dashboard Quản trị phục vụ C-level ra quyết định, Thiết lập Hệ thống Chỉ số Đo lường Hiệu suất (KPIs)} \\ \vspace{2pt}
+     \textbf{Giải Pháp Dữ Liệu \& Tự Động Hóa (Data \& Automation Tools)}: {SQL (BigQuery, PostgreSQL, MySQL) phục vụ bóc tách insight, Python \& AI Tools tự động hóa báo cáo và vận hành, Định hướng Kiến trúc Dữ liệu CRM \& Khách hàng}
+    }}
+ \end{itemize}
+
+%-----------CERTIFICATIONS-----------
+\section*{Chứng Chỉ \& Bằng Cấp}
+        \resumeItemListStart
+      \resumeItem{\textbf{Chứng chỉ Tiếng Anh B2 Aptis} -- Được cấp bởi British Council}
+      \resumeItem{\textbf{Chứng chỉ khóa học Phân tích Dữ liệu} -- Được cấp bởi DataCamp}
+      \resumeItem{\textbf{Chứng chỉ khóa học Business Analysis} -- Được cấp bởi IIBA}
+      \resumeItemListEnd
+
+%-------------------------------------------
+\end{document}

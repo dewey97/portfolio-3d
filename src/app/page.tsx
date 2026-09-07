@@ -4,9 +4,10 @@ import {
   getExperiencesData,
   getProjectsData,
   getSkillsData,
+  getBeyondWorkData,
 } from '@/lib/data';
+import CvDownloadDropdown from '@/components/ui/CvDownloadDropdown';
 import {
-  FileText,
   Mail,
   MapPin,
   ExternalLink,
@@ -14,6 +15,10 @@ import {
   Code,
   FolderGit2,
   TrendingUp,
+  Compass,
+  Sparkles,
+  Activity,
+  HeartHandshake,
 } from 'lucide-react';
 import { MotionReveal, SpotlightCard } from '@/components/ui/MotionReveal';
 
@@ -34,10 +39,11 @@ function parseExperienceContent(content: string) {
 }
 
 export default function Home() {
-  const profile = getProfileData('vie');
-  const experiences = getExperiencesData('vie');
-  const projects = getProjectsData('vie');
-  const skills = getSkillsData('vie');
+  const profile = getProfileData('vie', 'master');
+  const experiences = getExperiencesData('vie', 'master');
+  const projects = getProjectsData('vie', 'master');
+  const skills = getSkillsData('vie', 'master');
+  const beyondWork = getBeyondWorkData('vie');
 
   return (
     <main className="min-h-screen bg-slate-950 text-slate-100 selection:bg-blue-500 selection:text-white">
@@ -52,28 +58,10 @@ export default function Home() {
             <a href="#experience" className="hover:text-blue-400 transition">Kinh Nghiệm</a>
             <a href="#projects" className="hover:text-blue-400 transition">Dự Án</a>
             <a href="#skills" className="hover:text-blue-400 transition">Kỹ Năng</a>
+            <a href="#beyond" className="hover:text-blue-400 transition">Bên Lề</a>
             
-            {/* MULTI-LANGUAGE CV DOWNLOAD BUTTONS */}
-            <div className="flex items-center gap-2">
-              <a
-                href="/resume_vie.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-slate-800 hover:bg-slate-700 text-slate-200 font-medium text-xs transition border border-slate-700"
-              >
-                <FileText className="w-3.5 h-3.5 text-blue-400" />
-                CV Tiếng Việt
-              </a>
-              <a
-                href="/resume_eng.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-blue-600 hover:bg-blue-500 text-white font-medium text-xs transition shadow-lg shadow-blue-500/20"
-              >
-                <FileText className="w-3.5 h-3.5" />
-                CV English
-              </a>
-            </div>
+            {/* MULTI-TRACK CV DOWNLOAD DROPDOWN */}
+            <CvDownloadDropdown />
           </nav>
         </div>
       </header>
@@ -349,6 +337,7 @@ export default function Home() {
       </section>
 
       {/* SKILLS SECTION */}
+      {/* SKILLS SECTION */}
       <section id="skills" className="max-w-6xl mx-auto px-6 py-20 border-t border-slate-800/60">
         <MotionReveal>
           <div className="flex items-center gap-3 mb-10">
@@ -381,9 +370,92 @@ export default function Home() {
         </div>
       </section>
 
+      {/* BEYOND THE DATA / PERSONAL STORIES SECTION */}
+      {beyondWork && beyondWork.items.length > 0 && (
+        <section id="beyond" className="max-w-6xl mx-auto px-6 py-20 border-t border-slate-800/60">
+          <MotionReveal>
+            <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+              <div>
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-950/60 border border-emerald-800/40 text-emerald-400 text-xs font-mono mb-3">
+                  <Compass className="w-3.5 h-3.5" />
+                  <span>Life & Perspectives</span>
+                </div>
+                <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight text-white">
+                  {beyondWork.title}
+                </h2>
+              </div>
+              <p className="text-slate-400 text-sm max-w-md">
+                {beyondWork.subtitle}
+              </p>
+            </div>
+          </MotionReveal>
+
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
+            {beyondWork.items.map((item, bIdx) => {
+              // Alternating bento spans: Row 1 (7/5), Row 2 (5/7)
+              const colSpan = bIdx === 0 ? 'lg:col-span-7' : bIdx === 1 ? 'lg:col-span-5' : bIdx === 2 ? 'lg:col-span-5' : 'lg:col-span-7';
+              
+              let IconComponent = Compass;
+              let iconColor = 'text-emerald-400 bg-emerald-500/10 border-emerald-500/30';
+              if (item.icon === 'Sparkles') {
+                IconComponent = Sparkles;
+                iconColor = 'text-blue-400 bg-blue-500/10 border-blue-500/30';
+              } else if (item.icon === 'Activity') {
+                IconComponent = Activity;
+                iconColor = 'text-amber-400 bg-amber-500/10 border-amber-500/30';
+              } else if (item.icon === 'HeartHandshake') {
+                IconComponent = HeartHandshake;
+                iconColor = 'text-rose-400 bg-rose-500/10 border-rose-500/30';
+              }
+
+              return (
+                <MotionReveal key={item.id} delay={bIdx * 0.12} className={colSpan}>
+                  <SpotlightCard className="p-7 sm:p-8 h-full flex flex-col justify-between group hover:border-slate-600/60 transition-all">
+                    <div className="space-y-4">
+                      <div className="flex items-center justify-between">
+                        <div className={`p-2.5 rounded-xl border ${iconColor}`}>
+                          <IconComponent className="w-5 h-5" />
+                        </div>
+                        <span className="text-xs font-mono px-3 py-1 rounded-full bg-slate-800/80 border border-slate-700/60 text-slate-300">
+                          {item.tag}
+                        </span>
+                      </div>
+
+                      <div>
+                        <h3 className="text-xl font-bold text-white group-hover:text-cyan-300 transition-colors">
+                          {item.title}
+                        </h3>
+                        <p className="text-xs font-mono text-blue-400 mt-1">{item.subtitle}</p>
+                      </div>
+
+                      <p className="text-slate-300/90 text-sm leading-relaxed">
+                        {item.description}
+                      </p>
+                    </div>
+
+                    {item.highlights && item.highlights.length > 0 && (
+                      <div className="flex flex-wrap gap-2 pt-6 border-t border-slate-800/60 mt-6">
+                        {item.highlights.map((hl) => (
+                          <span
+                            key={hl}
+                            className="text-xs font-mono px-2.5 py-1 rounded-md bg-slate-900/90 border border-slate-800 text-slate-300"
+                          >
+                            ✓ {hl}
+                          </span>
+                        ))}
+                      </div>
+                    )}
+                  </SpotlightCard>
+                </MotionReveal>
+              );
+            })}
+          </div>
+        </section>
+      )}
+
       {/* FOOTER */}
       <footer className="border-t border-slate-800/60 py-8 bg-slate-950 text-center text-xs text-slate-500">
-        <p>© {new Date().getFullYear()} {profile.name}. Data Analyst & Analytics Engineer Portfolio.</p>
+        <p>© {new Date().getFullYear()} {profile.name}. Business Analytics & Analytics Engineering Portfolio.</p>
       </footer>
     </main>
   );
