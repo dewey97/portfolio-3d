@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { motion, HTMLMotionProps } from 'framer-motion';
+import { motion, HTMLMotionProps, useReducedMotion } from 'framer-motion';
 
 interface MotionRevealProps extends HTMLMotionProps<'div'> {
   children: React.ReactNode;
@@ -16,21 +16,24 @@ export function MotionReveal({
   children,
   delay = 0,
   direction = 'up',
-  duration = 0.65,
+  duration = 0.5,
   className = '',
-  once = false, // Enables continuous smooth transitions when scrolling both up and down
+  once = true,
   ...props
 }: MotionRevealProps) {
+  const shouldReduceMotion = useReducedMotion();
+
   const getOffset = () => {
+    if (shouldReduceMotion) return { x: 0, y: 0 };
     switch (direction) {
       case 'up':
-        return { y: 30, x: 0 };
+        return { y: 14, x: 0 };
       case 'down':
-        return { y: -30, x: 0 };
+        return { y: -14, x: 0 };
       case 'left':
-        return { x: 30, y: 0 };
+        return { x: 14, y: 0 };
       case 'right':
-        return { x: -30, y: 0 };
+        return { x: -14, y: 0 };
       default:
         return { x: 0, y: 0 };
     }
@@ -40,13 +43,13 @@ export function MotionReveal({
 
   return (
     <motion.div
-      initial={{ opacity: 0, ...offset }}
+      initial={shouldReduceMotion ? false : { opacity: 0, ...offset }}
       whileInView={{ opacity: 1, x: 0, y: 0 }}
-      viewport={{ once, amount: 0.15, margin: '-50px' }}
+      viewport={{ once, margin: '100px 0px 0px 0px' }}
       transition={{
-        duration,
+        duration: shouldReduceMotion ? 0 : duration,
         delay,
-        ease: [0.21, 0.47, 0.32, 0.98], // Apple/Linear smooth cubic bezier
+        ease: [0.16, 1, 0.3, 1], // Crisp easeOut
       }}
       className={className}
       {...props}
@@ -75,28 +78,20 @@ export function SpotlightCard({ children, className = '', ...props }: SpotlightC
 
   return (
     <motion.div
-      whileHover={{ y: -4 }}
-      transition={{ duration: 0.25, ease: 'easeOut' }}
+      whileHover={{ y: -2 }}
+      transition={{ duration: 0.2, ease: 'easeOut' }}
       onMouseMove={handleMouseMove}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      className={`relative overflow-hidden rounded-2xl bg-slate-900/60 border border-slate-800/80 transition-all duration-300 backdrop-blur-md ${className}`}
+      className={`relative overflow-hidden rounded-xl bg-zinc-900/40 border border-zinc-800/80 transition-all duration-200 backdrop-blur-md ${className}`}
       {...props}
     >
-      {/* Dynamic Cursor Spotlight Radial Glow */}
+      {/* Subtle border highlight on hover */}
       <div
-        className="pointer-events-none absolute -inset-px transition-opacity duration-300"
+        className="pointer-events-none absolute inset-0 transition-opacity duration-200 rounded-xl"
         style={{
           opacity: isHovered ? 1 : 0,
-          background: `radial-gradient(550px circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(56, 189, 248, 0.12), transparent 70%)`,
-        }}
-      />
-      {/* Border Spotlight Glow */}
-      <div
-        className="pointer-events-none absolute inset-0 transition-opacity duration-300 rounded-2xl"
-        style={{
-          opacity: isHovered ? 1 : 0,
-          border: '1px solid rgba(56, 189, 248, 0.35)',
+          border: '1px solid rgba(255, 255, 255, 0.15)',
         }}
       />
       <div className="relative z-10">{children}</div>
