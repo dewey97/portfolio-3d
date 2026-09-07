@@ -1,0 +1,107 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=0.6in]{geometry}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+
+% Color Palette - Deep Navy Blue & Dark Slate
+\definecolor{primary}{RGB}{30, 58, 138}    % Deep Navy Blue
+\definecolor{darkgray}{RGB}{15, 23, 42}    % Slate 900
+\definecolor{mediumgray}{RGB}{71, 85, 105} % Slate 600
+\definecolor{linegray}{RGB}{203, 213, 225} % Slate 300
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=primary,
+    urlcolor=primary
+}
+
+% Section Styling - Modern Sans Header with Thin Rule
+\titleformat{\section}
+  {\large\bfseries\color{primary}\uppercase}
+  {}{0em}{}
+  [\color{linegray}\titlerule]
+\titlespacing*{\section}{0pt}{11pt}{5pt}
+
+% Bullet point styling
+\setlist[itemize]{noitemsep, topsep=2pt, parsep=2pt, partopsep=0pt, leftmargin=1.2em}
+
+\pagestyle{empty}
+
+\begin{document}
+
+% HEADER
+\begin{center}
+    {\Huge \bfseries \color{darkgray} Bùi Đình Huy}\\[4pt]
+    {\large \bfseries \color{primary} Data Analyst \& Analytics Engineer}\\[5pt]
+    \small \color{mediumgray} huybui9703@gmail.com \ \textbullet \ 0328979304 \ \textbullet \ Quận Cầu Giấy, Hà Nội, Việt Nam\\
+    \small \href{https://github.com/dewey97}{GitHub} \ \textbullet \ \href{https://www.linkedin.com/in/dinh-huy-bui/}{LinkedIn} \ \textbullet \ \href{https://dinhhuybui.dev}{Portfolio}
+\end{center}
+
+\vspace{-4pt}
+
+% SUMMARY
+\section*{Tóm Tắt Chuyên Môn}
+\color{darkgray} Chuyên viên Phân tích Dữ liệu với tư duy giải quyết vấn đề sắc bén và tinh thần đổi mới sáng tạo, sở hữu năng lực chuyển đổi các hệ thống dữ liệu phân mảnh thành các kiến trúc thông tin tập trung và có tính ứng dụng cao.
+
+% EXPERIENCE
+\section*{Kinh Nghiệm Làm Việc}
+\color{darkgray} \textbf{Chuyên viên Phân tích Dữ liệu (Phòng Kinh doanh)} \hfill 06/2025 -- Hiện tại\\
+\textit{Công ty CP Hợp tác Giáo dục Việt Nam} \hfill \textit{Hà Nội, Việt Nam}
+\begin{itemize}
+  \item \textbf{Tái cấu trúc \& Quản trị Data Warehouse CRM}: Chuẩn hóa và đồng bộ các nguồn dữ liệu rời rạc từ nhiều phòng ban tuyển sinh, quy hoạch Data Warehouse phục vụ theo dõi vòng đời khách hàng từ tiếp cận đến nhập học. Đầu mối kỹ thuật kết nối CSDL công ty với CRM bên thứ ba.
+  \item \textbf{Xây dựng Báo cáo Quản trị \& Vận hành}: Phân tích yêu cầu nghiệp vụ từ lãnh đạo để thiết lập Báo cáo quản trị, giám sát vận hành, đo lường hiệu quả làm việc và tỷ lệ chuyển đổi chi tiết theo từng nguồn.
+  \item \textbf{Thiết kế Dashboard trực quan}: Triển khai trên Power BI và Zoho Analytics, cho phép giám sát hiệu suất thực tế so với mục tiêu và hỗ trợ lãnh đạo đưa ra quyết định kịp thời.
+  \item \textbf{Khởi xướng \& Phát triển Web Quản lý Học sinh \& KPI}: Trực tiếp phát triển ứng dụng quản lý tập trung giải quyết điểm nghẽn vận hành, \textbf{tiết kiệm 40\% thời gian vận hành} và tổng hợp báo cáo cho bộ phận Tuyển sinh.
+\end{itemize}
+\vspace{4pt}
+
+\textbf{Nhân viên Phân tích Dữ liệu (Phát triển Kinh doanh Hệ thống)} \hfill 03/2024 -- 06/2025\\
+\textit{Công ty CP Z Solution} \hfill \textit{Hà Nội, Việt Nam}
+\begin{itemize}
+  \item \textbf{Nghiên cứu thị trường \& Đánh giá chiến lược}: Tham gia dự án phân tích dữ liệu thị trường quốc tế (Philippines, Thái Lan); đánh giá tính khả thi cho danh mục sản phẩm mới. Triển khai thử nghiệm ưu đãi giảm giá và sale contest, đánh giá kết quả dựa trên số liệu thực tế.
+  \item \textbf{Hạ tầng dữ liệu \& Tối ưu hóa quy trình ETL}: Phối hợp với bộ phận IT \& BI chuẩn hóa cấu trúc dữ liệu và kiến trúc báo cáo tổng thể. Trực tiếp xây dựng và tối ưu hóa các luồng ETL, \textbf{giảm 20\% thời gian xử lý dữ liệu hằng ngày}.
+  \item \textbf{Hệ thống Báo cáo Tự động hóa}: Xây dựng dashboard tự động trên Power BI và Metabase, tối ưu quy trình tổng hợp dữ liệu đa chiều, giúp các phòng ban phản ứng nhanh với biến động thị trường.
+\end{itemize}
+\vspace{4pt}
+
+% PROJECTS
+\section*{Dự Án Nổi Bật}
+\color{darkgray} \textbf{Hệ thống Web Quản lý Học sinh \& Data Warehouse CRM} (Data Warehouse, Python, JavaScript, CRM, Power BI, Zoho Analytics) \hfill 2025\\
+\textit{Ứng dụng quản lý tập trung và quy hoạch Data Warehouse tuyển sinh}\
+Hệ thống tái cấu trúc và đồng bộ nguồn dữ liệu phân mảnh từ nhiều phòng ban tuyển sinh về Data Warehouse tập trung. Tích hợp Web App quản lý tập trung giúp \textbf{tiết kiệm 40\% thời gian vận hành} và chuẩn hóa dữ liệu báo cáo cho cấp quản lý.
+\vspace{4pt}
+
+\textbf{Tối ưu hóa Quy trình ETL \& Dashboard Báo cáo Quốc tế} (ETL, BigQuery, PostgreSQL, Power BI, Metabase, Market Analysis) \hfill 2024\\
+\textit{Hạ tầng phân tích dữ liệu thị trường Philippines \& Thái Lan}\
+Dự án thiết kế luồng ETL xử lý dữ liệu quy mô lớn cho thị trường quốc tế, giúp \textbf{giảm 20\% thời gian xử lý dữ liệu hằng ngày}. Triển khai Dashboard tự động trên Power BI \& Metabase phục vụ theo dõi hiệu suất kinh doanh đa chiều.
+\vspace{4pt}
+
+% SKILLS
+\section*{Kỹ Năng \& Chứng Chỉ}
+\color{darkgray} \begin{itemize}
+  \item BigQuery, PostgreSQL, MySQL
+  \item Tối ưu hóa câu lệnh truy vấn (SQL Optimization), xử lý tập dữ liệu lớn
+\end{itemize}
+\begin{itemize}
+  \item Power BI, Zoho Analytics, Metabase, Tableau
+  \item Thiết kế Dashboard tương tác cao, theo dõi KPI \& tỷ lệ chuyển đổi
+\end{itemize}
+\begin{itemize}
+  \item Python, JavaScript, Git, HTML/CSS
+  \item Tự động hóa báo cáo, phát triển Web App quản lý, ứng dụng AI tối ưu quy trình
+\end{itemize}
+\begin{itemize}
+  \item E-commerce, Performance Marketing, Business Analysis (BA)
+  \item Tiếng Anh B2 Aptis (British Council), DataCamp Data Analysis, IIBA Business Analysis
+\end{itemize}
+
+\vfill
+\begin{center}
+    \tiny \color{mediumgray} Curriculum Vitae • Bùi Đình Huy • Last Updated: 2026-09-08 01:41
+\end{center}
+
+\end{document}
