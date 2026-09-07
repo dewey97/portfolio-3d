@@ -177,24 +177,24 @@ export default function ArchitecturalLineage({ lang = 'vie' }: { lang?: 'vie' | 
             <button
               key={node.id}
               onClick={() => setActiveId(node.id)}
-              className={`p-5 rounded-2xl text-left transition-all duration-300 relative group hover:-translate-y-1.5 cursor-pointer ${
+              className={`p-5 rounded-xl text-left transition-all duration-300 relative group hover:-translate-y-1.5 cursor-pointer ${
                 isActive
-                  ? 'bg-zinc-900 shadow-xl shadow-black/80 ring-1 ring-white/20 text-zinc-100'
-                  : 'bg-zinc-900/60 shadow-lg shadow-black/60 hover:bg-zinc-900/90 hover:shadow-2xl hover:shadow-black ring-1 ring-white/5 text-zinc-400 hover:text-zinc-200'
+                  ? 'bg-[#0f1930] shadow-xl shadow-[#020617]/80 ring-1 ring-blue-500/40 text-slate-100'
+                  : 'bg-[#0b1222]/75 shadow-lg shadow-[#020617]/60 hover:bg-[#0f1930]/90 hover:shadow-2xl hover:shadow-blue-950/40 ring-1 ring-blue-500/10 text-slate-400 hover:text-slate-200'
               }`}
             >
               <div className="flex items-center justify-between mb-3">
-                <span className="font-mono text-xs text-zinc-500 font-medium group-hover:text-zinc-400 transition-colors">
+                <span className="font-mono text-xs text-blue-400/80 font-medium group-hover:text-blue-300 transition-colors">
                   {node.step} / {node.category}
                 </span>
                 {isActive && (
-                  <span className="w-2 h-2 rounded-full bg-emerald-400 shadow-sm shadow-emerald-400" />
+                  <span className="w-2 h-2 rounded-full bg-blue-400 shadow-sm shadow-blue-400" />
                 )}
               </div>
-              <h4 className="text-sm font-semibold text-zinc-100 mb-1">
+              <h4 className="text-sm font-semibold text-slate-100 mb-1">
                 {node.title}
               </h4>
-              <p className="text-xs text-zinc-400 line-clamp-2 leading-relaxed font-normal">
+              <p className="text-xs text-slate-400 line-clamp-2 leading-relaxed font-normal">
                 {node.summary}
               </p>
             </button>
@@ -210,21 +210,21 @@ export default function ArchitecturalLineage({ lang = 'vie' }: { lang?: 'vie' | 
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -8 }}
           transition={{ duration: 0.25 }}
-          className="rounded-2xl bg-zinc-900/70 p-6 md:p-8 space-y-6 shadow-2xl shadow-black ring-1 ring-white/10 relative overflow-hidden backdrop-blur-xl"
+          className="rounded-xl bg-[#0b1222]/85 p-6 md:p-8 space-y-6 shadow-2xl shadow-[#020617] ring-1 ring-blue-500/20 relative overflow-hidden backdrop-blur-xl"
         >
           {/* HEADER ROW */}
-          <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-6 border-b border-zinc-800/40">
+          <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-6 border-b border-slate-800/60">
             <div>
               <div className="flex items-center gap-2 mb-1">
-                <span className="font-mono text-xs text-zinc-500">
+                <span className="font-mono text-xs text-blue-400">
                   STAGE {activeNode.step}
                 </span>
-                <span className="text-zinc-600">•</span>
-                <span className="font-mono text-xs text-zinc-400 uppercase tracking-wider">
+                <span className="text-slate-600">•</span>
+                <span className="font-mono text-xs text-slate-400 uppercase tracking-wider">
                   {activeNode.category}
                 </span>
               </div>
-              <h3 className="text-xl font-bold text-zinc-100">
+              <h3 className="text-xl font-bold text-slate-100">
                 {activeNode.title}
               </h3>
             </div>
@@ -234,7 +234,7 @@ export default function ArchitecturalLineage({ lang = 'vie' }: { lang?: 'vie' | 
               {activeNode.tools.map((t) => (
                 <span
                   key={t}
-                  className="px-2.5 py-1 rounded-lg bg-zinc-950/80 shadow-inner text-xs font-mono text-zinc-300 ring-1 ring-white/5"
+                  className="px-2.5 py-1 rounded-md bg-[#060b17] shadow-inner text-xs font-mono text-blue-300 ring-1 ring-blue-900/40"
                 >
                   {t}
                 </span>
@@ -246,17 +246,17 @@ export default function ArchitecturalLineage({ lang = 'vie' }: { lang?: 'vie' | 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
             {/* SPECS LIST */}
             <div className="lg:col-span-4 space-y-3">
-              <span className="text-xs font-mono uppercase text-zinc-500 tracking-wider block font-medium">
+              <span className="text-xs font-mono uppercase text-blue-400 tracking-wider block font-medium">
                 {labels.telemetry}
               </span>
               <div className="space-y-2">
                 {activeNode.specs.map((s, idx) => (
                   <div
                     key={idx}
-                    className="p-3 rounded-xl bg-zinc-950/60 shadow-md shadow-black/40 flex items-center justify-between text-xs ring-1 ring-white/5"
+                    className="p-3 rounded-lg bg-[#060b17]/80 shadow-md ring-1 ring-blue-950/50 flex items-center justify-between text-xs"
                   >
-                    <span className="text-zinc-400 font-mono">{s.label}</span>
-                    <span className="text-zinc-100 font-semibold font-mono">
+                    <span className="text-slate-400 font-mono">{s.label}</span>
+                    <span className="text-blue-200 font-semibold font-mono">
                       {s.value}
                     </span>
                   </div>
@@ -265,21 +265,21 @@ export default function ArchitecturalLineage({ lang = 'vie' }: { lang?: 'vie' | 
             </div>
 
             {/* DETAILED NARRATIVE & TRADEOFFS */}
-            <div className="lg:col-span-8 space-y-4 text-sm text-zinc-300 leading-relaxed">
+            <div className="lg:col-span-8 space-y-4 text-sm text-slate-300 leading-relaxed">
               <div>
-                <span className="text-xs font-mono uppercase text-zinc-500 tracking-wider block font-medium mb-1">
+                <span className="text-xs font-mono uppercase text-blue-400 tracking-wider block font-medium mb-1">
                   {labels.description}
                 </span>
-                <p className="text-zinc-300 font-normal leading-relaxed">
+                <p className="text-slate-300 font-normal leading-relaxed">
                   {activeNode.summary}
                 </p>
               </div>
 
-              <div className="p-4 rounded-xl bg-zinc-950/50 shadow-inner ring-1 ring-white/5">
-                <span className="text-xs font-mono uppercase text-zinc-300 tracking-wider block font-semibold mb-1">
+              <div className="p-4 rounded-lg bg-[#060b17]/80 shadow-inner ring-1 ring-blue-900/40">
+                <span className="text-xs font-mono uppercase text-blue-300 tracking-wider block font-semibold mb-1">
                   {labels.tradeoffs}
                 </span>
-                <p className="text-xs text-zinc-400 leading-relaxed">
+                <p className="text-xs text-slate-400 leading-relaxed">
                   {activeNode.tradeoffs}
                 </p>
               </div>

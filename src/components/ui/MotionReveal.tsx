@@ -83,15 +83,15 @@ export function SpotlightCard({ children, className = '', ...props }: SpotlightC
       onMouseMove={handleMouseMove}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      className={`relative overflow-hidden rounded-2xl bg-zinc-900/60 shadow-xl shadow-black/80 hover:shadow-2xl hover:shadow-black transition-all duration-300 backdrop-blur-md ${className}`}
+      className={`relative overflow-hidden rounded-xl bg-[#0b1222]/80 shadow-xl shadow-[#020617]/80 hover:shadow-2xl hover:shadow-blue-950/40 transition-all duration-300 backdrop-blur-md ring-1 ring-blue-500/10 hover:ring-blue-400/25 ${className}`}
       {...props}
     >
-      {/* Dynamic Cursor Spotlight Radial Glow */}
+      {/* Dynamic Cursor Spotlight Radial Glow with Blue Tint */}
       <div
         className="pointer-events-none absolute -inset-px transition-opacity duration-300"
         style={{
           opacity: isHovered ? 1 : 0,
-          background: `radial-gradient(450px circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(255, 255, 255, 0.08), transparent 70%)`,
+          background: `radial-gradient(450px circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(59, 130, 246, 0.12), transparent 70%)`,
         }}
       />
       <div className="relative z-10">{children}</div>
