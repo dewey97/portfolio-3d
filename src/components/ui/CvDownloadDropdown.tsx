@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useRef, useEffect } from 'react';
-import { FileText, ChevronDown, Briefcase, Cpu, Layers } from 'lucide-react';
+import { FileText, ChevronDown, Briefcase, Cpu, Layers, ExternalLink } from 'lucide-react';
 
 interface CvDownloadDropdownProps {
   lang?: 'vie' | 'eng';
@@ -28,24 +28,21 @@ export default function CvDownloadDropdown({ lang = 'vie' }: CvDownloadDropdownP
         title: 'CV Tổng Hợp (Hybrid Master)',
         subtitle: 'Cân bằng giữa Tư duy Kinh doanh & Kỹ thuật Dữ liệu',
         icon: Layers,
-        vieUrl: '/resume_vie.pdf',
-        engUrl: '/resume_eng.pdf',
+        url: '/resume_vie.pdf',
       },
       {
         id: 'consultant',
         title: 'CV Tư Vấn & Chiến Lược (Consultant)',
         subtitle: 'Tập trung Phân tích Nghiệp vụ, ROI & Tối ưu Vận hành',
         icon: Briefcase,
-        vieUrl: '/resume_consultant_vie.pdf',
-        engUrl: '/resume_consultant_eng.pdf',
+        url: '/resume_consultant_vie.pdf',
       },
       {
         id: 'technical',
         title: 'CV Kỹ Thuật Dữ Liệu (Technical)',
         subtitle: 'Tập trung Kho Dữ liệu, ETL Pipelines & Python',
         icon: Cpu,
-        vieUrl: '/resume_technical_vie.pdf',
-        engUrl: '/resume_technical_eng.pdf',
+        url: '/resume_technical_vie.pdf',
       },
     ],
     eng: [
@@ -54,24 +51,21 @@ export default function CvDownloadDropdown({ lang = 'vie' }: CvDownloadDropdownP
         title: 'Master Resume (Hybrid)',
         subtitle: 'Bridging Business Strategy & Analytics Engineering',
         icon: Layers,
-        vieUrl: '/resume_vie.pdf',
-        engUrl: '/resume_eng.pdf',
+        url: '/resume_eng.pdf',
       },
       {
         id: 'consultant',
         title: 'Consultant & Strategy Resume',
         subtitle: 'Focus on Business Analysis, Operational Optimization & ROI',
         icon: Briefcase,
-        vieUrl: '/resume_consultant_vie.pdf',
-        engUrl: '/resume_consultant_eng.pdf',
+        url: '/resume_consultant_eng.pdf',
       },
       {
         id: 'technical',
         title: 'Data Engineering Resume',
         subtitle: 'Focus on Data Warehousing, ETL Pipelines & Python',
         icon: Cpu,
-        vieUrl: '/resume_technical_vie.pdf',
-        engUrl: '/resume_technical_eng.pdf',
+        url: '/resume_technical_eng.pdf',
       },
     ],
   }[lang];
@@ -79,15 +73,11 @@ export default function CvDownloadDropdown({ lang = 'vie' }: CvDownloadDropdownP
   const labels = {
     vie: {
       button: 'Xem CV',
-      header: 'Chọn phiên bản CV phù hợp',
-      viePdf: 'Bản Tiếng Việt',
-      engPdf: 'English PDF',
+      header: 'Chọn phiên bản CV',
     },
     eng: {
       button: 'View CV',
       header: 'Select Targeted Resume Track',
-      viePdf: 'Vietnamese PDF',
-      engPdf: 'English PDF',
     },
   }[lang];
 
@@ -95,12 +85,12 @@ export default function CvDownloadDropdown({ lang = 'vie' }: CvDownloadDropdownP
     <div className="relative inline-block text-left" ref={dropdownRef}>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="inline-flex items-center gap-2 px-3.5 py-2.5 rounded-lg bg-blue-600/15 hover:bg-blue-600/25 border border-blue-500/40 hover:border-blue-400/70 text-blue-200 hover:text-white font-medium text-xs transition shadow-lg shadow-blue-950/60 ring-1 ring-blue-500/20 cursor-pointer"
+        className="inline-flex items-center gap-2 px-3.5 py-2.5 rounded-lg bg-slate-900/90 hover:bg-slate-800 text-slate-300 hover:text-blue-200 transition text-xs font-mono shadow-lg shadow-black/60 ring-1 ring-blue-500/15 cursor-pointer"
         aria-expanded={isOpen}
       >
         <FileText className="w-3.5 h-3.5 text-blue-400 shrink-0" />
         <span className="font-semibold">{labels.button}</span>
-        <ChevronDown className={`w-3.5 h-3.5 text-blue-400 shrink-0 transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`} />
+        <ChevronDown className={`w-3.5 h-3.5 text-slate-400 shrink-0 transition-transform duration-200 ${isOpen ? 'rotate-180 text-blue-400' : ''}`} />
       </button>
 
       {isOpen && (
@@ -115,39 +105,29 @@ export default function CvDownloadDropdown({ lang = 'vie' }: CvDownloadDropdownP
             {cvTracks.map((track) => {
               const Icon = track.icon;
               return (
-                <div
+                <a
                   key={track.id}
-                  className="p-2.5 rounded-lg bg-slate-950/70 hover:bg-slate-900/90 border border-slate-800/80 hover:border-blue-700/50 transition-all"
+                  href={track.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => setIsOpen(false)}
+                  className="group flex items-start gap-2.5 p-2.5 rounded-lg bg-slate-950/70 hover:bg-slate-900/90 border border-slate-800/80 hover:border-blue-700/60 transition-all cursor-pointer"
                 >
-                  <div className="flex items-start gap-2.5 mb-2">
-                    <div className="p-1.5 rounded-md bg-blue-950/60 border border-blue-800/40 text-blue-300 shrink-0 mt-0.5">
-                      <Icon className="w-3.5 h-3.5" />
+                  <div className="p-1.5 rounded-md bg-blue-950/60 border border-blue-800/40 text-blue-300 shrink-0 mt-0.5 group-hover:border-blue-500/50 group-hover:text-blue-200 transition">
+                    <Icon className="w-3.5 h-3.5" />
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <div className="flex items-center justify-between">
+                      <div className="text-xs font-semibold text-slate-100 group-hover:text-blue-300 transition leading-tight truncate">
+                        {track.title}
+                      </div>
+                      <ExternalLink className="w-3 h-3 text-slate-500 group-hover:text-blue-400 shrink-0 ml-1 transition" />
                     </div>
-                    <div>
-                      <div className="text-xs font-semibold text-slate-100 leading-tight">{track.title}</div>
-                      <div className="text-[11px] text-slate-400 leading-snug mt-0.5">{track.subtitle}</div>
+                    <div className="text-[11px] text-slate-400 leading-snug mt-0.5 group-hover:text-slate-300 transition">
+                      {track.subtitle}
                     </div>
                   </div>
-
-                  <div className="flex items-center gap-1.5 pl-8">
-                    <a
-                      href={track.vieUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex-1 text-center py-1 px-2 rounded bg-slate-900 hover:bg-blue-950 text-slate-300 hover:text-blue-200 text-[11px] font-mono border border-slate-800 hover:border-blue-700/60 transition"
-                    >
-                      {labels.viePdf}
-                    </a>
-                    <a
-                      href={track.engUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex-1 text-center py-1 px-2 rounded bg-slate-900 hover:bg-blue-950 text-slate-300 hover:text-blue-200 text-[11px] font-mono border border-slate-800 hover:border-blue-700/60 transition"
-                    >
-                      {labels.engPdf}
-                    </a>
-                  </div>
-                </div>
+                </a>
               );
             })}
           </div>
