@@ -29,6 +29,7 @@ export default function CvDownloadDropdown({ lang = 'vie' }: CvDownloadDropdownP
         subtitle: 'Toàn diện từ Tư duy Phân tích Nghiệp vụ đến Triển khai Kỹ thuật Dữ liệu',
         icon: Layers,
         url: '/resume_vie.pdf',
+        downloadName: 'CV_BuiDinhHuy_Master_VIE.pdf',
       },
       {
         id: 'consultant',
@@ -36,6 +37,7 @@ export default function CvDownloadDropdown({ lang = 'vie' }: CvDownloadDropdownP
         subtitle: 'Khảo sát yêu cầu nghiệp vụ, tối ưu phễu chuyển đổi & xây dựng báo cáo P&L điều hành',
         icon: Briefcase,
         url: '/resume_consultant_vie.pdf',
+        downloadName: 'CV_BuiDinhHuy_Consultant_VIE.pdf',
       },
       {
         id: 'technical',
@@ -43,6 +45,7 @@ export default function CvDownloadDropdown({ lang = 'vie' }: CvDownloadDropdownP
         subtitle: 'Kiến trúc Data Warehouse, tối ưu hóa ETL Pipelines & tự động hóa hạ tầng phân tích',
         icon: Cpu,
         url: '/resume_technical_vie.pdf',
+        downloadName: 'CV_BuiDinhHuy_AnalyticsEngineer_VIE.pdf',
       },
     ],
     eng: [
@@ -52,6 +55,7 @@ export default function CvDownloadDropdown({ lang = 'vie' }: CvDownloadDropdownP
         subtitle: 'End-to-End Leadership: Business Analysis, Data Architecture & BI Systems',
         icon: Layers,
         url: '/resume_eng.pdf',
+        downloadName: 'CV_BuiDinhHuy_Master_ENG.pdf',
       },
       {
         id: 'consultant',
@@ -59,6 +63,7 @@ export default function CvDownloadDropdown({ lang = 'vie' }: CvDownloadDropdownP
         subtitle: 'Requirements Engineering, Funnel & ROI Optimization, P&L Financial Dashboards',
         icon: Briefcase,
         url: '/resume_consultant_eng.pdf',
+        downloadName: 'CV_BuiDinhHuy_Consultant_ENG.pdf',
       },
       {
         id: 'technical',
@@ -66,6 +71,7 @@ export default function CvDownloadDropdown({ lang = 'vie' }: CvDownloadDropdownP
         subtitle: 'Data Warehouse Architecture (Star Schema), Automated ETL Pipelines & Analytics Infrastructure',
         icon: Cpu,
         url: '/resume_technical_eng.pdf',
+        downloadName: 'CV_BuiDinhHuy_AnalyticsEngineer_ENG.pdf',
       },
     ],
   }[lang];
@@ -108,6 +114,7 @@ export default function CvDownloadDropdown({ lang = 'vie' }: CvDownloadDropdownP
                 <a
                   key={track.id}
                   href={track.url}
+                  download={track.downloadName}
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() => setIsOpen(false)}

@@ -107,6 +107,27 @@
               "**Tối ưu Hạ tầng Dữ liệu & Pipeline ETL**: Phối hợp cùng IT/BI chuẩn hóa kiến trúc Data Marts, tinh chỉnh các truy vấn SQL phức tạp & luồng ETL chuyển đổi tập dữ liệu lớn, **cắt giảm 20% thời gian xử lý dữ liệu hằng ngày** (pipeline < 90s).",
               "**Hệ thống Báo cáo Tự động hóa & Actionable Metrics**: Xây dựng dashboard tự động trên Power BI & Metabase với tập trung vào các chỉ số vận hành thực chất, giúp Ban giám đốc chủ động đưa ra quyết định kinh doanh kịp thời."
             ]
+          },
+          {
+            "id": "03-vnp-logistics",
+            "company": "Công ty CP Logistics Vietnam Post (VNP Logistics)",
+            "role": "Nhân viên Kinh doanh (Xuất Nhập Khẩu & Logistics)",
+            "location": "Hà Nội, Việt Nam",
+            "startDate": "09/2023",
+            "endDate": "03/2024",
+            "tags": [
+              "International Logistics",
+              "Supply Chain Analysis",
+              "Trade Documentation",
+              "Customer Management",
+              "Freight Pricing"
+            ],
+            "featured": true,
+            "bullets": [
+              "**Kinh doanh Xuất Nhập Khẩu & Tư vấn Vận tải**: Khảo sát nhu cầu giao thương quốc tế của các doanh nghiệp xuất nhập khẩu, tư vấn giải pháp cước phí vận chuyển & tuyến đường logistics tối ưu.",
+              "**Quản trị Chứng từ & Bóc tách Quy trình**: Trực tiếp xử lý & rèn luyện tư duy quy trình qua các chứng từ thương mại (Bill of Lading, Invoice, Packing List, Tờ khai hải quan), phát hiện & xử lý các điểm nghẽn giao nhận.",
+              "**Phân tích Doanh số & Chi phí Chuỗi Cung ứng**: Tổng hợp dữ liệu cước vận tải, phân tích biên lợi nhuận và đo lường hiệu quả đóng góp doanh số theo từng tuyến đường & nhóm mặt hàng."
+            ]
           }
         ],
         "projects": [
@@ -252,6 +273,27 @@
               "**Tư vấn Tối ưu hóa Quy trình Báo cáo**: Phối hợp cùng IT & BI tái cấu trúc luồng thông tin báo cáo liên phòng ban, **giảm 20% thời gian trích xuất dữ liệu**, nâng cao năng lực phản ứng với biến động thị trường.",
               "**Hệ thống Báo cáo Tự động cho Khối Vận hành**: Xây dựng dashboard tự động trên Power BI và Metabase, chuẩn hóa số liệu đa chiều giúp Ban lãnh đạo nắm bắt kịp thời các cơ hội kinh doanh."
             ]
+          },
+          {
+            "id": "03-vnp-logistics",
+            "company": "Công ty CP Logistics Vietnam Post (VNP Logistics)",
+            "role": "Chuyên viên Tư vấn Kinh doanh Logistics & Chuỗi Cung Ứng",
+            "location": "Hà Nội, Việt Nam",
+            "startDate": "09/2023",
+            "endDate": "03/2024",
+            "tags": [
+              "Logistics Consulting",
+              "Trade Process Optimization",
+              "Cost-Benefit Analysis",
+              "Freight Negotiation",
+              "Customer Advisory"
+            ],
+            "featured": true,
+            "bullets": [
+              "**Khảo sát Requirement & Tư vấn Giải pháp Logistics**: Khảo sát nhu cầu vận tải quốc tế từ khách hàng doanh nghiệp, tư vấn cấu trúc phương án vận chuyển và báo giá cước tối ưu chi phí.",
+              "**Tái cấu trúc Quy trình Bóc tách Chứng từ**: Chuẩn hóa luồng luân chuyển chứng từ thương mại (Bill of Lading, Customs Declaration, Commercial Invoice), cắt giảm thời gian xử lý thủ tục hải quan.",
+              "**Đánh giá Hiệu quả Thương mại & Tuyến đường**: Phân tích dữ liệu chi phí vận tải và độ trễ giao nhận, đưa ra đề xuất tối ưu hóa biên lợi nhuận cho các hợp đồng logistics dài hạn."
+            ]
           }
         ],
         "projects": [
@@ -393,6 +435,27 @@
               "**Xây dựng & Tối ưu hóa Luồng ETL**: Phối hợp cùng IT/BI thiết kế các luồng ETL xử lý dữ liệu quy mô lớn cho thị trường quốc tế (Philippines, Thái Lan), **cắt giảm 20% thời gian batch processing hằng ngày**.",
               "**Quản trị Hạ tầng Báo cáo BI**: Kết nối và tối ưu hóa hệ thống Metabase & Power BI với cơ sở dữ liệu PostgreSQL, tối ưu cấu trúc truy vấn phục vụ phân tích thời gian thực.",
               "**Mô hình hóa Dữ liệu Nghiên cứu**: Xây dựng kiến trúc dữ liệu phân tích định lượng phục vụ đánh giá tính khả thi cho danh mục sản phẩm mới và các chiến dịch thương mại."
+            ]
+          },
+          {
+            "id": "03-vnp-logistics",
+            "company": "Công ty CP Logistics Vietnam Post (VNP Logistics)",
+            "role": "Chuyên viên Phân tích Dữ liệu Kinh doanh & Vận tải Logistics",
+            "location": "Hà Nội, Việt Nam",
+            "startDate": "09/2023",
+            "endDate": "03/2024",
+            "tags": [
+              "Logistics Data",
+              "SQL Analysis",
+              "Freight Data Modeling",
+              "Workflow Tracking",
+              "Excel & Python"
+            ],
+            "featured": true,
+            "bullets": [
+              "**Quản trị & Phân tích Dữ liệu Cước Vận tải**: Xây dựng bảng theo dõi dữ liệu cước tàu, cước hàng không và phân tích biến động giá cước quốc tế phục vụ báo giá thời gian thực.",
+              "**Đồng bộ & Kiểm soát Dữ liệu Chứng từ**: Chuẩn hóa dữ liệu từ các bộ chứng từ xuất nhập khẩu (Bill of Lading, Packing List), đảm bảo tính chính xác cho dữ liệu đối soát công nợ khách hàng.",
+              "**Báo cáo Tối ưu hóa Chuỗi Cung ứng**: Tổng hợp & trực quan hóa chỉ số thời gian giao nhận (Transit Time SLA) và chi phí vận tải trên Excel/Python."
             ]
           }
         ],
@@ -628,6 +691,27 @@
               "**Data Infrastructure & High-Performance ETL Optimization**: Partnered with IT & BI engineers to standardize data warehousing, tuning complex SQL queries & ETL execution (Parquet columnar engine), **cutting daily data processing runtime by 20%** (pipeline < 90s).",
               "**Automated Multi-Dimensional BI & Executive Dashboards**: Developed automated dashboards on Power BI and Metabase focused on Actionable Metrics, enabling rapid operational responses to dynamic market shifts."
             ]
+          },
+          {
+            "id": "03-vnp-logistics",
+            "company": "Vietnam Post Logistics Joint Stock Company",
+            "role": "Logistics Sales & Import-Export Executive",
+            "location": "Hanoi, Vietnam",
+            "startDate": "09/2023",
+            "endDate": "03/2024",
+            "tags": [
+              "International Logistics",
+              "Supply Chain Analysis",
+              "Trade Documentation",
+              "Customer Management",
+              "Freight Pricing"
+            ],
+            "featured": true,
+            "bullets": [
+              "**International Trade Sales & Freight Advisory**: Evaluated international shipping demands for import-export clients, providing optimized freight rate structures and supply chain route solutions.",
+              "**Trade Documentation & Workflow Management**: Managed end-to-end commercial shipping documentation (Bill of Lading, Commercial Invoice, Packing List, Customs Declarations), resolving operational bottlenecks.",
+              "**Revenue & Freight Cost Analytics**: Compiled freight rate datasets, analyzing profit margins and channel revenue contributions by shipping lanes and commodity groups."
+            ]
           }
         ],
         "projects": [
@@ -773,6 +857,27 @@
               "**Reporting Workflow Optimization**: Collaborated with cross-functional IT/BI teams to streamline data reporting, **reducing data extraction latency by 20%** for agile decision-making.",
               "**Automated Decision Dashboards**: Implemented automated dashboards on Power BI & Metabase, delivering multi-dimensional visibility to capture emerging market opportunities."
             ]
+          },
+          {
+            "id": "03-vnp-logistics",
+            "company": "Vietnam Post Logistics Joint Stock Company",
+            "role": "Logistics & Supply Chain Business Consultant",
+            "location": "Hanoi, Vietnam",
+            "startDate": "09/2023",
+            "endDate": "03/2024",
+            "tags": [
+              "Logistics Consulting",
+              "Trade Process Optimization",
+              "Cost-Benefit Analysis",
+              "Freight Negotiation",
+              "Customer Advisory"
+            ],
+            "featured": true,
+            "bullets": [
+              "**Client Scoping & Logistics Advisory**: Scoped international transport requirements for corporate clients, structuring cost-effective freight solutions and rate quotes.",
+              "**Trade Documentation Process Re-engineering**: Streamlined commercial documentation workflows, reducing customs clearance turnaround time and paperwork friction.",
+              "**Commercial Route & Profitability Analysis**: Analyzed transportation cost metrics and delivery SLA latencies, recommending margin optimization strategies for long-term logistics contracts."
+            ]
           }
         ],
         "projects": [
@@ -914,6 +1019,27 @@
               "**Build & Optimize High-Volume ETL Pipelines**: Engineered and optimized ETL pipelines on PostgreSQL & BigQuery for international markets (Philippines, Thailand), **reducing daily batch processing time by 20%**.",
               "**BI Infrastructure & Query Administration**: Maintained Metabase & Power BI architectures on PostgreSQL, tuning query schemas for sub-second analytical performance.",
               "**Quantitative Data Modeling**: Built quantitative data schemas supporting international market feasibility evaluation and pricing tests."
+            ]
+          },
+          {
+            "id": "03-vnp-logistics",
+            "company": "Vietnam Post Logistics Joint Stock Company",
+            "role": "Logistics & Freight Data Analyst",
+            "location": "Hanoi, Vietnam",
+            "startDate": "09/2023",
+            "endDate": "03/2024",
+            "tags": [
+              "Logistics Data",
+              "SQL Analysis",
+              "Freight Data Modeling",
+              "Workflow Tracking",
+              "Excel & Python"
+            ],
+            "featured": true,
+            "bullets": [
+              "**Freight Rate Data Management & Analytics**: Maintained ocean/air freight rate tracking datasets, analyzing global tariff fluctuations to support real-time quotation models.",
+              "**Documentation Data Standardization**: Cleaned and reconciled trade data from import-export shipping documents, ensuring 100% accuracy for client billing and auditing.",
+              "**Supply Chain Performance Reporting**: Aggregated and visualized transit time SLA and freight cost metrics using Python and Excel."
             ]
           }
         ],
