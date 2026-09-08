@@ -18,8 +18,19 @@ import {
   Server,
   BarChart3,
   Cpu,
+  HeartHandshake,
+  Truck,
+  Compass,
+  Sparkles,
 } from 'lucide-react';
 import { MotionReveal } from '@/components/ui/MotionReveal';
+
+const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
+  HeartHandshake,
+  Truck,
+  Compass,
+  Sparkles,
+};
 
 function parseExperienceContent(content: string) {
   const lines = content
@@ -538,40 +549,62 @@ export default function PortfolioView({ initialData }: PortfolioViewProps) {
             </div>
           </MotionReveal>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {/* ALTERNATING LEFT-RIGHT TIMELINE LAYOUT */}
+          <div className="relative pl-6 md:pl-0 space-y-12 before:absolute before:left-2.5 md:before:left-1/2 md:before:-translate-x-1/2 before:top-6 before:bottom-6 before:w-0.5 before:bg-gradient-to-b before:from-blue-500/80 before:via-blue-500/40 before:to-blue-900/20">
             {beyondWork.items.map((item, bIdx) => {
+              const IconComp = iconMap[item.icon] || Sparkles;
+              const isEven = bIdx % 2 === 0;
+
               return (
                 <MotionReveal key={item.id} delay={bIdx * 0.1}>
-                  <div className="group rounded-xl bg-[#0b1222]/75 hover:bg-[#0f1930]/90 p-6 md:p-8 flex flex-col justify-between h-full space-y-4 shadow-xl shadow-[#020617]/80 hover:shadow-2xl hover:shadow-blue-950/40 hover:-translate-y-1.5 transition-all duration-300 relative overflow-hidden backdrop-blur-md">
-                    <div className="space-y-3">
-                      <div className="flex items-center justify-between font-mono text-xs">
-                        <span className="text-blue-400/80 group-hover:text-blue-300 transition-colors">{item.tag}</span>
-                      </div>
-
-                      <div>
-                        <h3 className="text-lg font-bold text-slate-100 group-hover:text-white transition-colors">
-                          {item.title}
-                        </h3>
-                        <p className="text-xs font-mono text-slate-400 mt-0.5">{item.subtitle}</p>
-                      </div>
-
-                      <p className="text-slate-300 text-sm leading-relaxed font-normal">
-                        {renderFormattedText(item.description)}
-                      </p>
+                  <div className="relative group flex flex-col md:flex-row items-center">
+                    {/* TIMELINE NODE DOT (CENTERED ON DESKTOP) */}
+                    <div className="absolute left-[-21px] md:left-1/2 md:-translate-x-1/2 top-6 w-5 h-5 rounded-full bg-[#060b17] border-2 border-blue-400/80 group-hover:border-blue-300 group-hover:scale-125 group-hover:bg-blue-500 transition-all duration-300 flex items-center justify-center shadow-lg shadow-blue-500/20 z-20">
+                      <span className="w-1.5 h-1.5 rounded-full bg-blue-300 group-hover:bg-white transition-colors" />
                     </div>
 
-                    {item.highlights && item.highlights.length > 0 && (
-                      <div className="flex flex-wrap gap-1.5 pt-2">
-                        {item.highlights.map((hl) => (
-                          <span
-                            key={hl}
-                            className="text-xs font-mono px-2.5 py-1 rounded-md bg-[#060b17] shadow-inner text-blue-300 group-hover:text-blue-200 transition-colors ring-1 ring-blue-900/40"
-                          >
-                            {hl}
-                          </span>
-                        ))}
+                    {/* TIMELINE CARD (ALTERNATING LEFT/RIGHT) */}
+                    <div
+                      className={`w-full md:w-[calc(50%-2.5rem)] ${
+                        isEven ? 'md:mr-auto' : 'md:ml-auto'
+                      }`}
+                    >
+                      <div className="rounded-xl bg-[#0b1222]/75 hover:bg-[#0f1930]/90 p-6 md:p-8 space-y-4 shadow-xl shadow-[#020617]/80 hover:shadow-2xl hover:shadow-blue-950/40 hover:-translate-y-1 transition-all duration-300 relative overflow-hidden backdrop-blur-md">
+                        <div className="space-y-2">
+                          <div className="flex items-center justify-between font-mono text-xs">
+                            <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-[#060b17] text-blue-300 ring-1 ring-blue-900/40">
+                              <IconComp className="w-3.5 h-3.5 text-blue-400" />
+                              {item.tag}
+                            </span>
+                            <span className="text-slate-500 font-mono text-xs">Phase 0{bIdx + 1}</span>
+                          </div>
+
+                          <div className="pt-1">
+                            <h3 className="text-lg md:text-xl font-bold text-slate-100 group-hover:text-white transition-colors">
+                              {item.title}
+                            </h3>
+                            <p className="text-xs font-mono text-blue-300/80 mt-0.5">{item.subtitle}</p>
+                          </div>
+
+                          <p className="text-slate-300 text-sm leading-relaxed font-normal pt-1">
+                            {renderFormattedText(item.description)}
+                          </p>
+                        </div>
+
+                        {item.highlights && item.highlights.length > 0 && (
+                          <div className="flex flex-wrap gap-1.5 pt-2 border-t border-slate-800/50">
+                            {item.highlights.map((hl) => (
+                              <span
+                                key={hl}
+                                className="text-xs font-mono px-2.5 py-1 rounded-md bg-[#060b17] shadow-inner text-slate-300 group-hover:text-blue-200 transition-colors ring-1 ring-slate-800/80"
+                              >
+                                {hl}
+                              </span>
+                            ))}
+                          </div>
+                        )}
                       </div>
-                    )}
+                    </div>
                   </div>
                 </MotionReveal>
               );
