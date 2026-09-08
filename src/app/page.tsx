@@ -1,3 +1,4 @@
+import PortfolioView from '@/components/portfolio/PortfolioView';
 import {
   getProfileData,
   getExperiencesData,
@@ -5,7 +6,6 @@ import {
   getSkillsData,
   getBeyondWorkData,
 } from '@/lib/data';
-import PortfolioView from '@/components/portfolio/PortfolioView';
 
 export default function Home() {
   const initialData = {
@@ -27,3 +27,4 @@ export default function Home() {
 
   return <PortfolioView initialData={initialData} />;
 }
+

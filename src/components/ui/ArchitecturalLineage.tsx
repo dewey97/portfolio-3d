@@ -179,8 +179,8 @@ export default function ArchitecturalLineage({ lang = 'vie' }: { lang?: 'vie' | 
               onClick={() => setActiveId(node.id)}
               className={`p-5 rounded-xl text-left transition-all duration-300 relative group hover:-translate-y-1.5 cursor-pointer ${
                 isActive
-                  ? 'bg-[#0f1930] shadow-xl shadow-[#020617]/80 ring-1 ring-blue-500/40 text-slate-100'
-                  : 'bg-[#0b1222]/75 shadow-lg shadow-[#020617]/60 hover:bg-[#0f1930]/90 hover:shadow-2xl hover:shadow-blue-950/40 ring-1 ring-blue-500/10 text-slate-400 hover:text-slate-200'
+                  ? 'bg-[#0f1930] shadow-xl shadow-[#020617]/80 text-slate-100'
+                  : 'bg-[#0b1222]/75 shadow-lg shadow-[#020617]/60 hover:bg-[#0f1930]/90 hover:shadow-2xl hover:shadow-blue-950/40 text-slate-400 hover:text-slate-200'
               }`}
             >
               <div className="flex items-center justify-between mb-3">
@@ -210,10 +210,10 @@ export default function ArchitecturalLineage({ lang = 'vie' }: { lang?: 'vie' | 
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -8 }}
           transition={{ duration: 0.25 }}
-          className="rounded-xl bg-[#0b1222]/85 p-6 md:p-8 space-y-6 shadow-2xl shadow-[#020617] ring-1 ring-blue-500/20 relative overflow-hidden backdrop-blur-xl"
+          className="rounded-xl bg-[#0b1222]/85 p-6 md:p-8 space-y-6 shadow-2xl shadow-[#020617] relative overflow-hidden backdrop-blur-xl"
         >
           {/* HEADER ROW */}
-          <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-6 border-b border-slate-800/60">
+          <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-2">
             <div>
               <div className="flex items-center gap-2 mb-1">
                 <span className="font-mono text-xs text-blue-400">

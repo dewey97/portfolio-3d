@@ -8,6 +8,7 @@ export interface ProfileData {
   location: string;
   github: string;
   linkedin: string;
+  instagram?: string;
   website: string;
   bio: string;
   content: string;
@@ -50,11 +51,15 @@ export interface BeyondWorkItem {
   description: string;
   icon: string;
   highlights: string[];
+  link?: string;
+  linkLabel?: string;
 }
 
 export interface BeyondWorkData {
   title: string;
   subtitle: string;
+  instagramUrl?: string;
+  instagramLabel?: string;
   items: BeyondWorkItem[];
 }
 
@@ -92,6 +97,7 @@ export function getProfileData(lang: string = 'vie', track: string = 'master'): 
     location: profile.location || '',
     github: profile.github || '',
     linkedin: profile.linkedin || '',
+    instagram: profile.instagram || 'https://www.instagram.com/dewey_973/',
     website: profile.website || '',
     bio: trackData?.bio || '',
     content: trackData?.bio || '',
@@ -185,6 +191,8 @@ export function getBeyondWorkData(lang: string = 'vie'): BeyondWorkData {
   return {
     title: beyond.title || 'Beyond The Data',
     subtitle: beyond.subtitle || '',
+    instagramUrl: beyond.instagramUrl || '',
+    instagramLabel: beyond.instagramLabel || '',
     items: beyond.items || [],
   };
 }

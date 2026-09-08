@@ -7,6 +7,7 @@
       "location": "Quận Cầu Giấy, Hà Nội, Việt Nam",
       "github": "https://github.com/dewey97",
       "linkedin": "https://www.linkedin.com/in/dinh-huy-bui/",
+      "instagram": "https://www.instagram.com/dewey_973/",
       "website": "https://dinhhuybui.dev",
       "education": {
         "school": "Đại học Ngoại Thương (FTU)",
@@ -18,7 +19,7 @@
     "tracks": {
       "master": {
         "title": "Chuyên Viên Phân Tích Dữ Liệu & Tư Vấn Vận Hành",
-        "bio": "Chuyên viên Phân tích & Tư vấn Dữ liệu với năng lực kết nối toàn diện giữa bài toán kinh doanh và triển khai kỹ thuật. Chuyên sâu khảo sát nghiệp vụ, thiết kế kho dữ liệu tập trung và phát triển các công cụ tự động hóa báo cáo phục vụ cấp điều hành.",
+        "bio": "Chuyên viên Phân tích & Tư vấn Dữ liệu với năng lực kết nối toàn diện giữa bài toán kinh doanh và triển khai kỹ thuật. Chuyên sâu khảo sát nghiệp vụ, thiết kế kho dữ liệu tập trung và phát triển các công cụ tự động hóa báo cáo phục vụ vận hành.",
         "skills": {
           "title": "Kỹ Năng Toàn Diện (Business & Tech)",
           "categories": [
@@ -67,13 +68,22 @@
             "location": "Hà Nội, Việt Nam",
             "startDate": "06/2025",
             "endDate": "Hiện tại",
-            "tags": ["Data Warehouse", "Power BI", "Zoho Analytics", "ETL", "CRM", "Python"],
+            "tags": [
+              "Data Warehouse",
+              "Power BI",
+              "Zoho Analytics",
+              "ETL",
+              "CRM",
+              "Python",
+              "DuckDB",
+              "PostgreSQL"
+            ],
             "featured": true,
             "bullets": [
-              "**Tư vấn & Tái thiết kế Kiến trúc Dữ liệu CRM**: Đóng vai trò cầu nối giữa Ban giám đốc và các phòng ban tuyển sinh, chuẩn hóa dữ liệu phân mảnh và quy hoạch Data Warehouse theo dõi trọn vẹn vòng đời khách hàng từ tiếp cận đến nhập học.",
-              "**Hệ thống Báo cáo Quản trị & Điều hành**: Khảo sát nhu cầu nghiệp vụ từ lãnh đạo để thiết lập Báo cáo quản trị, giám sát vận hành, đo lường hiệu quả làm việc và tỷ lệ chuyển đổi chi tiết theo từng nguồn leads.",
-              "**Thiết kế Dashboard Trực quan**: Triển khai trên Power BI và Zoho Analytics, cho phép giám sát hiệu suất thực tế so với mục tiêu và hỗ trợ lãnh đạo đưa ra quyết định kịp thời.",
-              "**Phát triển Web Quản lý Học sinh & KPI**: Trực tiếp lập trình ứng dụng quản lý tập trung giải quyết điểm nghẽn vận hành, **tiết kiệm 40% thời gian vận hành** cho bộ phận Tuyển sinh."
+              "**Kiến trúc Data Warehouse & Chuẩn hóa CRM**: Khảo sát nghiệp vụ tuyển sinh, thiết kế kho dữ liệu tập trung Star Schema chuẩn hóa dữ liệu phân mảnh từ 12+ kênh tiếp cận, đảm bảo Data SLA 99.9% cho toàn bộ vòng đời học sinh.",
+              "**Tối ưu Luồng Ingestion & Pipeline ETL**: Trực tiếp xây dựng luồng trích xuất dữ liệu (Micro-batch Ingestion 15m) bằng Python, PostgreSQL & DuckDB; tự động hóa validation schema và deduplication, loại bỏ 100% tình trạng sai lệch dữ liệu giữa các bộ phận.",
+              "**Báo cáo Quản trị & Dashboard BI Tự Động**: Xây dựng hệ thống Power BI & Zoho Analytics Dashboards phục vụ theo dõi tỷ lệ chuyển đổi phễu theo thời gian thực; tích hợp Bot Telegram tự động phát hiện và gửi cảnh báo khi có biến động doanh thu bất thường.",
+              "**Phát triển Web Quản lý Tập trung & KPI**: Trực tiếp lập trình Web App hỗ trợ theo dõi chỉ số hiệu suất tuyển sinh, giải quyết triệt me nút thắt vận hành và **tiết kiệm 40% thời gian xử lý thủ công**."
             ]
           },
           {
@@ -83,12 +93,19 @@
             "location": "Hà Nội, Việt Nam",
             "startDate": "03/2024",
             "endDate": "06/2025",
-            "tags": ["ETL", "Metabase", "Power BI", "PostgreSQL", "Market Research"],
+            "tags": [
+              "ETL Pipeline",
+              "Metabase",
+              "Power BI",
+              "PostgreSQL",
+              "BigQuery",
+              "Market Analytics"
+            ],
             "featured": true,
             "bullets": [
-              "**Nghiên cứu thị trường & Đánh giá chiến lược**: Tham gia phân tích dữ liệu thị trường quốc tế (Philippines, Thái Lan); đánh giá tính khả thi cho danh mục sản phẩm mới, triển khai thử nghiệm ưu đãi giảm giá và sale contest dựa trên dữ liệu.",
-              "**Hạ tầng dữ liệu & Tối ưu hóa luồng ETL**: Phối hợp cùng đội ngũ IT/BI chuẩn hóa kiến trúc dữ liệu và tối ưu hóa các luồng ETL, **giảm 20% thời gian xử lý dữ liệu hằng ngày**.",
-              "**Hệ thống Báo cáo Tự động hóa**: Xây dựng dashboard tự động trên Power BI và Metabase, tối ưu quy trình tổng hợp dữ liệu đa chiều, giúp các phòng ban phản ứng nhanh với biến động thị trường."
+              "**Nghiên cứu Thị trường & Mô hình A/B Testing**: Phân tích dữ liệu kinh doanh Đông Nam Á (Philippines, Thái Lan); thiết kế khung đánh giá tính khả thi cho sản phẩm mới và triển khai thử nghiệm chiến dịch ưu đãi/sale contest dựa trên dữ liệu thực chứng.",
+              "**Tối ưu Hạ tầng Dữ liệu & Pipeline ETL**: Phối hợp cùng IT/BI chuẩn hóa kiến trúc Data Marts, tinh chỉnh các truy vấn SQL phức tạp & luồng ETL chuyển đổi tập dữ liệu lớn, **cắt giảm 20% thời gian xử lý dữ liệu hằng ngày** (pipeline < 90s).",
+              "**Hệ thống Báo cáo Tự động hóa & Actionable Metrics**: Xây dựng dashboard tự động trên Power BI & Metabase với tập trung vào các chỉ số vận hành thực chất, giúp Ban giám đốc chủ động đưa ra quyết định kinh doanh kịp thời."
             ]
           }
         ],
@@ -98,7 +115,14 @@
             "title": "Hệ thống Web Quản lý Học sinh & Data Warehouse CRM",
             "subtitle": "Ứng dụng quản lý tập trung và quy hoạch Data Warehouse tuyển sinh",
             "date": "2025",
-            "tags": ["Data Warehouse", "Python", "JavaScript", "CRM", "Power BI", "Zoho Analytics"],
+            "tags": [
+              "Data Warehouse",
+              "Python",
+              "JavaScript",
+              "CRM",
+              "Power BI",
+              "Zoho Analytics"
+            ],
             "github": "https://github.com/dewey97",
             "demo": "",
             "featured": true,
@@ -109,11 +133,36 @@
             "title": "Tối ưu hóa Quy trình ETL & Dashboard Báo cáo Quốc tế",
             "subtitle": "Hạ tầng phân tích dữ liệu thị trường Philippines & Thái Lan",
             "date": "2024",
-            "tags": ["ETL", "BigQuery", "PostgreSQL", "Power BI", "Metabase", "Market Analysis"],
+            "tags": [
+              "ETL",
+              "BigQuery",
+              "PostgreSQL",
+              "Power BI",
+              "Metabase",
+              "Market Analysis"
+            ],
             "github": "https://github.com/dewey97",
             "demo": "",
             "featured": true,
             "description": "Dự án thiết kế luồng ETL xử lý dữ liệu quy mô lớn cho thị trường quốc tế, giúp **giảm 20% thời gian xử lý dữ liệu hằng ngày**. Triển khai Dashboard tự động trên Power BI & Metabase phục vụ theo dõi hiệu suất kinh doanh đa chiều."
+          },
+          {
+            "id": "03-house-price-prediction",
+            "title": "Phân Tích Không Gian & Mô Hình Dự Đoán Giá Nhà California",
+            "subtitle": "Dự án EDA không gian & Machine Learning dự đoán giá bất động sản dựa trên lý thuyết Hedonic Pricing",
+            "date": "2024",
+            "tags": [
+              "Machine Learning",
+              "Python",
+              "EDA",
+              "Scikit-Learn",
+              "Hedonic Pricing",
+              "Spatial Analysis"
+            ],
+            "github": "https://github.com/dewey97/house-price-prediction",
+            "demo": "",
+            "featured": true,
+            "description": "Phân tích khám phá dữ liệu không gian (EDA) và phát triển các mô hình Machine Learning (Linear, Polynomial, Decision Tree) dự đoán giá bất động sản California dựa trên thu nhập hộ gia đình, khoảng cách bờ biển và vị trí đô thị. Mô hình Polynomial Regression (Degree 3) đạt hiệu suất tối ưu nhất."
           }
         ]
       },
@@ -168,7 +217,13 @@
             "location": "Hà Nội, Việt Nam",
             "startDate": "06/2025",
             "endDate": "Hiện tại",
-            "tags": ["Business Analysis", "CRM Strategy", "Power BI", "Zoho Analytics", "Funnel Optimization"],
+            "tags": [
+              "Business Analysis",
+              "CRM Strategy",
+              "Power BI",
+              "Zoho Analytics",
+              "Funnel Optimization"
+            ],
             "featured": true,
             "bullets": [
               "**Tư vấn & Tái thiết kế Kiến trúc Dữ liệu CRM**: Đóng vai trò cầu nối chiến lược giữa Ban giám đốc và các phòng ban tuyển sinh, bóc tách điểm nghẽn vận hành để tư vấn mô hình theo dõi vòng đời khách hàng toàn diện từ tiếp cận đến nhập học.",
@@ -184,7 +239,13 @@
             "location": "Hà Nội, Việt Nam",
             "startDate": "03/2024",
             "endDate": "06/2025",
-            "tags": ["Market Research", "Commercial Strategy", "Power BI", "Metabase", "Process Optimization"],
+            "tags": [
+              "Market Research",
+              "Commercial Strategy",
+              "Power BI",
+              "Metabase",
+              "Process Optimization"
+            ],
             "featured": true,
             "bullets": [
               "**Nghiên cứu Thị trường Quốc tế & Đánh giá Tính khả thi**: Chủ trì phân tích dữ liệu thị trường quốc tế (Philippines, Thái Lan); đánh giá tiềm năng thương mại cho dòng sản phẩm mới và đo lường hiệu quả các chiến dịch kích cầu doanh số.",
@@ -199,7 +260,13 @@
             "title": "Hệ thống Quản lý Vận hành Tuyển sinh & Chuẩn hóa Dữ liệu CRM",
             "subtitle": "Tư vấn kiến trúc dữ liệu và triển khai giải pháp số hóa quy trình kinh doanh",
             "date": "2025",
-            "tags": ["Business Analysis", "CRM", "Process Optimization", "Power BI", "Zoho Analytics"],
+            "tags": [
+              "Business Analysis",
+              "CRM",
+              "Process Optimization",
+              "Power BI",
+              "Zoho Analytics"
+            ],
             "github": "https://github.com/dewey97",
             "demo": "",
             "featured": true,
@@ -210,11 +277,34 @@
             "title": "Phân tích Dữ liệu Thị trường & Hệ thống Dashboard Quốc tế",
             "subtitle": "Đánh giá thương mại và hạ tầng báo cáo thị trường Philippines & Thái Lan",
             "date": "2024",
-            "tags": ["Market Analysis", "Commercial Strategy", "Power BI", "Metabase", "BigQuery"],
+            "tags": [
+              "Market Analysis",
+              "Commercial Strategy",
+              "Power BI",
+              "Metabase",
+              "BigQuery"
+            ],
             "github": "https://github.com/dewey97",
             "demo": "",
             "featured": true,
             "description": "Nghiên cứu và chuẩn hóa hệ thống phân tích thị trường quốc tế, **cắt giảm 20% độ trễ dữ liệu hằng ngày**. Cung cấp báo cáo đa chiều hỗ trợ Ban giám đốc định hình chiến lược sản phẩm tại Đông Nam Á."
+          },
+          {
+            "id": "03-house-price-prediction",
+            "title": "Phân Tích Động lực Giá Bất Động Sản & Mô Hình Học Máy California",
+            "subtitle": "Nghiên cứu định lượng các yếu tố kinh tế, vị trí không gian và định giá Hedonic",
+            "date": "2024",
+            "tags": [
+              "Market Analytics",
+              "Python",
+              "Hedonic Pricing",
+              "Econometrics",
+              "Machine Learning"
+            ],
+            "github": "https://github.com/dewey97/house-price-prediction",
+            "demo": "",
+            "featured": true,
+            "description": "Phân tích định lượng các biến số tác động tới thị trường bất động sản (thu nhập, vị trí địa lý, khoảng cách bờ biển). Ứng dụng lý thuyết định giá Hedonic và thuật toán Machine Learning giúp chuẩn hóa mô hình dự báo giá phục vụ thẩm định giá và đầu tư."
           }
         ]
       },
@@ -267,7 +357,14 @@
             "location": "Hà Nội, Việt Nam",
             "startDate": "06/2025",
             "endDate": "Hiện tại",
-            "tags": ["Data Warehouse", "Python", "SQL", "ETL", "CRM Integration", "Power BI"],
+            "tags": [
+              "Data Warehouse",
+              "Python",
+              "SQL",
+              "ETL",
+              "CRM Integration",
+              "Power BI"
+            ],
             "featured": true,
             "bullets": [
               "**Quy hoạch & Quản trị Data Warehouse CRM**: Tái cấu trúc và đồng bộ các nguồn dữ liệu rời rạc từ nhiều phòng ban tuyển sinh, thiết kế Data Warehouse chuẩn hóa theo dõi trọn vẹn dữ liệu khách hàng. Làm đầu mối kỹ thuật kết nối CSDL công ty với CRM bên thứ ba.",
@@ -283,7 +380,14 @@
             "location": "Hà Nội, Việt Nam",
             "startDate": "03/2024",
             "endDate": "06/2025",
-            "tags": ["ETL", "PostgreSQL", "BigQuery", "Metabase", "Power BI", "Python"],
+            "tags": [
+              "ETL",
+              "PostgreSQL",
+              "BigQuery",
+              "Metabase",
+              "Power BI",
+              "Python"
+            ],
             "featured": true,
             "bullets": [
               "**Xây dựng & Tối ưu hóa Luồng ETL**: Phối hợp cùng IT/BI thiết kế các luồng ETL xử lý dữ liệu quy mô lớn cho thị trường quốc tế (Philippines, Thái Lan), **cắt giảm 20% thời gian batch processing hằng ngày**.",
@@ -298,7 +402,14 @@
             "title": "Hệ thống Web Quản lý Học sinh & Data Warehouse CRM",
             "subtitle": "Kiến trúc Data Warehouse tuyển sinh và ứng dụng Web quản lý tập trung",
             "date": "2025",
-            "tags": ["Data Warehouse", "Python", "JavaScript", "CRM API", "Power BI", "Zoho Analytics"],
+            "tags": [
+              "Data Warehouse",
+              "Python",
+              "JavaScript",
+              "CRM API",
+              "Power BI",
+              "Zoho Analytics"
+            ],
             "github": "https://github.com/dewey97",
             "demo": "",
             "featured": true,
@@ -309,11 +420,36 @@
             "title": "Hạ tầng ETL & Tối ưu Truy vấn Báo cáo Quốc tế",
             "subtitle": "Pipeline xử lý dữ liệu lớn cho thị trường Philippines & Thái Lan",
             "date": "2024",
-            "tags": ["ETL", "BigQuery", "PostgreSQL", "SQL Optimization", "Metabase", "Power BI"],
+            "tags": [
+              "ETL",
+              "BigQuery",
+              "PostgreSQL",
+              "SQL Optimization",
+              "Metabase",
+              "Power BI"
+            ],
             "github": "https://github.com/dewey97",
             "demo": "",
             "featured": true,
             "description": "Thiết kế pipeline ETL xử lý dữ liệu thương mại quốc tế, **giảm 20% thời gian xử lý hàng ngày**. Tối ưu hóa schema và kết nối Dashboard Metabase/Power BI cho dữ liệu quy mô lớn."
+          },
+          {
+            "id": "03-house-price-prediction",
+            "title": "Mô Hình Machine Learning Dự Đoán Giá Nhà & Pipeline EDA Không Gian",
+            "subtitle": "Pipeline xử lý dữ liệu, Feature Engineering & Tinh chỉnh siêu tham số trên Scikit-Learn",
+            "date": "2024",
+            "tags": [
+              "Machine Learning",
+              "Python",
+              "Scikit-Learn",
+              "Feature Engineering",
+              "Data Science",
+              "EDA"
+            ],
+            "github": "https://github.com/dewey97/house-price-prediction",
+            "demo": "",
+            "featured": true,
+            "description": "Xây dựng pipeline xử lý dữ liệu và Feature Engineering (IQR Boxplot Clipping, ratio scaling, StandardScaler). Thực nghiệm và tinh chỉnh siêu tham số (GridSearchCV) trên các mô hình Hồi quy tuyến tính, Hồi quy đa thức và Cây quyết định."
           }
         ]
       }
@@ -321,15 +457,22 @@
     "beyondWork": {
       "title": "Beyond The Data",
       "subtitle": "Góc nhìn, câu chuyện và những hành trình định hình con người tôi phía sau màn hình máy tính.",
+      "instagramUrl": "https://www.instagram.com/dewey_973/",
+      "instagramLabel": "@dewey_973",
       "items": [
         {
-          "id": "cross-vietnam",
-          "tag": "Hành trình & Bản lĩnh",
-          "title": "Chuyến Đi Xuyên Việt (2.000+ km)",
-          "subtitle": "Hà Nội – Cà Mau (Xe máy & Khám phá độc lập)",
-          "description": "Tự mình vượt qua hàng nghìn cây số dọc chiều dài đất nước. Chuyến đi rèn luyện sự kiên định, sức bền thể lực, khả năng xử lý tình huống bất ngờ và cho tôi góc nhìn thấu cảm sâu sắc về cuộc sống, con người ở từng vùng miền.",
+          "id": "journeys-exploration",
+          "tag": "Khám phá & Thích nghi",
+          "title": "Văn Hóa Xê Dịch & Những Hành Trình Khám Phá",
+          "subtitle": "Xuyên Việt 2.000+ km • Cung đường Vùng cao • Trải nghiệm Độc lập",
+          "description": "Đam mê bước ra khỏi vùng an toàn qua những chuyến độc hành và khám phá khắp mọi miền. Từ hành trình Xuyên Việt 2.000+ km đến những cung đường vùng cao hiểm trở, mỗi chuyến đi là một lần tôi luyện khả năng thích nghi trong mọi hoàn cảnh, tính độc lập và góc nhìn đa chiều về con người & văn hóa.",
           "icon": "Compass",
-          "highlights": ["2.000+ km", "Độc lập & Thích nghi", "Sức bền & Kiên định"]
+          "highlights": [
+            "Xuyên Việt 2.000+ km",
+            "Cung đường Vùng cao",
+            "Độc lập & Thích nghi",
+            "Sức bền & Bản lĩnh"
+          ]
         },
         {
           "id": "continuous-learning",
@@ -338,7 +481,11 @@
           "subtitle": "Biến công nghệ thành đòn bẩy cho cuộc sống",
           "description": "Luôn tò mò với các mô hình AI mới, lập trình các micro-tools tự động hóa những việc nhỏ nhất hằng ngày và đọc sách về kinh tế học hành vi, tâm lý học ra quyết định.",
           "icon": "Sparkles",
-          "highlights": ["AI Experiments", "Automation", "Behavioral Economics"]
+          "highlights": [
+            "AI Experiments",
+            "Automation",
+            "Behavioral Economics"
+          ]
         },
         {
           "id": "discipline-health",
@@ -347,7 +494,11 @@
           "subtitle": "Tâm trí sắc bén bắt nguồn từ một cơ thể khỏe mạnh",
           "description": "Duy trì thói quen tập luyện thể thao thường xuyên. Đối với tôi, giải quyết những bài toán dữ liệu phức tạp đòi hỏi sự tập trung cao độ và tính kỷ luật dài hạn giống như thể thao sức bền.",
           "icon": "Activity",
-          "highlights": ["Kỷ luật cá nhân", "Sức khỏe dẻo dai", "Tập trung cao độ"]
+          "highlights": [
+            "Kỷ luật cá nhân",
+            "Sức khỏe dẻo dai",
+            "Tập trung cao độ"
+          ]
         },
         {
           "id": "frontline-hospitality",
@@ -356,7 +507,11 @@
           "subtitle": "Quầy Pub, Lễ tân khách sạn & Bếp",
           "description": "Những năm tháng cọ xát thực tế ở ngành dịch vụ dạy tôi bài học đắt giá về tâm lý con người, khả năng lắng nghe và giữ bình tĩnh dưới áp lực cao — những phẩm chất cốt lõi của một nhà tư vấn hiểu con người chứ không chỉ nhìn vào con số.",
           "icon": "HeartHandshake",
-          "highlights": ["Thấu cảm khách hàng", "Giao tiếp & Lắng nghe", "Xử lý áp lực cao"]
+          "highlights": [
+            "Thấu cảm khách hàng",
+            "Giao tiếp & Lắng nghe",
+            "Xử lý áp lực cao"
+          ]
         }
       ]
     },
@@ -374,6 +529,7 @@
       "location": "Cau Giay District, Hanoi, Vietnam",
       "github": "https://github.com/dewey97",
       "linkedin": "https://www.linkedin.com/in/dinh-huy-bui/",
+      "instagram": "https://www.instagram.com/dewey_973/",
       "website": "https://dinhhuybui.dev",
       "education": {
         "school": "Foreign Trade University (FTU)",
@@ -434,13 +590,22 @@
             "location": "Hanoi, Vietnam",
             "startDate": "06/2025",
             "endDate": "Present",
-            "tags": ["Data Warehouse", "Power BI", "Zoho Analytics", "ETL", "CRM", "Python"],
+            "tags": [
+              "Data Warehouse",
+              "Power BI",
+              "Zoho Analytics",
+              "ETL Pipeline",
+              "CRM",
+              "Python",
+              "DuckDB",
+              "PostgreSQL"
+            ],
             "featured": true,
             "bullets": [
-              "**Consult & Restructure CRM Data Warehouse**: Acted as strategic bridge between executive leadership and admissions teams to standardize fragmented data and structure a centralized Data Warehouse tracking full student lifecycles.",
-              "**Build Executive & Operational Reporting Systems**: Elicited business requirements to establish multi-dimensional KPI tracking and conversion rate reports across acquisition channels, assisting leadership in timely decisions.",
-              "**Design Interactive Dashboards**: Deployed dynamic dashboards on Power BI and Zoho Analytics for monitoring actual vs. target performance in real time.",
-              "**Engineer Student & KPI Management Web System**: Spearheaded the development of a centralized management app resolving operational bottlenecks, **saving 40% operational time** for admissions teams."
+              "**CRM Data Warehouse Architecture & Strategy**: Acted as strategic bridge between executive leadership and admissions teams to scope business requirements and architect a star-schema Data Warehouse, standardizing fragmented lead data across 12+ channels with 99.9% Data SLA.",
+              "**Data Ingestion & Pipeline ETL Engineering**: Engineered automated 15-minute micro-batch ingestion & ETL pipelines using Python, PostgreSQL, and DuckDB, enforcing schema validation and eliminating 100% of inter-departmental data silos.",
+              "**Executive BI & Automated Alert Systems**: Built self-serve Metabase, Power BI & Zoho Analytics dashboards for C-level conversion funnel tracking, integrating automated Telegram alert bots for real-time revenue anomaly detection (< 60s latency).",
+              "**Custom Student & Operational KPI Web Application**: Developed a custom centralized Web App resolving operational bottlenecks, **saving 40% manual operational overhead** for admissions teams."
             ]
           },
           {
@@ -450,12 +615,19 @@
             "location": "Hanoi, Vietnam",
             "startDate": "03/2024",
             "endDate": "06/2025",
-            "tags": ["ETL", "Metabase", "Power BI", "PostgreSQL", "Market Research"],
+            "tags": [
+              "ETL Pipeline",
+              "Metabase",
+              "Power BI",
+              "PostgreSQL",
+              "BigQuery",
+              "Market Analytics"
+            ],
             "featured": true,
             "bullets": [
-              "**Market Research & Commercial Evaluation**: Analyzed international market data (Philippines, Thailand); evaluated commercial feasibility for new product lines, executing and assessing data-driven discount campaigns and sales contests.",
-              "**Data Infrastructure & ETL Optimization**: Collaborated with IT/BI teams to standardize reporting architecture and optimize ETL workflows, **cutting daily data processing time by 20%**.",
-              "**Automated Reporting Systems**: Developed automated dashboards on Power BI and Metabase, enabling multi-dimensional data synthesis for agile market response."
+              "**Market Research & Commercial Strategy Evaluation**: Analyzed cross-border e-commerce data across Southeast Asia (Philippines, Thailand); designed A/B testing frameworks and evaluated commercial ROI for discount campaigns & sales contests using empirical data.",
+              "**Data Infrastructure & High-Performance ETL Optimization**: Partnered with IT & BI engineers to standardize data warehousing, tuning complex SQL queries & ETL execution (Parquet columnar engine), **cutting daily data processing runtime by 20%** (pipeline < 90s).",
+              "**Automated Multi-Dimensional BI & Executive Dashboards**: Developed automated dashboards on Power BI and Metabase focused on Actionable Metrics, enabling rapid operational responses to dynamic market shifts."
             ]
           }
         ],
@@ -465,7 +637,14 @@
             "title": "Student Management Web System & CRM Data Warehouse",
             "subtitle": "Centralized application and admissions Data Warehouse planning",
             "date": "2025",
-            "tags": ["Data Warehouse", "Python", "JavaScript", "CRM", "Power BI", "Zoho Analytics"],
+            "tags": [
+              "Data Warehouse",
+              "Python",
+              "JavaScript",
+              "CRM",
+              "Power BI",
+              "Zoho Analytics"
+            ],
             "github": "https://github.com/dewey97",
             "demo": "",
             "featured": true,
@@ -476,11 +655,36 @@
             "title": "ETL Pipeline Optimization & International Analytics Dashboards",
             "subtitle": "Data analytics infrastructure for Philippines & Thailand markets",
             "date": "2024",
-            "tags": ["ETL", "BigQuery", "PostgreSQL", "Power BI", "Metabase", "Market Analysis"],
+            "tags": [
+              "ETL",
+              "BigQuery",
+              "PostgreSQL",
+              "Power BI",
+              "Metabase",
+              "Market Analysis"
+            ],
             "github": "https://github.com/dewey97",
             "demo": "",
             "featured": true,
             "description": "Designed large-scale ETL pipelines for international markets, **cutting daily data processing times by 20%**. Deployed automated Power BI & Metabase dashboards for multi-dimensional business performance tracking."
+          },
+          {
+            "id": "03-house-price-prediction",
+            "title": "California House Price Prediction & Spatial Analytics",
+            "subtitle": "Spatial EDA & Machine Learning valuation model based on Hedonic Pricing Theory",
+            "date": "2024",
+            "tags": [
+              "Machine Learning",
+              "Python",
+              "EDA",
+              "Scikit-Learn",
+              "Hedonic Pricing",
+              "Spatial Analysis"
+            ],
+            "github": "https://github.com/dewey97/house-price-prediction",
+            "demo": "",
+            "featured": true,
+            "description": "Executed Spatial Exploratory Data Analysis (EDA) and built Machine Learning models (Linear, Polynomial, Decision Tree) to predict California house values based on median income, coastal proximity, and urban location. Achieved optimal performance with 3rd-degree Polynomial Regression."
           }
         ]
       },
@@ -535,7 +739,13 @@
             "location": "Hanoi, Vietnam",
             "startDate": "06/2025",
             "endDate": "Present",
-            "tags": ["Business Analysis", "CRM Strategy", "Power BI", "Zoho Analytics", "Funnel Optimization"],
+            "tags": [
+              "Business Analysis",
+              "CRM Strategy",
+              "Power BI",
+              "Zoho Analytics",
+              "Funnel Optimization"
+            ],
             "featured": true,
             "bullets": [
               "**Consult & Re-engineer CRM Data Architecture**: Served as strategic advisor between C-suite and admissions teams, identifying operational bottlenecks to architect an end-to-end customer lifecycle tracking model.",
@@ -551,7 +761,13 @@
             "location": "Hanoi, Vietnam",
             "startDate": "03/2024",
             "endDate": "06/2025",
-            "tags": ["Market Research", "Commercial Strategy", "Power BI", "Metabase", "Process Optimization"],
+            "tags": [
+              "Market Research",
+              "Commercial Strategy",
+              "Power BI",
+              "Metabase",
+              "Process Optimization"
+            ],
             "featured": true,
             "bullets": [
               "**International Market Feasibility & Commercial Strategy**: Led market data analytics across Southeast Asia (Philippines, Thailand); assessed commercial viability for new product lines and measured campaign ROI.",
@@ -566,7 +782,13 @@
             "title": "Admissions Operations System & CRM Data Architecture",
             "subtitle": "Data architecture advisory and process digitalization for educational recruitment",
             "date": "2025",
-            "tags": ["Business Analysis", "CRM", "Process Optimization", "Power BI", "Zoho Analytics"],
+            "tags": [
+              "Business Analysis",
+              "CRM",
+              "Process Optimization",
+              "Power BI",
+              "Zoho Analytics"
+            ],
             "github": "https://github.com/dewey97",
             "demo": "",
             "featured": true,
@@ -577,11 +799,34 @@
             "title": "Market Feasibility Analytics & International BI System",
             "subtitle": "Commercial evaluation and reporting infrastructure for Philippines & Thailand markets",
             "date": "2024",
-            "tags": ["Market Analysis", "Commercial Strategy", "Power BI", "Metabase", "BigQuery"],
+            "tags": [
+              "Market Analysis",
+              "Commercial Strategy",
+              "Power BI",
+              "Metabase",
+              "BigQuery"
+            ],
             "github": "https://github.com/dewey97",
             "demo": "",
             "featured": true,
             "description": "Evaluated international market viability and streamlined reporting infrastructure, **cutting daily data latency by 20%**. Delivered multi-dimensional insights supporting executive expansion in Southeast Asia."
+          },
+          {
+            "id": "03-house-price-prediction",
+            "title": "Real Estate Price Dynamics Analysis & ML Valuation Model",
+            "subtitle": "Quantitative research on economic & spatial factors using Hedonic Pricing",
+            "date": "2024",
+            "tags": [
+              "Market Analytics",
+              "Python",
+              "Hedonic Pricing",
+              "Econometrics",
+              "Machine Learning"
+            ],
+            "github": "https://github.com/dewey97/house-price-prediction",
+            "demo": "",
+            "featured": true,
+            "description": "Quantitative analysis of macroeconomic and spatial variables affecting real estate values (income, geography, coastal distance). Applied Hedonic Pricing theory and ML regression algorithms to provide data-driven valuation models for investment decision-making."
           }
         ]
       },
@@ -634,7 +879,14 @@
             "location": "Hanoi, Vietnam",
             "startDate": "06/2025",
             "endDate": "Present",
-            "tags": ["Data Warehouse", "Python", "SQL", "ETL", "CRM Integration", "Power BI"],
+            "tags": [
+              "Data Warehouse",
+              "Python",
+              "SQL",
+              "ETL",
+              "CRM Integration",
+              "Power BI"
+            ],
             "featured": true,
             "bullets": [
               "**Architect & Administer CRM Data Warehouse**: Structured and standardized fragmented data sources into a centralized Data Warehouse. Acted as technical lead integrating company databases with third-party CRM APIs.",
@@ -650,7 +902,14 @@
             "location": "Hanoi, Vietnam",
             "startDate": "03/2024",
             "endDate": "06/2025",
-            "tags": ["ETL", "PostgreSQL", "BigQuery", "Metabase", "Power BI", "Python"],
+            "tags": [
+              "ETL",
+              "PostgreSQL",
+              "BigQuery",
+              "Metabase",
+              "Power BI",
+              "Python"
+            ],
             "featured": true,
             "bullets": [
               "**Build & Optimize High-Volume ETL Pipelines**: Engineered and optimized ETL pipelines on PostgreSQL & BigQuery for international markets (Philippines, Thailand), **reducing daily batch processing time by 20%**.",
@@ -665,7 +924,14 @@
             "title": "Student Management Web System & CRM Data Warehouse",
             "subtitle": "Admissions Data Warehouse architecture and centralized web application",
             "date": "2025",
-            "tags": ["Data Warehouse", "Python", "JavaScript", "CRM API", "Power BI", "Zoho Analytics"],
+            "tags": [
+              "Data Warehouse",
+              "Python",
+              "JavaScript",
+              "CRM API",
+              "Power BI",
+              "Zoho Analytics"
+            ],
             "github": "https://github.com/dewey97",
             "demo": "",
             "featured": true,
@@ -676,11 +942,36 @@
             "title": "ETL Infrastructure & Query Optimization for International Analytics",
             "subtitle": "Scalable data pipeline for Philippines & Thailand business analytics",
             "date": "2024",
-            "tags": ["ETL", "BigQuery", "PostgreSQL", "SQL Optimization", "Metabase", "Power BI"],
+            "tags": [
+              "ETL",
+              "BigQuery",
+              "PostgreSQL",
+              "SQL Optimization",
+              "Metabase",
+              "Power BI"
+            ],
             "github": "https://github.com/dewey97",
             "demo": "",
             "featured": true,
             "description": "Engineered large-scale ETL pipelines for international commerce, **cutting daily data processing times by 20%**. Optimized schemas and integrated Metabase & Power BI dashboards."
+          },
+          {
+            "id": "03-house-price-prediction",
+            "title": "California House Price ML Valuation Pipeline & Spatial EDA",
+            "subtitle": "Data processing pipeline, Feature Engineering & Hyperparameter Tuning via Scikit-Learn",
+            "date": "2024",
+            "tags": [
+              "Machine Learning",
+              "Python",
+              "Scikit-Learn",
+              "Feature Engineering",
+              "Data Science",
+              "EDA"
+            ],
+            "github": "https://github.com/dewey97/house-price-prediction",
+            "demo": "",
+            "featured": true,
+            "description": "Engineered end-to-end data pipelines and custom feature transformers (IQR clipping, ratio feature scaling, StandardScaler). Evaluated Linear, Polynomial, and Decision Tree regression models with hyperparameter tuning via GridSearchCV."
           }
         ]
       }
@@ -688,15 +979,22 @@
     "beyondWork": {
       "title": "Beyond The Data",
       "subtitle": "Perspectives, stories, and journeys that shape who I am outside the screen.",
+      "instagramUrl": "https://www.instagram.com/dewey_973/",
+      "instagramLabel": "@dewey_973",
       "items": [
         {
-          "id": "cross-vietnam",
-          "tag": "Resilience & Journey",
-          "title": "Solo Cross-Vietnam Expedition (2,000+ km)",
-          "subtitle": "Hanoi to Ca Mau (Endurance & Independence)",
-          "description": "Navigated thousands of kilometers across Vietnam independently. The journey honed my mental grit, adaptability under unexpected conditions, and deepened my empathy for diverse local communities and cultures.",
+          "id": "journeys-exploration",
+          "tag": "Exploration & Grit",
+          "title": "Exploration & Solo Journeys",
+          "subtitle": "2,000+ km Cross-Vietnam • Highland Expeditions • Independent Travel",
+          "description": "A deep passion for stepping outside comfort zones through solo road trips and continuous exploration. From a 2,000+ km solo cross-country journey to challenging highland expeditions, every trail sharpens my adaptability under uncertainty, mental grit, and empathy for diverse cultures.",
           "icon": "Compass",
-          "highlights": ["2,000+ km", "Adaptability", "Endurance Grit"]
+          "highlights": [
+            "2,000+ km Cross-Country",
+            "Highland Trails",
+            "Adaptability & Grit",
+            "Cultural Empathy"
+          ]
         },
         {
           "id": "continuous-learning",
@@ -705,7 +1003,11 @@
           "subtitle": "Leveraging technology as a force multiplier",
           "description": "Constantly exploring cutting-edge AI developments, writing custom scripts to automate daily tasks, and reading about behavioral economics and decision psychology.",
           "icon": "Sparkles",
-          "highlights": ["AI Prototyping", "Workflow Automation", "Continuous Learning"]
+          "highlights": [
+            "AI Prototyping",
+            "Workflow Automation",
+            "Continuous Learning"
+          ]
         },
         {
           "id": "discipline-health",
@@ -714,7 +1016,11 @@
           "subtitle": "Sharp intellect stems from physical resilience",
           "description": "Committed to regular physical conditioning. Solving complex data problems requires sustained endurance and disciplined focus, much like long-distance athletic training.",
           "icon": "Activity",
-          "highlights": ["High Focus", "Physical Grit", "Consistency"]
+          "highlights": [
+            "High Focus",
+            "Physical Grit",
+            "Consistency"
+          ]
         },
         {
           "id": "frontline-hospitality",
@@ -723,7 +1029,11 @@
           "subtitle": "Pub Bartending, Hotel Reception & Kitchen",
           "description": "Hands-on experience in frontline service environments taught me invaluable lessons about human psychology, active listening, and composure under pressure — foundational traits that make me a consultant who understands people, not just numbers.",
           "icon": "HeartHandshake",
-          "highlights": ["Customer Empathy", "Active Listening", "Composure Under Stress"]
+          "highlights": [
+            "Customer Empathy",
+            "Active Listening",
+            "Composure Under Stress"
+          ]
         }
       ]
     },

@@ -94,7 +94,7 @@ export default function CvDownloadDropdown({ lang = 'vie' }: CvDownloadDropdownP
       </button>
 
       {isOpen && (
-        <div className="absolute left-0 mt-2 w-84 rounded-2xl bg-[#080d1a]/95 backdrop-blur-2xl shadow-[0_20px_50px_rgba(0,0,0,0.85)] p-3 z-50 animate-in fade-in zoom-in-95 duration-150 ring-1 ring-white/10">
+        <div className="absolute left-0 mt-2 w-[calc(100vw-2.5rem)] sm:w-96 md:w-[400px] max-w-[420px] rounded-2xl bg-[#080d1a]/95 backdrop-blur-2xl shadow-[0_25px_60px_rgba(0,0,0,0.95)] p-3 z-50 animate-in fade-in zoom-in-95 duration-150 ring-1 ring-white/10 border border-slate-700/50">
           <div className="px-2 pt-1 pb-2">
             <span className="text-xs font-sans font-semibold text-slate-300 tracking-wide">
               {labels.header}

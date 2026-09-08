@@ -1,20 +1,22 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Plus_Jakarta_Sans, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
+const sansFont = Plus_Jakarta_Sans({
   variable: "--font-geist-sans",
-  subsets: ["latin"],
+  subsets: ["latin", "vietnamese"],
+  display: "swap",
 });
 
-const geistMono = Geist_Mono({
+const monoFont = JetBrains_Mono({
   variable: "--font-geist-mono",
-  subsets: ["latin"],
+  subsets: ["latin", "vietnamese"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "Bùi Đình Huy | Data Analyst & Analytics Engineer",
-  description: "Portfolio của Bùi Đình Huy - Chuyên viên Phân tích Dữ liệu & Kỹ thuật Dữ liệu (Analytics Engineer)",
+  title: "Bùi Đình Huy | Portfolio",
+  description: "Portfolio của Bùi Đình Huy - Analytics Engineer & Data Consultant",
 };
 
 export default function RootLayout({
@@ -25,7 +27,7 @@ export default function RootLayout({
   return (
     <html
       lang="vi"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased scroll-smooth`}
+      className={`${sansFont.variable} ${monoFont.variable} font-sans h-full antialiased scroll-smooth`}
       suppressHydrationWarning
     >
       <body className="min-h-full flex flex-col bg-slate-950 text-slate-100" suppressHydrationWarning>
