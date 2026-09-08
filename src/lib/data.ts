@@ -45,7 +45,7 @@ export interface SkillsData {
 
 export interface BeyondWorkItem {
   id: string;
-  tag: string;
+  tag?: string;
   title: string;
   subtitle: string;
   description: string;

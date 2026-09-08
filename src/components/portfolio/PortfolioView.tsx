@@ -333,9 +333,20 @@ export default function PortfolioView({ initialData }: PortfolioViewProps) {
                     <span className="w-1.5 h-1.5 rounded-full bg-blue-300 group-hover:bg-white transition-colors" />
                   </div>
 
+                  {/* PARALLEL DATE BADGE ON OPPOSITE SIDE (DESKTOP) */}
+                  <div
+                    className={`hidden md:flex flex-col ${
+                      isEven ? 'items-start pl-6 right-0' : 'items-end pr-6 left-0'
+                    } justify-center absolute top-6 w-[calc(50%-2rem)] z-10`}
+                  >
+                    <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#060b17] border border-blue-500/40 text-blue-300 font-mono text-xs font-semibold shadow-lg shadow-black/50 group-hover:border-blue-400 group-hover:text-blue-200 transition-all">
+                      {exp.startDate} — {exp.endDate}
+                    </span>
+                  </div>
+
                   {/* TIMELINE CARD (ALTERNATING LEFT/RIGHT) */}
                   <div
-                    className={`w-full md:w-[calc(50%-2.5rem)] ${
+                    className={`w-full md:w-[calc(50%-2rem)] ${
                       isEven ? 'md:mr-auto' : 'md:ml-auto'
                     }`}
                   >
@@ -355,11 +366,9 @@ export default function PortfolioView({ initialData }: PortfolioViewProps) {
                         </h3>
 
                         <div className="flex flex-wrap items-center gap-2 pt-1 font-mono text-xs">
-                          <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-[#060b17] text-blue-300 ring-1 ring-blue-900/40">
+                          {/* MOBILE DATE BADGE */}
+                          <span className="md:hidden inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-[#060b17] text-blue-300 ring-1 ring-blue-900/40">
                             {exp.startDate} — {exp.endDate}
-                          </span>
-                          <span className="px-2.5 py-1 rounded-md bg-[#060b17] text-slate-400 ring-1 ring-slate-800/80">
-                            {exp.location}
                           </span>
                         </div>
                       </div>

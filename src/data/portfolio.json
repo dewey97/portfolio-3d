@@ -80,16 +80,16 @@
             ],
             "featured": true,
             "bullets": [
-              "**Kiến trúc Data Warehouse & Chuẩn hóa CRM**: Khảo sát nghiệp vụ tuyển sinh, thiết kế kho dữ liệu tập trung Star Schema chuẩn hóa dữ liệu phân mảnh từ 12+ kênh tiếp cận, đảm bảo Data SLA 99.9% cho toàn bộ vòng đời học sinh.",
-              "**Tối ưu Luồng Ingestion & Pipeline ETL**: Trực tiếp xây dựng luồng trích xuất dữ liệu (Micro-batch Ingestion 15m) bằng Python, PostgreSQL & DuckDB; tự động hóa validation schema và deduplication, loại bỏ 100% tình trạng sai lệch dữ liệu giữa các bộ phận.",
-              "**Báo cáo Quản trị & Dashboard BI Tự Động**: Xây dựng hệ thống Power BI & Zoho Analytics Dashboards phục vụ theo dõi tỷ lệ chuyển đổi phễu theo thời gian thực; tích hợp Bot Telegram tự động phát hiện và gửi cảnh báo khi có biến động doanh thu bất thường.",
-              "**Phát triển Web Quản lý Tập trung & KPI**: Trực tiếp lập trình Web App hỗ trợ theo dõi chỉ số hiệu suất tuyển sinh, giải quyết triệt me nút thắt vận hành và **tiết kiệm 40% thời gian xử lý thủ công**."
+              "**Kiến Trúc Dữ Liệu CRM**: Quy hoạch luồng dữ liệu phân mảnh từ 12+ kênh về kho dữ liệu tập trung, đảm bảo độ sẵn sàng 99.9%.",
+              "**Số Hóa Vận Hành**: Trực tiếp phát triển Web App quản lý chỉ số tuyển sinh, **tiết kiệm 40% thời gian xử lý thủ công**.",
+              "**BI & Cảnh Báo Doanh Thu**: Thiết lập báo cáo phễu chuyển đổi thời gian thực và tích hợp tự động phát hiện biến động doanh thu.",
+              "**Tự Động Hóa Số Liệu**: Tự động hóa luồng trích xuất & kiểm tra trùng lặp, loại bỏ 100% sai lệch số liệu liên phòng ban."
             ]
           },
           {
             "id": "02-z-solution",
             "company": "Công ty CP Z Solution",
-            "role": "Nhân viên Phân tích Dữ liệu (Phát triển Kinh doanh Hệ thống)",
+            "role": "Chuyên viên Phân tích Dữ liệu (Phát triển Kinh doanh Hệ thống)",
             "location": "Hà Nội, Việt Nam",
             "startDate": "03/2024",
             "endDate": "06/2025",
@@ -103,9 +103,9 @@
             ],
             "featured": true,
             "bullets": [
-              "**Nghiên cứu Thị trường & Mô hình A/B Testing**: Phân tích dữ liệu kinh doanh Đông Nam Á (Philippines, Thái Lan); thiết kế khung đánh giá tính khả thi cho sản phẩm mới và triển khai thử nghiệm chiến dịch ưu đãi/sale contest dựa trên dữ liệu thực chứng.",
-              "**Tối ưu Hạ tầng Dữ liệu & Pipeline ETL**: Phối hợp cùng IT/BI chuẩn hóa kiến trúc Data Marts, tinh chỉnh các truy vấn SQL phức tạp & luồng ETL chuyển đổi tập dữ liệu lớn, **cắt giảm 20% thời gian xử lý dữ liệu hằng ngày** (pipeline < 90s).",
-              "**Hệ thống Báo cáo Tự động hóa & Actionable Metrics**: Xây dựng dashboard tự động trên Power BI & Metabase với tập trung vào các chỉ số vận hành thực chất, giúp Ban giám đốc chủ động đưa ra quyết định kinh doanh kịp thời."
+              "**Phân Tích Thị Trường**: Đánh giá hiệu quả thương mại thị trường Philippines & Thái Lan qua các thử nghiệm kích cầu doanh số.",
+              "**Tối Ưu Hạ Tầng Dữ Liệu**: Tinh chỉnh truy vấn dữ liệu lớn hằng ngày, **cắt giảm 20% thời gian xử lý**.",
+              "**Báo Cáo Điều Hành**: Triển khai hệ thống báo cáo tự động giúp Ban giám đốc chủ động nắm bắt cơ hội kinh doanh."
             ]
           },
           {
@@ -124,9 +124,9 @@
             ],
             "featured": true,
             "bullets": [
-              "**Kinh doanh Xuất Nhập Khẩu & Tư vấn Vận tải**: Khảo sát nhu cầu giao thương quốc tế của các doanh nghiệp xuất nhập khẩu, tư vấn giải pháp cước phí vận chuyển & tuyến đường logistics tối ưu.",
-              "**Quản trị Chứng từ & Bóc tách Quy trình**: Trực tiếp xử lý & rèn luyện tư duy quy trình qua các chứng từ thương mại (Bill of Lading, Invoice, Packing List, Tờ khai hải quan), phát hiện & xử lý các điểm nghẽn giao nhận.",
-              "**Phân tích Doanh số & Chi phí Chuỗi Cung ứng**: Tổng hợp dữ liệu cước vận tải, phân tích biên lợi nhuận và đo lường hiệu quả đóng góp doanh số theo từng tuyến đường & nhóm mặt hàng."
+              "**Tư Vấn Giải Pháp Vận Tải**: Khảo sát nhu cầu xuất nhập khẩu, thiết kế phương án vận chuyển & báo giá tối ưu chi phí.",
+              "**Bóc Tách Quy Trình & Thông Quan**: Quản trị luồng chứng từ thương mại, bóc tách điểm nghẽn giao nhận để đẩy nhanh tốc độ thông quan.",
+              "**Phân Tích Biên Lợi Nhận**: Đo lường hiệu quả đóng góp doanh số & biên lợi nhuận theo từng tuyến đường và nhóm mặt hàng."
             ]
           }
         ],
@@ -247,10 +247,10 @@
             ],
             "featured": true,
             "bullets": [
-              "**Tư vấn & Tái thiết kế Kiến trúc Dữ liệu CRM**: Đóng vai trò cầu nối chiến lược giữa Ban giám đốc và các phòng ban tuyển sinh, bóc tách điểm nghẽn vận hành để tư vấn mô hình theo dõi vòng đời khách hàng toàn diện từ tiếp cận đến nhập học.",
-              "**Thiết lập Báo cáo Quản trị & Quyết định Chiến lược**: Khảo sát bài toán kinh doanh, xây dựng hệ thống chỉ số giám sát vận hành và tỷ lệ chuyển đổi chi tiết theo từng kênh leads, giúp lãnh đạo ra quyết định phân bổ ngân sách tối ưu.",
-              "**Khởi xướng Giải pháp Số hóa Vận hành & KPI**: Đề xuất và trực tiếp triển khai ứng dụng quản lý tập trung, **cắt giảm 40% thời gian vận hành** và chuẩn hóa dữ liệu báo cáo toàn hệ thống.",
-              "**Hệ thống Dashboard Quản trị Trực quan**: Thiết kế Dashboard tương tác cao trên Power BI & Zoho Analytics, cung cấp góc nhìn toàn cảnh về tốc độ tăng trưởng doanh số theo thời gian thực."
+              "**Tư Vấn Kiến Trúc CRM**: Tư vấn mô hình theo dõi vòng đời khách hàng toàn diện từ tiếp cận đến nhập học.",
+              "**Báo Cáo Chiến Lược**: Thiết lập hệ thống chỉ số giám sát vận hành và tỷ lệ chuyển đổi, giúp lãnh đạo tối ưu hóa ngân sách.",
+              "**Số Hóa Vận Hành**: Đề xuất & triển khai ứng dụng quản lý tập trung chỉ số tuyển sinh, **tiết kiệm 40% thời gian vận hành**.",
+              "**BI & Cảnh Báo Doanh Thu**: Báo cáo phễu chuyển đổi thời gian thực và tích hợp tự động phát hiện biến động doanh thu."
             ]
           },
           {
@@ -269,9 +269,9 @@
             ],
             "featured": true,
             "bullets": [
-              "**Nghiên cứu Thị trường Quốc tế & Đánh giá Tính khả thi**: Chủ trì phân tích dữ liệu thị trường quốc tế (Philippines, Thái Lan); đánh giá tiềm năng thương mại cho dòng sản phẩm mới và đo lường hiệu quả các chiến dịch kích cầu doanh số.",
-              "**Tư vấn Tối ưu hóa Quy trình Báo cáo**: Phối hợp cùng IT & BI tái cấu trúc luồng thông tin báo cáo liên phòng ban, **giảm 20% thời gian trích xuất dữ liệu**, nâng cao năng lực phản ứng với biến động thị trường.",
-              "**Hệ thống Báo cáo Tự động cho Khối Vận hành**: Xây dựng dashboard tự động trên Power BI và Metabase, chuẩn hóa số liệu đa chiều giúp Ban lãnh đạo nắm bắt kịp thời các cơ hội kinh doanh."
+              "**Phân Tích Thị Trường**: Đánh giá tiềm năng thương mại sản phẩm mới & hiệu quả chiến dịch ưu đãi tại Philippines & Thái Lan.",
+              "**Tối Ưu Quy Trình**: Tái cấu trúc luồng thông tin báo cáo liên phòng ban, **cắt giảm 20% thời gian trích xuất dữ liệu hằng ngày**.",
+              "**Báo Cáo Điều Hành**: Triển khai hệ thống báo cáo tự động giúp Ban lãnh đạo chủ động nắm bắt cơ hội kinh doanh."
             ]
           },
           {
@@ -290,9 +290,9 @@
             ],
             "featured": true,
             "bullets": [
-              "**Khảo sát Requirement & Tư vấn Giải pháp Logistics**: Khảo sát nhu cầu vận tải quốc tế từ khách hàng doanh nghiệp, tư vấn cấu trúc phương án vận chuyển và báo giá cước tối ưu chi phí.",
-              "**Tái cấu trúc Quy trình Bóc tách Chứng từ**: Chuẩn hóa luồng luân chuyển chứng từ thương mại (Bill of Lading, Customs Declaration, Commercial Invoice), cắt giảm thời gian xử lý thủ tục hải quan.",
-              "**Đánh giá Hiệu quả Thương mại & Tuyến đường**: Phân tích dữ liệu chi phí vận tải và độ trễ giao nhận, đưa ra đề xuất tối ưu hóa biên lợi nhuận cho các hợp đồng logistics dài hạn."
+              "**Tư Vấn Giải Pháp Vận Tải**: Khảo sát nhu cầu xuất nhập khẩu của doanh nghiệp, thiết kế phương án vận chuyển tối ưu chi phí.",
+              "**Tái Cấu Trúc Quy Trình**: Chuẩn hóa luồng chứng từ thương mại, bóc tách điểm nghẽn để đẩy nhanh tốc độ thông quan.",
+              "**Phân Tích Biên Lợi Nhận**: Phân tích chi phí vận tải quốc tế, đề xuất tối ưu biên lợi nhuận cho các tuyến đường chủ lực."
             ]
           }
         ],
@@ -409,10 +409,10 @@
             ],
             "featured": true,
             "bullets": [
-              "**Quy hoạch & Quản trị Data Warehouse CRM**: Tái cấu trúc và đồng bộ các nguồn dữ liệu rời rạc từ nhiều phòng ban tuyển sinh, thiết kế Data Warehouse chuẩn hóa theo dõi trọn vẹn dữ liệu khách hàng. Làm đầu mối kỹ thuật kết nối CSDL công ty với CRM bên thứ ba.",
-              "**Lập trình Web App Quản lý Học sinh & KPI**: Trực tiếp phát triển ứng dụng Full-stack giải quyết điểm nghẽn luồng dữ liệu vận hành, **tiết kiệm 40% thời gian xử lý nghiệp vụ** cho khối tuyển sinh.",
-              "**Thiết kế Mô hình Dữ liệu BI**: Xây dựng kiến trúc báo cáo trên Power BI và Zoho Analytics với các câu lệnh DAX tối ưu hóa, hỗ trợ phân tích hiệu suất và tỷ lệ chuyển đổi đa nguồn.",
-              "**Tự động hóa Luồng Dữ liệu**: Thiết lập các kịch bản script Python tự động hóa trích xuất và đồng bộ dữ liệu phễu tuyển sinh hàng ngày."
+              "**Kiến Trúc Data Warehouse**: Tái cấu trúc luồng dữ liệu 12+ kênh tiếp cận về kho dữ liệu tập trung, đảm bảo độ sẵn sàng 99.9%.",
+              "**Phát Triển Web App**: Lập trình ứng dụng Web quản lý chỉ số tuyển sinh, **tiết kiệm 40% thời gian xử lý thủ công**.",
+              "**BI & Cảnh Báo Doanh Thu**: Xây dựng báo cáo phễu chuyển đổi thời gian thực và tự động gửi cảnh báo biến động doanh thu.",
+              "**Tự Động Hóa Pipeline**: Thiết lập script tự động trích xuất & kiểm tra trùng lặp, loại bỏ 100% sai lệch số liệu."
             ]
           },
           {
@@ -432,9 +432,9 @@
             ],
             "featured": true,
             "bullets": [
-              "**Xây dựng & Tối ưu hóa Luồng ETL**: Phối hợp cùng IT/BI thiết kế các luồng ETL xử lý dữ liệu quy mô lớn cho thị trường quốc tế (Philippines, Thái Lan), **cắt giảm 20% thời gian batch processing hằng ngày**.",
-              "**Quản trị Hạ tầng Báo cáo BI**: Kết nối và tối ưu hóa hệ thống Metabase & Power BI với cơ sở dữ liệu PostgreSQL, tối ưu cấu trúc truy vấn phục vụ phân tích thời gian thực.",
-              "**Mô hình hóa Dữ liệu Nghiên cứu**: Xây dựng kiến trúc dữ liệu phân tích định lượng phục vụ đánh giá tính khả thi cho danh mục sản phẩm mới và các chiến dịch thương mại."
+              "**Tối Ưu Xử Lý Dữ Liệu**: Tinh chỉnh truy vấn dữ liệu lớn hằng ngày cho thị trường Philippines & Thái Lan, **cắt giảm 20% thời gian xử lý**.",
+              "**Hạ Tầng Báo Cáo BI**: Kết nối và tối ưu hóa hệ thống báo cáo tự động phục vụ phân tích vận hành thời gian thực.",
+              "**Mô Hình Hóa Dữ Liệu**: Xây dựng kiến trúc dữ liệu phân tích định lượng đo lường hiệu quả các chiến dịch thương mại."
             ]
           },
           {
@@ -453,9 +453,9 @@
             ],
             "featured": true,
             "bullets": [
-              "**Quản trị & Phân tích Dữ liệu Cước Vận tải**: Xây dựng bảng theo dõi dữ liệu cước tàu, cước hàng không và phân tích biến động giá cước quốc tế phục vụ báo giá thời gian thực.",
-              "**Đồng bộ & Kiểm soát Dữ liệu Chứng từ**: Chuẩn hóa dữ liệu từ các bộ chứng từ xuất nhập khẩu (Bill of Lading, Packing List), đảm bảo tính chính xác cho dữ liệu đối soát công nợ khách hàng.",
-              "**Báo cáo Tối ưu hóa Chuỗi Cung ứng**: Tổng hợp & trực quan hóa chỉ số thời gian giao nhận (Transit Time SLA) và chi phí vận tải trên Excel/Python."
+              "**Dữ Liệu Cước Vận Tải**: Khảo sát nhu cầu quốc tế, xây dựng mô hình phân tích dữ liệu cước vận tải và báo giá thời gian thực.",
+              "**Kiểm Soát Dữ Liệu Chứng Từ**: Chuẩn hóa luồng dữ liệu bộ chứng từ xuất nhập khẩu, đẩy nhanh tốc độ thông quan.",
+              "**Phân Tích Biên Lợi Nhận**: Báo cáo biến động cước quốc tế và đo lường hiệu quả đóng góp doanh số & biên lợi nhuận theo tuyến."
             ]
           }
         ],
@@ -525,7 +525,7 @@
       "items": [
         {
           "id": "01-hospitality-empathy",
-          "tag": "Chương 01 • Con Người & Tuyến Đầu",
+          "tag": "Con Người & Tuyến Đầu",
           "title": "Thấu Cảm Con Người từ Dịch Vụ Tuyến Đầu",
           "subtitle": "Quầy Pub, Lễ tân Khách sạn & Phụ bếp",
           "description": "Những năm tháng cọ xát trực tiếp ở ngành dịch vụ giúp tôi rèn luyện khả năng quan sát tâm lý con người, sự nhẫn nại và bản lĩnh giữ bình tĩnh dưới áp lực cao. Đây là điểm tựa để tôi trở thành một nhà phân tích biết lắng nghe bài toán con người trước khi chạm vào con số.",
@@ -538,7 +538,7 @@
         },
         {
           "id": "02-logistics-trade",
-          "tag": "Chương 02 • Thực Tế Thương Mại",
+          "tag": "Thực Tế Thương Mại",
           "title": "Thực Chiến Kinh Doanh Xuất Nhập Khẩu",
           "subtitle": "Nhân viên Kinh doanh tại Vietnam Post Logistics",
           "description": "Thời gian làm kinh doanh Logistics mang lại cho tôi trải nghiệm thực tế về quy trình chuỗi cung ứng, luồng hàng hóa quốc tế và chứng từ thương mại. Việc hiểu sâu điểm nghẽn vận hành của doanh nghiệp bắt nguồn chính từ giai đoạn này.",
@@ -551,7 +551,7 @@
         },
         {
           "id": "03-gap-year-solo",
-          "tag": "Chương 03 • Độc Hành & Bản Lĩnh",
+          "tag": "Độc Hành & Bản Lĩnh",
           "title": "Hành Trình Độc Hành & Khoảng Trầm Tự Thấm",
           "subtitle": "Xuyên Việt 2.000+ km • Cung đường Vùng cao • Gap Year",
           "description": "Dành khoảng thời gian gap để quan sát, tự vấn và bước ra khỏi vùng an toàn. Từ chuyến độc hành Xuyên Việt 2.000+ km đến những cung đường vùng cao, việc đối mặt với sự đơn độc và các yếu tố bất định đã tôi luyện sự kiên cường, tính độc lập và sự rõ ràng trong định hướng sự nghiệp.",
@@ -564,7 +564,7 @@
         },
         {
           "id": "04-tech-data-intuition",
-          "tag": "Chương 04 • Công Nghệ & Hiện Tại",
+          "tag": "Công Nghệ & Hiện Tại",
           "title": "Đam Mê Công Nghệ & Tư Duy Số Hóa",
           "subtitle": "Tự động hóa quy trình • AI Micro-tools • Kinh tế học Hành vi",
           "description": "Tất cả vốn sống từ trải nghiệm con người, thương mại và những chuyến đi được đúc kết thành đam mê với công nghệ. Tôi viết các công cụ tự động hóa hằng ngày bằng Python & AI, đồng thời ứng dụng Kinh tế học Hành vi để biến dữ liệu thô thành những quyết định mang giá trị thực.",
@@ -1109,7 +1109,7 @@
       "items": [
         {
           "id": "01-hospitality-empathy",
-          "tag": "Chapter 01 • Frontline Empathy",
+          "tag": "Frontline Empathy",
           "title": "Human Empathy from Frontline Hospitality",
           "subtitle": "Pub Bartender, Hotel Front Desk & Kitchen Staff",
           "description": "Hands-on work in fast-paced service environments built my foundation: deep empathy for human behavior, active listening, and composure under pressure — proving that understanding people comes before analyzing numbers.",
@@ -1122,7 +1122,7 @@
         },
         {
           "id": "02-logistics-trade",
-          "tag": "Chapter 02 • Commercial Realities",
+          "tag": "Commercial Realities",
           "title": "International Trade & Logistics Sales",
           "subtitle": "Logistics Sales Executive at Vietnam Post Logistics",
           "description": "Hands-on experience in international logistics sales exposed me to supply chain dynamics, cross-border shipping workflows, and import-export documentation — building my core commercial intuition for operational bottlenecks.",
@@ -1135,7 +1135,7 @@
         },
         {
           "id": "03-gap-year-solo",
-          "tag": "Chapter 03 • Solo Exploration & Grit",
+          "tag": "Solo Exploration & Grit",
           "title": "Solo Expeditions & Personal Gap Period",
           "subtitle": "2,000+ km Cross-Vietnam • Highland Trails • Gap Year",
           "description": "Taking a reflective gap period to push boundaries and explore. From a 2,000+ km solo cross-country trip to remote highland trails, navigating uncertainty alone sharpened my adaptability, self-reliance, and clarity of purpose.",
@@ -1148,7 +1148,7 @@
         },
         {
           "id": "04-tech-data-intuition",
-          "tag": "Chapter 04 • Technology & Present",
+          "tag": "Technology & Present",
           "title": "Technology Passions & Data Intuition",
           "subtitle": "Workflow Automation • AI Micro-tools • Behavioral Economics",
           "description": "Fusing life experiences in human psychology, commercial trade, and solo expeditions into a passion for technology. Using Python and AI tools for daily automation, while leveraging behavioral economics to convert raw data into actionable decisions.",
