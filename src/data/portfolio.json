@@ -456,61 +456,60 @@
     },
     "beyondWork": {
       "title": "Beyond The Data",
-      "subtitle": "Góc nhìn, câu chuyện và những hành trình định hình con người tôi phía sau màn hình máy tính.",
+      "subtitle": "Hành trình tự định hình con người tôi: Từ cọ xát thực tế, độc hành chiêm nghiệm đến tư duy dữ liệu hiện tại.",
       "instagramUrl": "https://www.instagram.com/dewey_973/",
       "instagramLabel": "@dewey_973",
       "items": [
         {
-          "id": "journeys-exploration",
-          "tag": "Khám phá & Thích nghi",
-          "title": "Văn Hóa Xê Dịch & Những Hành Trình Khám Phá",
-          "subtitle": "Xuyên Việt 2.000+ km • Cung đường Vùng cao • Trải nghiệm Độc lập",
-          "description": "Đam mê bước ra khỏi vùng an toàn qua những chuyến độc hành và khám phá khắp mọi miền. Từ hành trình Xuyên Việt 2.000+ km đến những cung đường vùng cao hiểm trở, mỗi chuyến đi là một lần tôi luyện khả năng thích nghi trong mọi hoàn cảnh, tính độc lập và góc nhìn đa chiều về con người & văn hóa.",
+          "id": "01-hospitality-empathy",
+          "tag": "Chương 01 • Con Người & Tuyến Đầu",
+          "title": "Thấu Cảm Con Người từ Dịch Vụ Tuyến Đầu",
+          "subtitle": "Quầy Pub, Lễ tân Khách sạn & Phụ bếp",
+          "description": "Những năm tháng cọ xát trực tiếp ở ngành dịch vụ giúp tôi rèn luyện khả năng quan sát tâm lý con người, sự nhẫn nại và bản lĩnh giữ bình tĩnh dưới áp lực cao. Đây là điểm tựa để tôi trở thành một nhà phân tích biết lắng nghe bài toán con người trước khi chạm vào con số.",
+          "icon": "HeartHandshake",
+          "highlights": [
+            "Thấu cảm con người",
+            "Giao tiếp tuyến đầu",
+            "Bản lĩnh dưới áp lực"
+          ]
+        },
+        {
+          "id": "02-logistics-trade",
+          "tag": "Chương 02 • Thực Tế Thương Mại",
+          "title": "Thực Chiến Kinh Doanh Xuất Nhập Khẩu",
+          "subtitle": "Nhân viên Kinh doanh tại Vietnam Post Logistics",
+          "description": "Thời gian làm kinh doanh Logistics mang lại cho tôi trải nghiệm thực tế về quy trình chuỗi cung ứng, luồng hàng hóa quốc tế và chứng từ thương mại. Việc hiểu sâu điểm nghẽn vận hành của doanh nghiệp bắt nguồn chính từ giai đoạn này.",
+          "icon": "Truck",
+          "highlights": [
+            "Vietnam Post Logistics",
+            "Chuỗi cung ứng",
+            "Chứng từ thương mại"
+          ]
+        },
+        {
+          "id": "03-gap-year-solo",
+          "tag": "Chương 03 • Độc Hành & Bản Lĩnh",
+          "title": "Hành Trình Độc Hành & Khoảng Trầm Tự Thấm",
+          "subtitle": "Xuyên Việt 2.000+ km • Cung đường Vùng cao • Gap Year",
+          "description": "Dành khoảng thời gian gap để quan sát, tự vấn và bước ra khỏi vùng an toàn. Từ chuyến độc hành Xuyên Việt 2.000+ km đến những cung đường vùng cao, việc đối mặt với sự đơn độc và các yếu tố bất định đã tôi luyện sự kiên cường, tính độc lập và sự rõ ràng trong định hướng sự nghiệp.",
           "icon": "Compass",
           "highlights": [
             "Xuyên Việt 2.000+ km",
-            "Cung đường Vùng cao",
-            "Độc lập & Thích nghi",
-            "Sức bền & Bản lĩnh"
+            "Bản lĩnh độc lập",
+            "Thích nghi bất định"
           ]
         },
         {
-          "id": "continuous-learning",
-          "tag": "Tò mò & Đổi mới",
-          "title": "Đam Mê Công Nghệ & Tự Động Hóa",
-          "subtitle": "Biến công nghệ thành đòn bẩy cho cuộc sống",
-          "description": "Luôn tò mò với các mô hình AI mới, lập trình các micro-tools tự động hóa những việc nhỏ nhất hằng ngày và đọc sách về kinh tế học hành vi, tâm lý học ra quyết định.",
+          "id": "04-tech-data-intuition",
+          "tag": "Chương 04 • Công Nghệ & Hiện Tại",
+          "title": "Đam Mê Công Nghệ & Tư Duy Số Hóa",
+          "subtitle": "Tự động hóa quy trình • AI Micro-tools • Kinh tế học Hành vi",
+          "description": "Tất cả vốn sống từ trải nghiệm con người, thương mại và những chuyến đi được đúc kết thành đam mê với công nghệ. Tôi viết các công cụ tự động hóa hằng ngày bằng Python & AI, đồng thời ứng dụng Kinh tế học Hành vi để biến dữ liệu thô thành những quyết định mang giá trị thực.",
           "icon": "Sparkles",
           "highlights": [
-            "AI Experiments",
-            "Automation",
-            "Behavioral Economics"
-          ]
-        },
-        {
-          "id": "discipline-health",
-          "tag": "Kỷ luật & Cân bằng",
-          "title": "Kỷ Luật & Thể Lực Bền Bỉ",
-          "subtitle": "Tâm trí sắc bén bắt nguồn từ một cơ thể khỏe mạnh",
-          "description": "Duy trì thói quen tập luyện thể thao thường xuyên. Đối với tôi, giải quyết những bài toán dữ liệu phức tạp đòi hỏi sự tập trung cao độ và tính kỷ luật dài hạn giống như thể thao sức bền.",
-          "icon": "Activity",
-          "highlights": [
-            "Kỷ luật cá nhân",
-            "Sức khỏe dẻo dai",
-            "Tập trung cao độ"
-          ]
-        },
-        {
-          "id": "frontline-hospitality",
-          "tag": "Thấu cảm & Giao tiếp",
-          "title": "Trải Nghiệm Tuyến Đầu & Dịch Vụ (Hospitality)",
-          "subtitle": "Quầy Pub, Lễ tân khách sạn & Bếp",
-          "description": "Những năm tháng cọ xát thực tế ở ngành dịch vụ dạy tôi bài học đắt giá về tâm lý con người, khả năng lắng nghe và giữ bình tĩnh dưới áp lực cao — những phẩm chất cốt lõi của một nhà tư vấn hiểu con người chứ không chỉ nhìn vào con số.",
-          "icon": "HeartHandshake",
-          "highlights": [
-            "Thấu cảm khách hàng",
-            "Giao tiếp & Lắng nghe",
-            "Xử lý áp lực cao"
+            "Tự động hóa Python/AI",
+            "Kinh tế học Hành vi",
+            "Tư duy Định lượng"
           ]
         }
       ]
@@ -978,61 +977,60 @@
     },
     "beyondWork": {
       "title": "Beyond The Data",
-      "subtitle": "Perspectives, stories, and journeys that shape who I am outside the screen.",
+      "subtitle": "My personal journey of self-discovery: From frontline empathy and trade realities to solo grit and data intuition.",
       "instagramUrl": "https://www.instagram.com/dewey_973/",
       "instagramLabel": "@dewey_973",
       "items": [
         {
-          "id": "journeys-exploration",
-          "tag": "Exploration & Grit",
-          "title": "Exploration & Solo Journeys",
-          "subtitle": "2,000+ km Cross-Vietnam • Highland Expeditions • Independent Travel",
-          "description": "A deep passion for stepping outside comfort zones through solo road trips and continuous exploration. From a 2,000+ km solo cross-country journey to challenging highland expeditions, every trail sharpens my adaptability under uncertainty, mental grit, and empathy for diverse cultures.",
-          "icon": "Compass",
-          "highlights": [
-            "2,000+ km Cross-Country",
-            "Highland Trails",
-            "Adaptability & Grit",
-            "Cultural Empathy"
-          ]
-        },
-        {
-          "id": "continuous-learning",
-          "tag": "Curiosity & Innovation",
-          "title": "Tech Versatility & Everyday Automation",
-          "subtitle": "Leveraging technology as a force multiplier",
-          "description": "Constantly exploring cutting-edge AI developments, writing custom scripts to automate daily tasks, and reading about behavioral economics and decision psychology.",
-          "icon": "Sparkles",
-          "highlights": [
-            "AI Prototyping",
-            "Workflow Automation",
-            "Continuous Learning"
-          ]
-        },
-        {
-          "id": "discipline-health",
-          "tag": "Discipline & Vitality",
-          "title": "Physical Stamina & Daily Discipline",
-          "subtitle": "Sharp intellect stems from physical resilience",
-          "description": "Committed to regular physical conditioning. Solving complex data problems requires sustained endurance and disciplined focus, much like long-distance athletic training.",
-          "icon": "Activity",
-          "highlights": [
-            "High Focus",
-            "Physical Grit",
-            "Consistency"
-          ]
-        },
-        {
-          "id": "frontline-hospitality",
-          "tag": "Empathy & Communication",
-          "title": "Frontline & Hospitality Experience",
-          "subtitle": "Pub Bartending, Hotel Reception & Kitchen",
-          "description": "Hands-on experience in frontline service environments taught me invaluable lessons about human psychology, active listening, and composure under pressure — foundational traits that make me a consultant who understands people, not just numbers.",
+          "id": "01-hospitality-empathy",
+          "tag": "Chapter 01 • Frontline Empathy",
+          "title": "Human Empathy from Frontline Hospitality",
+          "subtitle": "Pub Bartender, Hotel Front Desk & Kitchen Staff",
+          "description": "Hands-on work in fast-paced service environments built my foundation: deep empathy for human behavior, active listening, and composure under pressure — proving that understanding people comes before analyzing numbers.",
           "icon": "HeartHandshake",
           "highlights": [
-            "Customer Empathy",
+            "Frontline Empathy",
             "Active Listening",
-            "Composure Under Stress"
+            "Composure Under Pressure"
+          ]
+        },
+        {
+          "id": "02-logistics-trade",
+          "tag": "Chapter 02 • Commercial Realities",
+          "title": "International Trade & Logistics Sales",
+          "subtitle": "Logistics Sales Executive at Vietnam Post Logistics",
+          "description": "Hands-on experience in international logistics sales exposed me to supply chain dynamics, cross-border shipping workflows, and import-export documentation — building my core commercial intuition for operational bottlenecks.",
+          "icon": "Truck",
+          "highlights": [
+            "Vietnam Post Logistics",
+            "Supply Chain Workflows",
+            "Import-Export Trade"
+          ]
+        },
+        {
+          "id": "03-gap-year-solo",
+          "tag": "Chapter 03 • Solo Exploration & Grit",
+          "title": "Solo Expeditions & Personal Gap Period",
+          "subtitle": "2,000+ km Cross-Vietnam • Highland Trails • Gap Year",
+          "description": "Taking a reflective gap period to push boundaries and explore. From a 2,000+ km solo cross-country trip to remote highland trails, navigating uncertainty alone sharpened my adaptability, self-reliance, and clarity of purpose.",
+          "icon": "Compass",
+          "highlights": [
+            "2,000+ km Cross-Vietnam",
+            "Self-Reliance & Grit",
+            "Navigating Uncertainty"
+          ]
+        },
+        {
+          "id": "04-tech-data-intuition",
+          "tag": "Chapter 04 • Technology & Present",
+          "title": "Technology Passions & Data Intuition",
+          "subtitle": "Workflow Automation • AI Micro-tools • Behavioral Economics",
+          "description": "Fusing life experiences in human psychology, commercial trade, and solo expeditions into a passion for technology. Using Python and AI tools for daily automation, while leveraging behavioral economics to convert raw data into actionable decisions.",
+          "icon": "Sparkles",
+          "highlights": [
+            "Python/AI Automation",
+            "Behavioral Economics",
+            "Quantitative Intuition"
           ]
         }
       ]

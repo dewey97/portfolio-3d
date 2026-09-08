@@ -37,6 +37,21 @@ function parseExperienceContent(content: string) {
   });
 }
 
+function renderFormattedText(text: string) {
+  if (!text) return null;
+  const parts = text.split(/(\*\*.*?\*\*)/g);
+  return parts.map((part, i) => {
+    if (part.startsWith('**') && part.endsWith('**')) {
+      return (
+        <strong key={i} className="font-semibold text-slate-100">
+          {part.slice(2, -2)}
+        </strong>
+      );
+    }
+    return part;
+  });
+}
+
 interface PortfolioViewProps {
   initialData: {
     vie: {
@@ -333,7 +348,7 @@ export default function PortfolioView({ initialData }: PortfolioViewProps) {
                           <span className="w-1.5 h-1.5 rounded-full bg-blue-500/60 mt-2 shrink-0 group-hover:bg-blue-400 transition-colors" />
                           <p className="text-slate-300 leading-relaxed font-normal">
                             {bullet.title && <strong className="text-slate-100 font-semibold">{bullet.title}: </strong>}
-                            {bullet.desc}
+                            {renderFormattedText(bullet.desc)}
                           </p>
                         </div>
                       ))}
@@ -400,7 +415,7 @@ export default function PortfolioView({ initialData }: PortfolioViewProps) {
                   </div>
 
                   <p className="text-slate-300 text-sm leading-relaxed font-normal">
-                    {proj.content.trim()}
+                    {renderFormattedText(proj.content.trim())}
                   </p>
                 </div>
 
@@ -414,7 +429,7 @@ export default function PortfolioView({ initialData }: PortfolioViewProps) {
                   </div>
 
                   <div className="flex items-center gap-4 text-xs font-mono">
-                    {proj.github && (
+                    {proj.github && proj.github !== 'https://github.com/dewey97' && (
                       <a
                         href={proj.github}
                         target="_blank"
@@ -541,7 +556,7 @@ export default function PortfolioView({ initialData }: PortfolioViewProps) {
                       </div>
 
                       <p className="text-slate-300 text-sm leading-relaxed font-normal">
-                        {item.description}
+                        {renderFormattedText(item.description)}
                       </p>
                     </div>
 
