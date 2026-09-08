@@ -1,5 +1,4 @@
-import fs from 'fs';
-import path from 'path';
+import portfolioData from '@/data/portfolio.json';
 
 export interface ProfileData {
   name: string;
@@ -59,17 +58,8 @@ export interface BeyondWorkData {
   items: BeyondWorkItem[];
 }
 
-function loadPortfolioJson() {
-  const jsonPath = path.join(process.cwd(), '../data/portfolio.json');
-  if (fs.existsSync(jsonPath)) {
-    try {
-      const raw = fs.readFileSync(jsonPath, 'utf8');
-      return JSON.parse(raw);
-    } catch (e) {
-      console.error('Error parsing portfolio.json:', e);
-    }
-  }
-  return null;
+function loadPortfolioJson(): any {
+  return portfolioData;
 }
 
 export function getProfileData(lang: string = 'vie', track: string = 'master'): ProfileData {
