@@ -118,7 +118,7 @@ export default function PortfolioView({ initialData }: PortfolioViewProps) {
       projects: {
         eyebrow: 'Dự Án Thực Tế',
         title: 'Dự Án & Nghiên Cứu Điển Hình',
-        subtitle: 'Các giải pháp dữ liệu thực tế đã triển khai và kết quả chuyển đổi kinh doanh.',
+        subtitle: 'Tập hợp các giải pháp dữ liệu & bài toán phân tích tiêu biểu; đại diện cho hàng loạt script tự động hóa và mô hình phân tích thực chiến đã triển khai.',
         caseReview: 'Xem Chi Tiết',
         caseLabel: 'DỰ ÁN 0',
       },
@@ -145,7 +145,7 @@ export default function PortfolioView({ initialData }: PortfolioViewProps) {
       projects: {
         eyebrow: 'Case Studies',
         title: 'Featured Projects & Case Studies',
-        subtitle: 'Production data solutions, analytical modeling, and quantified business outcomes.',
+        subtitle: 'Featured data solutions, predictive models, and operational automation scripts delivering measured business value.',
         caseReview: 'Case Review',
         caseLabel: 'CASE STUDY 0',
       },
@@ -385,21 +385,6 @@ export default function PortfolioView({ initialData }: PortfolioViewProps) {
                           </div>
                         ))}
                       </div>
-
-                      {/* STACK TOKENS */}
-                      {exp.tags && exp.tags.length > 0 && (
-                        <div className="flex flex-wrap items-center gap-1.5 pt-3 border-t border-slate-800/50">
-                          <span className="text-xs font-mono text-slate-500 mr-1">Stack:</span>
-                          {exp.tags.map((tag) => (
-                            <span
-                              key={tag}
-                              className="text-xs font-mono px-2.5 py-1 rounded-md bg-[#060b17] shadow-inner text-blue-300 hover:text-blue-200 transition-colors ring-1 ring-blue-900/40"
-                            >
-                              {tag}
-                            </span>
-                          ))}
-                        </div>
-                      )}
                     </div>
                   </div>
                 </div>
@@ -580,22 +565,33 @@ export default function PortfolioView({ initialData }: PortfolioViewProps) {
                   <div className="group rounded-xl bg-[#0b1222]/75 hover:bg-[#0f1930]/90 p-6 md:p-8 flex flex-col justify-between h-full space-y-4 shadow-xl shadow-[#020617]/80 hover:shadow-2xl hover:shadow-blue-950/40 hover:-translate-y-1.5 transition-all duration-300 relative overflow-hidden backdrop-blur-md">
                     <div className="space-y-3">
                       <div className="flex items-center justify-between font-mono text-xs">
-                        <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-[#060b17] text-blue-300 ring-1 ring-blue-900/40">
-                          <IconComp className="w-3.5 h-3.5 text-blue-400" />
-                          {item.tag}
-                        </span>
-                        <span className="text-slate-500 font-mono text-xs">Phase 0{bIdx + 1}</span>
+                        {item.tag ? (
+                          <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-[#060b17] text-blue-300 ring-1 ring-blue-900/40">
+                            <IconComp className="w-3.5 h-3.5 text-blue-400" />
+                            {item.tag}
+                          </span>
+                        ) : (
+                          <span className="inline-flex items-center p-1.5 rounded-md bg-[#060b17] text-blue-300 ring-1 ring-blue-900/40">
+                            <IconComp className="w-4 h-4 text-blue-400" />
+                          </span>
+                        )}
                       </div>
 
-                      <div>
-                        <h3 className="text-lg font-bold text-slate-100 group-hover:text-white transition-colors">
-                          {item.title}
-                        </h3>
-                        <p className="text-xs font-mono text-blue-300/80 mt-0.5">{item.subtitle}</p>
-                      </div>
+                      {(item.title || item.subtitle) && (
+                        <div>
+                          {item.title && (
+                            <h3 className="text-lg font-bold text-slate-100 group-hover:text-white transition-colors">
+                              {item.title}
+                            </h3>
+                          )}
+                          {item.subtitle && (
+                            <p className="text-xs font-mono text-blue-300/80 mt-0.5">{item.subtitle}</p>
+                          )}
+                        </div>
+                      )}
 
-                      <p className="text-slate-300 text-sm leading-relaxed font-normal">
-                        {renderFormattedText(item.description)}
+                      <p className="text-slate-300 text-sm leading-relaxed font-normal italic">
+                        &ldquo;{renderFormattedText(item.description)}&rdquo;
                       </p>
                     </div>
 

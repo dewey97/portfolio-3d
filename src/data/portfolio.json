@@ -184,6 +184,40 @@
             "demo": "",
             "featured": true,
             "description": "Phân tích khám phá dữ liệu không gian (EDA) và phát triển các mô hình Machine Learning (Linear, Polynomial, Decision Tree) dự đoán giá bất động sản California dựa trên thu nhập hộ gia đình, khoảng cách bờ biển và vị trí đô thị. Mô hình Polynomial Regression (Degree 3) đạt hiệu suất tối ưu nhất."
+          },
+          {
+            "id": "04-telegram-revenue-alert-bot",
+            "title": "Hệ Thống Bot Telegram Cảnh Báo Doanh Thu & KPI Real-Time",
+            "subtitle": "Giải pháp tự động hóa theo dõi biến động kinh doanh và phát hiện bất thường",
+            "date": "2025",
+            "tags": [
+              "Python",
+              "Telegram Bot API",
+              "PostgreSQL",
+              "Data Automation",
+              "Real-time Alert"
+            ],
+            "github": "https://github.com/dewey97",
+            "demo": "",
+            "featured": true,
+            "description": "Tự động hóa trích xuất và phân tích chỉ số kinh doanh hàng ngày; tích hợp thuật toán phát hiện biến động bất thường trong phễu chuyển đổi và tự động phát cảnh báo thời gian thực về kênh Telegram điều hành."
+          },
+          {
+            "id": "05-rfm-customer-segmentation-churn",
+            "title": "Mô Hình Phân Nhóm Khách Hàng RFM & Dự Báo Nguy Cơ Rời Bỏ",
+            "subtitle": "Tối ưu hóa chiến lược cá nhân hóa và giữ chân khách hàng thương mại",
+            "date": "2024",
+            "tags": [
+              "RFM Model",
+              "Python",
+              "SQL",
+              "Customer Analytics",
+              "Power BI"
+            ],
+            "github": "https://github.com/dewey97",
+            "demo": "",
+            "featured": true,
+            "description": "Phân tích lịch sử giao dịch và phân nhóm khách hàng theo mô hình RFM (Recency, Frequency, Monetary). Xây dựng chỉ số cảnh báo sớm nguy cơ rời bỏ giúp bộ phận kinh doanh chủ động đề xuất giải pháp chăm sóc."
           }
         ]
       },
@@ -347,6 +381,40 @@
             "demo": "",
             "featured": true,
             "description": "Phân tích định lượng các biến số tác động tới thị trường bất động sản (thu nhập, vị trí địa lý, khoảng cách bờ biển). Ứng dụng lý thuyết định giá Hedonic và thuật toán Machine Learning giúp chuẩn hóa mô hình dự báo giá phục vụ thẩm định giá và đầu tư."
+          },
+          {
+            "id": "04-telegram-revenue-alert-bot",
+            "title": "Tự Động Hóa Cảnh Báo Doanh Thu & Chỉ Số Vận Hành Telegram",
+            "subtitle": "Tư vấn và thiết lập giải pháp giám sát sức khỏe vận hành thời gian thực",
+            "date": "2025",
+            "tags": [
+              "Business Automation",
+              "Telegram API",
+              "KPI Monitoring",
+              "Alert Strategy",
+              "Python"
+            ],
+            "github": "https://github.com/dewey97",
+            "demo": "",
+            "featured": true,
+            "description": "Thiết lập cơ chế giám sát phễu chuyển đổi và phát hiện sai lệch chỉ số kinh doanh tự động. Tích hợp Bot cảnh báo Telegram hỗ trợ Ban điều hành phản ứng nhanh với các biến động doanh thu."
+          },
+          {
+            "id": "05-rfm-customer-segmentation-churn",
+            "title": "Phân Tích Hành Vi Khách Hàng RFM & Chiến Lược Giữ Chân",
+            "subtitle": "Đo lường giá trị vòng đời khách hàng và tối ưu hóa chi phí tiếp thị",
+            "date": "2024",
+            "tags": [
+              "Customer Retention",
+              "RFM Analytics",
+              "Market Strategy",
+              "LTV Optimization",
+              "Power BI"
+            ],
+            "github": "https://github.com/dewey97",
+            "demo": "",
+            "featured": true,
+            "description": "Nghiên cứu mô hình hành vi tiêu dùng và phân tầng giá trị khách hàng. Tư vấn giải pháp giữ chân khách hàng cá nhân hóa dựa trên mức độ rủi ro rời bỏ (Churn Risk Matrix)."
           }
         ]
       },
@@ -513,6 +581,40 @@
             "demo": "",
             "featured": true,
             "description": "Xây dựng pipeline xử lý dữ liệu và Feature Engineering (IQR Boxplot Clipping, ratio scaling, StandardScaler). Thực nghiệm và tinh chỉnh siêu tham số (GridSearchCV) trên các mô hình Hồi quy tuyến tính, Hồi quy đa thức và Cây quyết định."
+          },
+          {
+            "id": "04-telegram-revenue-alert-bot",
+            "title": "Kỹ Thuật Tự Động Hóa Pipeline Cảnh Báo Telegram Real-Time",
+            "subtitle": "Kịch bản Python & webhook tự động phát hiện bất thường dữ liệu vận hành",
+            "date": "2025",
+            "tags": [
+              "Python",
+              "Webhook",
+              "PostgreSQL",
+              "Cron Jobs",
+              "Telegram API"
+            ],
+            "github": "https://github.com/dewey97",
+            "demo": "",
+            "featured": true,
+            "description": "Lập trình kịch bản Python micro-batch trích xuất dữ liệu giao dịch, kiểm tra validation rules và đẩy thông báo cảnh báo qua Telegram Bot API với độ trễ dưới 5 giây."
+          },
+          {
+            "id": "05-rfm-customer-segmentation-churn",
+            "title": "Pipeline Phân Nhóm Dữ Liệu RFM & Thuật Toán Phân Tích Churn",
+            "subtitle": "Xử lý dữ liệu chuỗi thời gian giao dịch và mô hình hóa chỉ số phân nhóm",
+            "date": "2024",
+            "tags": [
+              "Python",
+              "Pandas/NumPy",
+              "SQL Analytics",
+              "RFM Algorithm",
+              "Scikit-Learn"
+            ],
+            "github": "https://github.com/dewey97",
+            "demo": "",
+            "featured": true,
+            "description": "Xây dựng luồng xử lý SQL & Python tính toán điểm số RFM tự động từ cơ sở dữ liệu giao dịch lớn. Thiết lập thuật toán phân nhóm (K-Means/Quantile scoring) phục vụ dashboard phân tích khách hàng."
           }
         ]
       }
@@ -525,9 +627,6 @@
       "items": [
         {
           "id": "01-hospitality-empathy",
-          "tag": "Con Người & Tuyến Đầu",
-          "title": "Thấu Cảm Con Người từ Dịch Vụ Tuyến Đầu",
-          "subtitle": "Quầy Pub, Lễ tân Khách sạn & Phụ bếp",
           "description": "Những năm tháng cọ xát trực tiếp ở ngành dịch vụ giúp tôi rèn luyện khả năng quan sát tâm lý con người, sự nhẫn nại và bản lĩnh giữ bình tĩnh dưới áp lực cao. Đây là điểm tựa để tôi trở thành một nhà phân tích biết lắng nghe bài toán con người trước khi chạm vào con số.",
           "icon": "HeartHandshake",
           "highlights": [
@@ -538,9 +637,6 @@
         },
         {
           "id": "02-logistics-trade",
-          "tag": "Thực Tế Thương Mại",
-          "title": "Thực Chiến Kinh Doanh Xuất Nhập Khẩu",
-          "subtitle": "Nhân viên Kinh doanh tại Vietnam Post Logistics",
           "description": "Thời gian làm kinh doanh Logistics mang lại cho tôi trải nghiệm thực tế về quy trình chuỗi cung ứng, luồng hàng hóa quốc tế và chứng từ thương mại. Việc hiểu sâu điểm nghẽn vận hành của doanh nghiệp bắt nguồn chính từ giai đoạn này.",
           "icon": "Truck",
           "highlights": [
@@ -551,9 +647,6 @@
         },
         {
           "id": "03-gap-year-solo",
-          "tag": "Độc Hành & Bản Lĩnh",
-          "title": "Hành Trình Độc Hành & Khoảng Trầm Tự Thấm",
-          "subtitle": "Xuyên Việt 2.000+ km • Cung đường Vùng cao • Gap Year",
           "description": "Dành khoảng thời gian gap để quan sát, tự vấn và bước ra khỏi vùng an toàn. Từ chuyến độc hành Xuyên Việt 2.000+ km đến những cung đường vùng cao, việc đối mặt với sự đơn độc và các yếu tố bất định đã tôi luyện sự kiên cường, tính độc lập và sự rõ ràng trong định hướng sự nghiệp.",
           "icon": "Compass",
           "highlights": [
@@ -564,9 +657,6 @@
         },
         {
           "id": "04-tech-data-intuition",
-          "tag": "Công Nghệ & Hiện Tại",
-          "title": "Đam Mê Công Nghệ & Tư Duy Số Hóa",
-          "subtitle": "Tự động hóa quy trình • AI Micro-tools • Kinh tế học Hành vi",
           "description": "Tất cả vốn sống từ trải nghiệm con người, thương mại và những chuyến đi được đúc kết thành đam mê với công nghệ. Tôi viết các công cụ tự động hóa hằng ngày bằng Python & AI, đồng thời ứng dụng Kinh tế học Hành vi để biến dữ liệu thô thành những quyết định mang giá trị thực.",
           "icon": "Sparkles",
           "highlights": [
@@ -768,6 +858,40 @@
             "demo": "",
             "featured": true,
             "description": "Executed Spatial Exploratory Data Analysis (EDA) and built Machine Learning models (Linear, Polynomial, Decision Tree) to predict California house values based on median income, coastal proximity, and urban location. Achieved optimal performance with 3rd-degree Polynomial Regression."
+          },
+          {
+            "id": "04-telegram-revenue-alert-bot",
+            "title": "Real-Time Telegram Revenue & KPI Alert System",
+            "subtitle": "Automated business metric tracking and anomaly detection solution",
+            "date": "2025",
+            "tags": [
+              "Python",
+              "Telegram Bot API",
+              "PostgreSQL",
+              "Data Automation",
+              "Real-time Alert"
+            ],
+            "github": "https://github.com/dewey97",
+            "demo": "",
+            "featured": true,
+            "description": "Automated daily business metrics extraction and processing; integrated anomaly detection algorithms on conversion funnels to deliver real-time Telegram alerts for management."
+          },
+          {
+            "id": "05-rfm-customer-segmentation-churn",
+            "title": "RFM Customer Segmentation & Churn Risk Analytics",
+            "subtitle": "Personalized retention strategy and customer lifetime value optimization",
+            "date": "2024",
+            "tags": [
+              "RFM Model",
+              "Python",
+              "SQL",
+              "Customer Analytics",
+              "Power BI"
+            ],
+            "github": "https://github.com/dewey97",
+            "demo": "",
+            "featured": true,
+            "description": "Analyzed transactional history to segment customers via RFM modeling. Built early-warning churn risk indicators empowering sales teams to execute proactive retention strategies."
           }
         ]
       },
@@ -931,6 +1055,40 @@
             "demo": "",
             "featured": true,
             "description": "Quantitative analysis of macroeconomic and spatial variables affecting real estate values (income, geography, coastal distance). Applied Hedonic Pricing theory and ML regression algorithms to provide data-driven valuation models for investment decision-making."
+          },
+          {
+            "id": "04-telegram-revenue-alert-bot",
+            "title": "Telegram Revenue & KPI Operational Alert Automation",
+            "subtitle": "Real-time business health monitoring and alert strategy solution",
+            "date": "2025",
+            "tags": [
+              "Business Automation",
+              "Telegram API",
+              "KPI Monitoring",
+              "Alert Strategy",
+              "Python"
+            ],
+            "github": "https://github.com/dewey97",
+            "demo": "",
+            "featured": true,
+            "description": "Established automated conversion funnel tracking and operational anomaly detection rules. Integrated Telegram alert bot enabling management to respond rapidly to revenue fluctuations."
+          },
+          {
+            "id": "05-rfm-customer-segmentation-churn",
+            "title": "RFM Customer Behavior Analysis & Retention Strategy",
+            "subtitle": "Customer lifetime value modeling and marketing cost optimization",
+            "date": "2024",
+            "tags": [
+              "Customer Retention",
+              "RFM Analytics",
+              "Market Strategy",
+              "LTV Optimization",
+              "Power BI"
+            ],
+            "github": "https://github.com/dewey97",
+            "demo": "",
+            "featured": true,
+            "description": "Researched consumer purchasing behavior models and customer tiering. Recommended personalized retention strategies based on Churn Risk Matrix analytics."
           }
         ]
       },
@@ -1097,6 +1255,40 @@
             "demo": "",
             "featured": true,
             "description": "Engineered end-to-end data pipelines and custom feature transformers (IQR clipping, ratio feature scaling, StandardScaler). Evaluated Linear, Polynomial, and Decision Tree regression models with hyperparameter tuning via GridSearchCV."
+          },
+          {
+            "id": "04-telegram-revenue-alert-bot",
+            "title": "Real-Time Telegram Alert Pipeline & Automation Engineering",
+            "subtitle": "Python scripts & webhooks for automated operational data anomaly detection",
+            "date": "2025",
+            "tags": [
+              "Python",
+              "Webhook",
+              "PostgreSQL",
+              "Cron Jobs",
+              "Telegram API"
+            ],
+            "github": "https://github.com/dewey97",
+            "demo": "",
+            "featured": true,
+            "description": "Engineered Python micro-batch scripts processing transactional data, validating business rules, and delivering Telegram Bot API alerts with sub-5-second latency."
+          },
+          {
+            "id": "05-rfm-customer-segmentation-churn",
+            "title": "RFM Data Pipeline & Customer Churn Analytics Algorithm",
+            "subtitle": "Transactional time-series processing and customer segmentation modeling",
+            "date": "2024",
+            "tags": [
+              "Python",
+              "Pandas/NumPy",
+              "SQL Analytics",
+              "RFM Algorithm",
+              "Scikit-Learn"
+            ],
+            "github": "https://github.com/dewey97",
+            "demo": "",
+            "featured": true,
+            "description": "Built automated SQL & Python data pipelines calculating RFM scores from large transactional databases. Implemented clustering algorithms (K-Means/Quantile scoring) powering BI customer dashboards."
           }
         ]
       }
@@ -1109,9 +1301,6 @@
       "items": [
         {
           "id": "01-hospitality-empathy",
-          "tag": "Frontline Empathy",
-          "title": "Human Empathy from Frontline Hospitality",
-          "subtitle": "Pub Bartender, Hotel Front Desk & Kitchen Staff",
           "description": "Hands-on work in fast-paced service environments built my foundation: deep empathy for human behavior, active listening, and composure under pressure — proving that understanding people comes before analyzing numbers.",
           "icon": "HeartHandshake",
           "highlights": [
@@ -1122,9 +1311,6 @@
         },
         {
           "id": "02-logistics-trade",
-          "tag": "Commercial Realities",
-          "title": "International Trade & Logistics Sales",
-          "subtitle": "Logistics Sales Executive at Vietnam Post Logistics",
           "description": "Hands-on experience in international logistics sales exposed me to supply chain dynamics, cross-border shipping workflows, and import-export documentation — building my core commercial intuition for operational bottlenecks.",
           "icon": "Truck",
           "highlights": [
@@ -1135,9 +1321,6 @@
         },
         {
           "id": "03-gap-year-solo",
-          "tag": "Solo Exploration & Grit",
-          "title": "Solo Expeditions & Personal Gap Period",
-          "subtitle": "2,000+ km Cross-Vietnam • Highland Trails • Gap Year",
           "description": "Taking a reflective gap period to push boundaries and explore. From a 2,000+ km solo cross-country trip to remote highland trails, navigating uncertainty alone sharpened my adaptability, self-reliance, and clarity of purpose.",
           "icon": "Compass",
           "highlights": [
@@ -1148,9 +1331,6 @@
         },
         {
           "id": "04-tech-data-intuition",
-          "tag": "Technology & Present",
-          "title": "Technology Passions & Data Intuition",
-          "subtitle": "Workflow Automation • AI Micro-tools • Behavioral Economics",
           "description": "Fusing life experiences in human psychology, commercial trade, and solo expeditions into a passion for technology. Using Python and AI tools for daily automation, while leveraging behavioral economics to convert raw data into actionable decisions.",
           "icon": "Sparkles",
           "highlights": [
