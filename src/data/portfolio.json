@@ -152,7 +152,7 @@
           {
             "id": "02-market-analytics-etl",
             "title": "Tối ưu hóa Quy trình ETL & Dashboard Báo cáo Quốc tế",
-            "subtitle": "Hạ tầng phân tích dữ liệu thị trường Philippines & Thái Lan",
+            "subtitle": "Hạ tầng phân tích dữ liệu thị trường quốc tế",
             "date": "2024",
             "tags": [
               "ETL",
@@ -351,7 +351,7 @@
           {
             "id": "02-market-analytics-etl",
             "title": "Phân tích Dữ liệu Thị trường & Hệ thống Dashboard Quốc tế",
-            "subtitle": "Đánh giá thương mại và hạ tầng báo cáo thị trường Philippines & Thái Lan",
+            "subtitle": "Đánh giá thương mại và hạ tầng báo cáo thị trường quốc tế",
             "date": "2024",
             "tags": [
               "Market Analysis",
@@ -549,7 +549,7 @@
           {
             "id": "02-market-analytics-etl",
             "title": "Hạ tầng ETL & Tối ưu Truy vấn Báo cáo Quốc tế",
-            "subtitle": "Pipeline xử lý dữ liệu lớn cho thị trường Philippines & Thái Lan",
+            "subtitle": "Pipeline xử lý dữ liệu lớn cho thị trường quốc tế",
             "date": "2024",
             "tags": [
               "ETL",
@@ -627,43 +627,19 @@
       "items": [
         {
           "id": "01-hospitality-empathy",
-          "description": "Những năm tháng cọ xát trực tiếp ở ngành dịch vụ giúp tôi rèn luyện khả năng quan sát tâm lý con người, sự nhẫn nại và bản lĩnh giữ bình tĩnh dưới áp lực cao. Đây là điểm tựa để tôi trở thành một nhà phân tích biết lắng nghe bài toán con người trước khi chạm vào con số.",
-          "icon": "HeartHandshake",
-          "highlights": [
-            "Thấu cảm con người",
-            "Giao tiếp tuyến đầu",
-            "Bản lĩnh dưới áp lực"
-          ]
+          "description": "Những năm tháng cọ xát trực tiếp ở ngành dịch vụ giúp tôi rèn luyện khả năng quan sát tâm lý con người, sự nhẫn nại và bản lĩnh giữ bình tĩnh dưới áp lực cao. Đây là điểm tựa để tôi trở thành một nhà phân tích biết lắng nghe bài toán con người trước khi chạm vào con số."
         },
         {
           "id": "02-logistics-trade",
-          "description": "Thời gian làm kinh doanh Logistics mang lại cho tôi trải nghiệm thực tế về quy trình chuỗi cung ứng, luồng hàng hóa quốc tế và chứng từ thương mại. Việc hiểu sâu điểm nghẽn vận hành của doanh nghiệp bắt nguồn chính từ giai đoạn này.",
-          "icon": "Truck",
-          "highlights": [
-            "Vietnam Post Logistics",
-            "Chuỗi cung ứng",
-            "Chứng từ thương mại"
-          ]
+          "description": "Thời gian làm kinh doanh Logistics mang lại cho tôi trải nghiệm thực tế về quy trình chuỗi cung ứng, luồng hàng hóa quốc tế và chứng từ thương mại. Việc hiểu sâu điểm nghẽn vận hành của doanh nghiệp bắt nguồn chính từ giai đoạn này."
         },
         {
           "id": "03-gap-year-solo",
-          "description": "Dành khoảng thời gian gap để quan sát, tự vấn và bước ra khỏi vùng an toàn. Từ chuyến độc hành Xuyên Việt 2.000+ km đến những cung đường vùng cao, việc đối mặt với sự đơn độc và các yếu tố bất định đã tôi luyện sự kiên cường, tính độc lập và sự rõ ràng trong định hướng sự nghiệp.",
-          "icon": "Compass",
-          "highlights": [
-            "Xuyên Việt 2.000+ km",
-            "Bản lĩnh độc lập",
-            "Thích nghi bất định"
-          ]
+          "description": "Dành khoảng thời gian gap để quan sát, tự vấn và bước ra khỏi vùng an toàn. Từ chuyến độc hành Xuyên Việt 2.000+ km đến những cung đường vùng cao, việc đối mặt với sự đơn độc và các yếu tố bất định đã tôi luyện sự kiên cường, tính độc lập và sự rõ ràng trong định hướng sự nghiệp."
         },
         {
           "id": "04-tech-data-intuition",
-          "description": "Tất cả vốn sống từ trải nghiệm con người, thương mại và những chuyến đi được đúc kết thành đam mê với công nghệ. Tôi viết các công cụ tự động hóa hằng ngày bằng Python & AI, đồng thời ứng dụng Kinh tế học Hành vi để biến dữ liệu thô thành những quyết định mang giá trị thực.",
-          "icon": "Sparkles",
-          "highlights": [
-            "Tự động hóa Python/AI",
-            "Kinh tế học Hành vi",
-            "Tư duy Định lượng"
-          ]
+          "description": "Tất cả vốn sống từ trải nghiệm con người, thương mại và những chuyến đi được đúc kết thành đam mê với công nghệ. Tôi viết các công cụ tự động hóa hằng ngày bằng Python & AI, đồng thời ứng dụng Kinh tế học Hành vi để biến dữ liệu thô thành những quyết định mang giá trị thực."
         }
       ]
     },
@@ -826,7 +802,7 @@
           {
             "id": "02-market-analytics-etl",
             "title": "ETL Pipeline Optimization & International Analytics Dashboards",
-            "subtitle": "Data analytics infrastructure for Philippines & Thailand markets",
+            "subtitle": "Data analytics infrastructure for international markets",
             "date": "2024",
             "tags": [
               "ETL",
@@ -1025,7 +1001,7 @@
           {
             "id": "02-market-analytics-etl",
             "title": "Market Feasibility Analytics & International BI System",
-            "subtitle": "Commercial evaluation and reporting infrastructure for Philippines & Thailand markets",
+            "subtitle": "Commercial evaluation and reporting infrastructure for international markets",
             "date": "2024",
             "tags": [
               "Market Analysis",
@@ -1223,7 +1199,7 @@
           {
             "id": "02-market-analytics-etl",
             "title": "ETL Infrastructure & Query Optimization for International Analytics",
-            "subtitle": "Scalable data pipeline for Philippines & Thailand business analytics",
+            "subtitle": "Scalable data pipeline for international business analytics",
             "date": "2024",
             "tags": [
               "ETL",
@@ -1301,43 +1277,19 @@
       "items": [
         {
           "id": "01-hospitality-empathy",
-          "description": "Hands-on work in fast-paced service environments built my foundation: deep empathy for human behavior, active listening, and composure under pressure — proving that understanding people comes before analyzing numbers.",
-          "icon": "HeartHandshake",
-          "highlights": [
-            "Frontline Empathy",
-            "Active Listening",
-            "Composure Under Pressure"
-          ]
+          "description": "Hands-on work in fast-paced service environments built my foundation: deep empathy for human behavior, active listening, and composure under pressure — proving that understanding people comes before analyzing numbers."
         },
         {
           "id": "02-logistics-trade",
-          "description": "Hands-on experience in international logistics sales exposed me to supply chain dynamics, cross-border shipping workflows, and import-export documentation — building my core commercial intuition for operational bottlenecks.",
-          "icon": "Truck",
-          "highlights": [
-            "Vietnam Post Logistics",
-            "Supply Chain Workflows",
-            "Import-Export Trade"
-          ]
+          "description": "Hands-on experience in international logistics sales exposed me to supply chain dynamics, cross-border shipping workflows, and import-export documentation — building my core commercial intuition for operational bottlenecks."
         },
         {
           "id": "03-gap-year-solo",
-          "description": "Taking a reflective gap period to push boundaries and explore. From a 2,000+ km solo cross-country trip to remote highland trails, navigating uncertainty alone sharpened my adaptability, self-reliance, and clarity of purpose.",
-          "icon": "Compass",
-          "highlights": [
-            "2,000+ km Cross-Vietnam",
-            "Self-Reliance & Grit",
-            "Navigating Uncertainty"
-          ]
+          "description": "Taking a reflective gap period to push boundaries and explore. From a 2,000+ km solo cross-country trip to remote highland trails, navigating uncertainty alone sharpened my adaptability, self-reliance, and clarity of purpose."
         },
         {
           "id": "04-tech-data-intuition",
-          "description": "Fusing life experiences in human psychology, commercial trade, and solo expeditions into a passion for technology. Using Python and AI tools for daily automation, while leveraging behavioral economics to convert raw data into actionable decisions.",
-          "icon": "Sparkles",
-          "highlights": [
-            "Python/AI Automation",
-            "Behavioral Economics",
-            "Quantitative Intuition"
-          ]
+          "description": "Fusing life experiences in human psychology, commercial trade, and solo expeditions into a passion for technology. Using Python and AI tools for daily automation, while leveraging behavioral economics to convert raw data into actionable decisions."
         }
       ]
     },

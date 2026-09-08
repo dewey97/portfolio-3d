@@ -22,6 +22,7 @@ import {
   Truck,
   Compass,
   Sparkles,
+  Quote,
 } from 'lucide-react';
 import { MotionReveal } from '@/components/ui/MotionReveal';
 
@@ -559,54 +560,22 @@ export default function PortfolioView({ initialData }: PortfolioViewProps) {
           {/* BEYOND WORK FLOATING CARDS GRID */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {beyondWork.items.map((item, bIdx) => {
-              const IconComp = iconMap[item.icon] || Sparkles;
               return (
                 <MotionReveal key={item.id} delay={bIdx * 0.1}>
                   <div className="group rounded-xl bg-[#0b1222]/75 hover:bg-[#0f1930]/90 p-6 md:p-8 flex flex-col justify-between h-full space-y-4 shadow-xl shadow-[#020617]/80 hover:shadow-2xl hover:shadow-blue-950/40 hover:-translate-y-1.5 transition-all duration-300 relative overflow-hidden backdrop-blur-md">
-                    <div className="space-y-3">
-                      <div className="flex items-center justify-between font-mono text-xs">
-                        {item.tag ? (
-                          <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-[#060b17] text-blue-300 ring-1 ring-blue-900/40">
-                            <IconComp className="w-3.5 h-3.5 text-blue-400" />
-                            {item.tag}
-                          </span>
-                        ) : (
-                          <span className="inline-flex items-center p-1.5 rounded-md bg-[#060b17] text-blue-300 ring-1 ring-blue-900/40">
-                            <IconComp className="w-4 h-4 text-blue-400" />
-                          </span>
-                        )}
+                    {/* Background Faint Quote Mark */}
+                    <Quote className="absolute -top-2 -left-2 w-20 h-20 text-blue-500/5 rotate-180 pointer-events-none group-hover:text-blue-500/10 transition-colors" />
+
+                    <div className="space-y-4 relative z-10">
+                      {/* Prominent Quote Icon Badge */}
+                      <div className="w-10 h-10 rounded-lg bg-[#060b17] border border-blue-500/20 flex items-center justify-center text-blue-400 shadow-md group-hover:border-blue-500/40 transition-colors">
+                        <Quote className="w-5 h-5 fill-blue-400/20" />
                       </div>
 
-                      {(item.title || item.subtitle) && (
-                        <div>
-                          {item.title && (
-                            <h3 className="text-lg font-bold text-slate-100 group-hover:text-white transition-colors">
-                              {item.title}
-                            </h3>
-                          )}
-                          {item.subtitle && (
-                            <p className="text-xs font-mono text-blue-300/80 mt-0.5">{item.subtitle}</p>
-                          )}
-                        </div>
-                      )}
-
-                      <p className="text-slate-300 text-sm leading-relaxed font-normal italic">
+                      <p className="text-slate-200 text-sm md:text-base leading-relaxed font-normal italic">
                         &ldquo;{renderFormattedText(item.description)}&rdquo;
                       </p>
                     </div>
-
-                    {item.highlights && item.highlights.length > 0 && (
-                      <div className="flex flex-wrap gap-1.5 pt-2 border-t border-slate-800/50">
-                        {item.highlights.map((hl) => (
-                          <span
-                            key={hl}
-                            className="text-xs font-mono px-2.5 py-1 rounded-md bg-[#060b17] shadow-inner text-slate-300 group-hover:text-blue-200 transition-colors ring-1 ring-slate-800/80"
-                          >
-                            {hl}
-                          </span>
-                        ))}
-                      </div>
-                    )}
                   </div>
                 </MotionReveal>
               );

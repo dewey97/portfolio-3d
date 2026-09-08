@@ -49,8 +49,8 @@ export interface BeyondWorkItem {
   title?: string;
   subtitle?: string;
   description: string;
-  icon: string;
-  highlights: string[];
+  icon?: string;
+  highlights?: string[];
   link?: string;
   linkLabel?: string;
 }
